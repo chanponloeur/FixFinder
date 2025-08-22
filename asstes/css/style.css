@@ -33,6 +33,17 @@ body {
 }
 }
 /*====================== service history ============= */
-.user-profile-body .service-detail{
+.user-profile-body .service-detail, 
+.user-profile-body .user-setting .notification-setting ,
+.user-profile-body .user-setting .security-setting,
+.user-profile-top .profile-info .modal-body .edit-profile-user,
+.user-profile-top .profile-info .modal-body .edit-username,
+.user-profile-top .profile-info .modal-body .edit-password
+{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/*====================== modal edit profile ====================== */
+.user-profile-top .profile-info .modal-body .btn-edit-profile{
+    top:75%;
+    right: 42%;
 }
