@@ -973,7 +973,7 @@ body {
 /*--background Login page, Register page, Forget password page--*/
 .login {
     background: linear-gradient(rgb(24, 1, 68), rgba(11, 0, 167, 0.712), rgba(69, 4, 173, 0.356)),
-        url(../image.login.register/background.jpg) no-repeat top center;
+        url(../img/image.login.register/background.jpg) no-repeat top center;
     background-size: cover;
     min-height: 100vh;
 }
@@ -1028,8 +1028,7 @@ body {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Responsive Adjustments */
+/*====================== Responsive Adjustments ====================== */
 @media (max-width: 767px) {
     .login .card-container .form-side {
         padding: 25px;
@@ -1039,8 +1038,7 @@ body {
         min-height: 200px;
     }
 }
-
-/*--verify--*/
+/*====================== verify ====================== */
 .login .form-side .otp-inputs input {
     width: 60px;
     height: 60px;
@@ -1055,8 +1053,7 @@ body {
     box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
     outline: none;
 }
-
-/*--back link--*/
+/*====================== back link ====================== */
 .login .form-side .back-link {
     font-size: 15px;
     font-weight: 500;
@@ -1161,4 +1158,3 @@ body {
 .fade-in-animation {
     animation: fadeIn 0.5s ease;
 }
-
