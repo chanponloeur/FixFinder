@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFinder - ស្វែងរកការជួសជុល</title>
+    <link rel="stylesheet" href="asstes/css/bootstrap.css">
+    <!-- remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <!-- Animate-style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="asstes/css/style.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar-top py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                    </div>
+                    <div class="d-none d-lg-block col-lg-7 ps-5">
+                        <div class="d-flex align-items-center ps-4">
+                            <div class="me-3">
+                                <i class="ri-phone-line fs-5 "></i>
+                                <span class=" fs-6">ទំនាក់ទំនង:</span>
+                                <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567 890</a>
+                            </div>
+                            <div>
+                                <i class="ri-mail-line fs-5 "></i>
+                                <span class=" fs-6">FixFinder@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-end ">
+                            <a class="nav-link dropdown-toggle ms-2 " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="ri-progress-4-line"></i> AUTO
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="#"><i class="ri-progress-4-line"></i> AUTO</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="ri-moon-line"></i> DARK</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="ri-sun-line"></i> LIGHT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div> 
+    <header>
+        <nav class="navbar navbar-expand-xl p-0">
+            <div class="container bg-primary p-0">
+                <a class="navbar-brand p-0 text-white" href="#">
+                    <img src="asstes/img/Logo-2.png" class="img-fluid " alt="">
+                    <div class="bg-after"></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto ms-sm-auto mb-2 mb-lg-0">
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
+                                ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link " href="#">បញ្ជីអ្នកជំនាញ </a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">ប្រវត្តិការងារ</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">ជំនួយ</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">អំពីពួកយើង</a>
+                        </li>
+                        <li class="nav-item hvr-underline-from-center">
+                            <a class="nav-link" href="#">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <a href="" class="btn btn-outline-light me-3">ចូលប្រើប្រាស់</a>
+                    <a href="" class="btn btn-light me-3">ចុះឈ្មោះ</a>
+                </div>
+                <div class="bg-nav-after"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="herobanner py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-7 banner-title">
+                        <span
+                            class="fs-5 text-white fw-bold animate__animated  animate__bounce">តើលោកអ្នកកំពុងស្វែងរកអ្នកជំនាញមែនទេ?</span>
+                        <h1 class="fw-bold display-3 text-white mb-4 animate__animated animate__fadeInLeftBig">
+                            សូមស្វាគមន៍មកកាន់ <span class="text-primary">FixFinder</span>
+                            ទីកន្លែងដោះស្រាយបញ្ហារបស់លោកអ្នក</h1>
+                        <p class="fs-5 text-white my-4 animate__animated animate__fadeInLeftBig">
+                            ភ្ជាប់ទំនាក់ទំនងជាមួយអ្នកជំនាញដែលមានការបញ្ជាក់
+                            ដែលអាចដោះស្រាយបញ្ហារបស់អ្នកបាន ធានានូវគុណភាពនិងប្រសិទ្ធភាព</p>
+                        <a href=""
+                            class="btn btn-outline-primary me-3 fw-bold animate__animated animate__fadeInLeftBig">ស្វែងយល់បន្ថែម</a>
+                        <a href=""
+                            class="btn btn-primary fw-bold animate__animated animate__fadeInLeftBig">ទំនាក់ទំនង</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-us py-5">
+            <div class="container">
+                <div class="popular-title py-3 text-center">
+                    <h2 class="fw-bold">ហេតុអ្វីគួរជ្រើសរើស FixFinder?</h2>
+                    <div class="style-line bg-primary m-auto my-2"></div>
+                    <span>យើងផ្តល់នូវដំណោះស្រាយល្អបំផុតសម្រាប់បញ្ហារបស់អ្នក</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="card border-0 text-center">
+                            <div class="card-icon d-flex justify-content-center py-4">
+                                <i class="ri-check-line"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold ">អ្នកជំនាញដែលអាចទុកចិត្តបាន</h5>
+                                <p class="">អ្នកជំនាញទាំងអស់ត្រូវបានផ្ទៀងផ្ទាត់ និងមានការវាយតម្លៃពីអតិថិជនពីមុន</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="card border-0 text-center">
+                            <div class="card-icon d-flex justify-content-center py-4">
+                                <i class="ri-flashlight-fill"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold">រហ័ស និងមានប្រសិទ្ធភាព</h5>
+                                <p class="">រកអ្នកជំនាញដែលនៅក្បែរអ្នកបំផុត ដើម្បីសន្សំសំចៃពេលវេលា</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="card border-0 text-center">
+                            <div class="card-icon d-flex justify-content-center py-4">
+                                <i class="ri-money-dollar-circle-line"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold">តម្លៃសមរម្យ</h5>
+                                <p class="">អ្នកអាចប្រៀបធៀបតម្លៃ និងជ្រើសរើសអ្នកជំនាញតាមថវិការបស់អ្នក</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up">
+                        <div class="card border-0 text-center">
+                            <div class="card-icon d-flex justify-content-center py-4">
+                                <i class="ri-shield-check-fill"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="fw-bold">ធានាសុវត្ថិភាព</h5>
+                                <p class="">ការធានាសុវត្ថិភាពសម្រាប់អ្នក និងទ្រព្យសម្បត្តិរបស់អ្នក</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-4 bg-primary my-5 ms-2 rounded-2 g-3">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="w-100 text-center">
+                                <div>
+                                    <span id="count1" class="fw-bold text-white display-6"></span> <span
+                                        class="fw-bold text-white display-6">+</span>
+                                </div>
+                                <span class="text-white fs-5 ">អ្នកជំនាញ</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="w-100 text-center">
+                                <div>
+                                    <span id="count2" class="fw-bold text-white display-6"></span> <span
+                                        class="fw-bold text-white display-6">+</span>
+                                </div>
+                                <span class="text-white fs-5 ">ការជួសជុល</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="w-100 text-center">
+                                <div>
+                                    <span id="count3" class="fw-bold text-white display-6"></span> <span
+                                        class="fw-bold text-white display-6">+</span>
+                                </div>
+                                <span class="text-white fs-5 ">ខេត្ត</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="w-100 text-center">
+                                <h3 class="fw-bold text-white display-6">4.8 <i class="ri-star-fill"></i></h3>
+                                <span class="text-white fs-5 ">ការវាយតម្លៃ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="find-fixer py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-6 text-center align-content-center" data-aos="fade-up-right">
+                        <div>
+                            <h1 class="fw-bold display-3 text-black mb-4"> <span class="text-primary">ស្វែងរក</span>
+                                អ្នកជំនាញដោះស្រាយបញ្ហារបស់អ្នក</h1>
+                            <p class="fs-5 text-black my-4 ">បញ្ចូលទីតាំងរបស់អ្នក និងសេវាកម្មដែលអ្នកត្រូវការ
+                                ខណៈពេលដែលប្រព័ន្ធយើងនឹងបង្ហាញអ្នកជំនាញដែលមានសមត្ថភាពបំផុតនៅក្បែរអ្នក</p>
+                            <div class="m-auto">
+                                <form class="row justify-content-center">
+                                    <div class="col-11 border rounded py-2">
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <div class="w-100 m-auto">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="សេវាកម្មដែលអ្នកត្រូវការ"
+                                                        aria-label="Recipient’s username"
+                                                        aria-describedby="button-addon">
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="w-100 m-auto">
+                                                    <input type="text" class="form-control" placeholder="ទីតាំង"
+                                                        aria-label="Recipient’s username"
+                                                        aria-describedby="button-addon">
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="w-100 m-auto">
+                                                    <button class="btn btn-primary w-100" type="button"
+                                                        id="button-addon"><i class="ri-search-line"></i>
+                                                        ស្វែងរក</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up-left">
+                        <div class="card w-75 m-auto">
+                            <img src="asstes/img/find-fixer.png" class="img-fluid rounded-1" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-service py-5">
+            <div class="container">
+                <div class="popular-title py-3 text-center">
+                    <h2 class="fw-bold">សេវាកម្មពេញនិយម</h2>
+                    <div class="style-line bg-primary m-auto my-2"></div>
+                    <span>សេវាកម្មដែលមានការស្នើរសុំច្រើនបំផុតនាពេលបច្ចុប្បន្ននេះ</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-1.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលផ្ទះ</h4>
+                                <p class="m-0 my-2">ជួសជុលគ្រប់ប្រភេទបញ្ហាដែលលោកអ្នកកំពុងជួបប្រទះនៅក្នុងផ្ទះរបស់អ្នក</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$50-150</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-2.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលសម្ភារះប្រើប្រាស់</h4>
+                                <p class="m-0 my-2">ជួសជុលសម្ភារះគ្រប់ប្រភេទនៅក្នុងគេហដ្ធានរបស់លោកអ្នក</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$15-50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-md-auto mt-md-3" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-3.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលរថយន្ត</h4>
+                                <p class="m-0 my-2">ជួសជុលគ្រប់ប្រភេទបញ្ហារបស់រថយន្តគ្រប់ប្រភេទ</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$15-50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-fixer py-5">
+            <div class="container">
+                <div class="popular-title py-3 text-center">
+                    <h2 class="fw-bold">អ្នកជំនាញល្អបំផុត</h2>
+                    <div class="style-line bg-primary m-auto my-2"></div>
+                    <span>នេះជាអ្នកជំនាញដែលសម្រេចបានការងារជាច្រើនប្រកបដោយប្រសិទ្ធិភាព</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="card p-3">
+                            <div class="p-2">
+                                <div class="d-flex">
+                                    <div class="w-25">
+                                        <img src="asstes/img/popular-fixer/Fixer-1.png" class="img-fluid rounded-circle"
+                                            alt="">
+                                    </div>
+                                    <div class="w-75 ps-3">
+                                        <h5 class="fw-bold w-100 m-0">លោក​ សុខ ដារ៉ា</h5>
+                                        <p class="m-0 pb-1">Sok Dara</p>
+                                        <span class="text-primary fs-6">អ្នកជំនាញជួសជុលទូរស័ព្ទ</span>
+                                        <p class="text-secondary ">Mobile Phone Repair Specialist</p>
+                                        <div>
+                                            <i class="ri-smartphone-line fs-5"></i>
+                                            <span class="p-1 border rounded">ជួសជុលអេឡិចត្រូនិច</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header rounded-2 p-3 mt-4 mb-2">
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fw-bold fs-5"><i
+                                                class="ri-money-dollar-circle-line text-primary"></i> តម្លៃ:</span>
+                                    </div>
+                                    <div>
+                                        <span class="bg-primary-subtle p-1 rounded">មធ្យម</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">ក្នុងមួយម៉ោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-primary fw-bold fs-5">$8-$15</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">គម្រោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="fw-bold">$20+</span>
+                                    </div>
+                                </div>
+                                <span class="fs-5"><i class="ri-time-line"></i> ក្នុងរយះពេល២ម៉ោង</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold fs-4">ជំនាញ</span>
+                                <div class="py-2 ">
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">iPhone Repair</span>
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">Samsung Repair</span> <br>
+                                    <div class="mt-3">
+                                        <span class="bg-secondary-subtle p-1 rounded me-2">Screen Replacement</span>
+                                        <span class="bg-secondary-subtle p-1 rounded">Battery Replacement</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">5
+                                        ឆ្នាំ</span></span>
+                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
+                                            class="ri-star-fill text-warning"></i></span></span>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <a href="" class="btn btn-primary me-3 w-50"><i class="ri-phone-line"></i>
+                                    មើលព័ត៍មាន</a>
+                                <a href="" class="btn btn-outline-primary w-50"><i class="ri-mail-line"></i> អ៊ីម៉ែល</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-3">
+                            <div class="p-2">
+                                <div class="d-flex">
+                                    <div class="w-25">
+                                        <img src="asstes/img/popular-fixer/Fixer-2.png" class="img-fluid rounded-circle"
+                                            alt="">
+                                    </div>
+                                    <div class="w-75 ps-3">
+                                        <h5 class="fw-bold w-100 m-0">លោក​ ប៉េង សីហា</h5>
+                                        <p class="m-0 pb-1">Peng Seyha</p>
+                                        <span class="text-primary fs-6">អ្នកជំនាញជួសជុលអគ្គីសនី</span>
+                                        <p class="text-secondary ">Electrical Repair Specialist</p>
+                                        <div>
+                                            <i class="ri-flashlight-line fs-5"></i>
+                                            <span class="p-1 border rounded">ជួសជុលអគ្គីសនី</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header rounded-2 p-3 mt-4 mb-2">
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fw-bold fs-5"><i
+                                                class="ri-money-dollar-circle-line text-primary"></i> តម្លៃ:</span>
+                                    </div>
+                                    <div>
+                                        <span class="bg-primary-subtle p-1 rounded">ខ្ពស់</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">ក្នុងមួយម៉ោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-primary fw-bold fs-5">$20-$35</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">គម្រោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="fw-bold">$150+</span>
+                                    </div>
+                                </div>
+                                <span class="fs-5"><i class="ri-time-line"></i> ក្នុងរយះពេល 30 នាទី</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold fs-4">ជំនាញ</span>
+                                <div class="py-2 ">
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">Wiring Installation</span>
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">Circuit Repair</span> <br>
+                                    <div class="mt-3">
+                                        <span class="bg-secondary-subtle p-1 rounded me-2">Panel Upgrade</span>
+                                        <span class="bg-secondary-subtle p-1 rounded">Safety Inspection</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">2
+                                        ឆ្នាំ</span></span>
+                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.9 <i
+                                            class="ri-star-fill text-warning"></i></span></span>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <a href="" class="btn btn-primary me-3 w-50"><i class="ri-phone-line"></i>
+                                    មើលព័ត៍មាន</a>
+                                <a href="" class="btn btn-outline-primary w-50"><i class="ri-mail-line"></i> អ៊ីម៉ែល</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-3">
+                            <div class="p-2">
+                                <div class="d-flex">
+                                    <div class="w-25">
+                                        <img src="asstes/img/popular-fixer/Fixer-3.png" class="img-fluid rounded-circle"
+                                            alt="">
+                                    </div>
+                                    <div class="w-75 ps-3">
+                                        <h5 class="fw-bold w-100 m-0">លោក​ស្រី ផល ចាន់ដែន</h5>
+                                        <p class="m-0 pb-1">Phal Chanden</p>
+                                        <span class="text-primary fs-6">អ្នកជំនាញជួសជុលគ្រឿងប្រើប្រាស់ក្នុងផ្ទះ</span>
+                                        <p class="text-secondary ">Home Appliance Repair Specialist</p>
+                                        <div>
+                                            <i class="ri-settings-5-line fs-5"></i>
+                                            <span class="p-1 border rounded">ជួសជុលគ្រឿងប្រើប្រាស់</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header rounded-2 p-3 mt-4 mb-2">
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fw-bold fs-5"><i
+                                                class="ri-money-dollar-circle-line text-primary"></i> តម្លៃ:</span>
+                                    </div>
+                                    <div>
+                                        <span class="bg-primary-subtle p-1 rounded">មធ្យម</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">ក្នុងមួយម៉ោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-primary fw-bold fs-5">$12-$20</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex w-100 justify-content-between mb-2">
+                                    <div>
+                                        <span class="fs-5">គម្រោង:</span>
+                                    </div>
+                                    <div>
+                                        <span class="fw-bold">$20+</span>
+                                    </div>
+                                </div>
+                                <span class="fs-5"><i class="ri-time-line"></i> ក្នុងរយះពេល 4 ម៉ោង</span>
+                            </div>
+                            <div>
+                                <span class="fw-bold fs-4">ជំនាញ</span>
+                                <div class="py-2 ">
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">ទូទឹកកក</span>
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">ម៉ាសុីនបោកគក់</span>
+                                    <span class="bg-secondary-subtle p-1 rounded me-2">ម៉ាស៊ីនត្រជាក់</span>
+                                    <span class="bg-secondary-subtle p-1 rounded">ចង្ក្រានអគ្គីសនី</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">5
+                                        ឆ្នាំ</span></span>
+                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">250</span></span>
+                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
+                                            class="ri-star-fill text-warning"></i></span></span>
+                            </div>
+                            <div class="d-flex justify-content-center my-3">
+                                <a href="" class="btn btn-primary me-3 w-50"><i class="ri-phone-line"></i>
+                                    មើលព័ត៍មាន</a>
+                                <a href="" class="btn btn-outline-primary w-50"><i class="ri-mail-line"></i> អ៊ីម៉ែល</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question py-5">
+            <div class="container">
+                <div class="popular-title py-3 text-center">
+                    <h2 class="fw-bold">សំណួរដែលអតិថិជនសួរញឹកញ៉ាប់</h2>
+                    <div class="style-line bg-primary m-auto my-2"></div>
+                    <span>នេះជាអ្នកជំនាញដែលសម្រេចបានការងារជាច្រើនប្រកបដោយប្រសិទ្ធិភាព</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-lg-8" data-aos="fade-right" data-aos-offset="300">
+                        <div class="px-3">
+                            <div class="accordion" id="accordionFlushExample">
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#question-1" aria-expanded="false"
+                                            aria-controls="question-1">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 1.
+                                                តើខ្ញុំអាចរកអ្នកជួសជុលបានដូចម្តេច?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-1" class=" collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            អ្នកគ្រាន់តែវាយបញ្ចូលប្រភេទសេវាកម្ម
+                                            និងទីតាំង រួចវេទិកានឹងបង្ហាញបញ្ជីអ្នកជួសជុលដែលសមស្រប។
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#question-3" aria-expanded="false"
+                                            aria-controls="question-3">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 2.
+                                                តម្លៃសេវាកម្មត្រូវកំណត់ដោយអ្នកជួសជុល ឬវេទិកា?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-3" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            តម្លៃកំណត់ដោយ អ្នកជួសជុលផ្ទាល់។ FixFinder
+                                            គ្រាន់តែជាវេទិកាដើម្បីភ្ជាប់អ្នកប្រើប្រាស់និងអ្នកផ្តល់សេវា។</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#question-4" aria-expanded="false"
+                                            aria-controls="question-4">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 3.
+                                                តើខ្ញុំអាចទំនាក់ទំនងជាមួយអ្នកជួសជុលដោយផ្ទាល់បានទេ?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-4" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            បាទ/ចាស! អ្នកអាចទំនាក់ទំនងតាមទូរសព្ទ ឬប្រព័ន្ធសារ (chat) នៅក្នុងវេទិកា។
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#question-8" aria-expanded="false"
+                                            aria-controls="question-8">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 4.
+                                                តើខ្ញុំអាចពិនិត្យមតិយោបល់ពីអ្នកប្រើប្រាស់មុនៗអំពីអ្នកជួសជុលបានទេ?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-8" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            បាទ/ចាស។ អ្នកអាចអាន Reviews & Ratings ពីអតិថិជនដែលបានប្រើសេវាកម្មមុន។</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#question-9" aria-expanded="false"
+                                            aria-controls="question-9">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 5.
+                                                តើខ្ញុំអាចកំណត់ពេលវេលាដែលអ្នកជួសជុលមកបានទេ?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-9" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            បាទ/ចាស។ អ្នកអាចកំណត់ពេលវេលា (Booking) តាមប្រព័ន្ធកាលវិភាគ
+                                            ដែលអ្នកជួសជុលអាចបញ្ជាក់បាន។</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#question-10"
+                                            aria-expanded="false" aria-controls="question-10">
+                                            <h5 class="fw-bold m-0"><i class="ri-question-line"></i> 6.
+                                                តើមានសេវាកម្មជួសជុលអាសន្ន (Emergency Fix) ដែរឬទេ?</h5>
+                                        </button>
+                                    </h2>
+                                    <div id="question-10" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body fs-5"><i class="ri-arrow-right-circle-line"></i>
+                                            បាទ/ចាស។ FixFinder ផ្តល់ជម្រើសសេវាអាសន្ន 24/7 សម្រាប់ករណីប្រញាប់ (ឧ. ទឹកលេច,
+                                            ភ្លើងខូច, ម៉ូតូឈប់ដំណើរការ...)។</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card rounded-3 p-2">
+                            <img src="asstes/img/Question.png" class="img-fluid rounded-3 w-100" alt="">
+                            <form class="row">
+                                <h3 class="fw-bold py-2 text-center m-0">បើមានចម្ងល់បន្ថែមអាចបំពេញនៅទីនេះបាន</h3>
+                                <div class="mb-3">
+                                    <input class="form-control" id="" type="text" placeholder="Email" aria-label="">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" id="" type="text" placeholder="សរសេរសំណួរដែលអ្នកចង់ដឹង"
+                                        aria-label="">
+                                </div>
+                                <div class="d-flex justify-content-center my-3">
+                                    <a href="" class="btn btn-primary fw-bold rounded-2 px-3">បញ្ចូន</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer py-5 bg-black">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div>
+                            <h3 class="text-primary">FixFinder</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <p class="text-white">វេទិកាដែលភ្ជាប់អ្នកប្រើប្រាស់ជាមួយអ្នកជំនាញដោះស្រាយបញ្ហាដោយងាយស្រួល
+                                និងរហ័ស។</p>
+                            <div class="social-links d-flex ">
+                                <a href="https://www.facebook.com/" class="text-decoration-none"><i
+                                        class="ri-facebook-fill"></i></a>
+                                <a href="https://www.tiktok.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-tiktok-line"></i></a>
+                                <a href="https://web.telegram.org/" class="text-decoration-none mx-2"><i
+                                        class="ri-telegram-2-fill"></i></a>
+                                <a href="https://www.google.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-google-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">សេវាកម្ម</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="#" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="#" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="#" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណង់</a></li>
+                                <li><a href="#" class="text-decoration-none">ទូទៅ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ក្រុមហ៊ុន</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">អំពីយើង</a></li>
+                                <li><a href="#" class="text-decoration-none">ក្រុមការងារ</a></li>
+                                <li><a href="#" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="#" class="text-decoration-none">ព័ត៍មាន</a></li>
+                                <li><a href="#" class="text-decoration-none">គោលការណ៍ភាពឯកជន</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ទំនាក់ទំនង</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">ទំនាក់ទំនង</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
+                                <li><a href="#" class="text-decoration-none">កន្លែងរបស់យើង</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 border-top">
+            <p class="bg-black text-white m-0 py-2 fs-5 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            function counter(id, start, end, duration) {
+                let obj = document.getElementById(id),
+                    current = start,
+                    range = end - start,
+                    increment = end > start ? 1 : -1,
+                    step = Math.abs(Math.floor(duration / range)),
+                    timer = setInterval(() => {
+                        current += increment;
+                        obj.textContent = current;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, step);
+            }
+            counter("count1", 1000, 1500, 1500);
+            counter("count2", 49500, 50000, 2000);
+            counter("count3", 0, 25, 2000);
+        });
+    </script>
+    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
