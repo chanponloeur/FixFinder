@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', "Noto Sans Khmer", sans-serif;
 }
 
+
 :root {
     --text: #04060b;
     --background: #f0f2fa;
@@ -921,5 +922,39 @@ body {
     justify-content: center;
     padding: 2px;
     display: block;
+}
+
+/*========================= user profile  ================================*/
+@media  (min-width:768px){
+    .user-profile-top .profile-img img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+}
+@media  (max-width:767px){
+    .user-profile-top .profile-img img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+.user-profile-top .profile-img{
+
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+.user-profile-top .profile-info{
+  
+ display: flex;
+ justify-content: center;
+}
+.user-profile-top .profile-info .address{
+    flex-direction: column;
+}
+}
+/*====================== service history ============= */
+.user-profile-body .service-detail{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
