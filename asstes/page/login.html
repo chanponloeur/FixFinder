@@ -23,49 +23,56 @@
                 <div class="row card-container">
 
                     <!-- Form Side -->
-                    <div class="col-lg-6 form-side">
+                    <div class="col-12  form-side">
                         <div>
-                            <h5 class="mb-4 fw-semibold">FixFinder</h5>
+                            <h5 class="mb-4 fw-semibold text-primary">FixFinder</h5>
                             <h2 class="fw-bold mb-3">ចូលទៅគណនីរបស់អ្នក</h2>
                             <p class="text-muted mb-4">បញ្ចូលអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។</p>
                         </div>
 
                         <form class="needs-validation" novalidate>
                             <!-- Email -->
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required>
-                                <div class="invalid-feedback">Please enter your email.</div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" autocomplete="off" required>
+                                <label for="floatingInput">Email address</label>
                             </div>
 
-                            <!-- Password -->
-                            <div class="mb-3">
-                                <input type="password" class="form-control" placeholder="Password" required>
-                                <div class="invalid-feedback">Please enter your password.</div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                                    autocomplete="new-password" required>
+                                <label for="floatingPassword">Password</label>
                             </div>
 
                             <!-- Submit Button -->
-                            <button type="submit" class="btn submit-btn w-100 py-2">ចូល</button>
+                            <button type="submit" class="btn submit-btn w-100 py-2">ចូលករណី</button>
 
                             <!-- Social Buttons -->
                             <div class="d-flex gap-2 mt-3">
-                                <button type="button" class="btn btn-dark w-50">
+                                <!-- Apple -->
+                                <a href="https://appleid.apple.com/auth/authorize" class="btn btn-dark w-50 social-btn">
                                     <i class="fab fa-apple me-2 text-white"></i>Apple
-                                </button>
-                                <button type="button" class="btn btn-danger w-50">
+                                </a>
+
+                                <!-- Google -->
+                                <a href="https://accounts.google.com/o/oauth2/v2/auth"
+                                    class="btn btn-danger w-50 social-btn">
                                     <i class="fab fa-google me-2 text-white"></i>Google
-                                </button>
+                                </a>
                             </div>
 
+
                             <!-- Links -->
-                            <div class="d-flex justify-content-between mt-4 small text-muted">
-                                <span>មិនមានគណនីមែនទេ? <a href="#">ចុះឈ្មោះ</a></span>
-                                <a href="#">ភ្លេចពាក្យសម្ងាត់?</a>
+                            <div class="d-flex justify-content-between mt-4 small text-muted flex-wrap">
+                                <span>មិនមានគណនីមែនទេ? <a href="Create.html">ចុះឈ្មោះ</a></span>
+                                <a href="Forgot.html">ភ្លេចពាក្យសម្ងាត់?</a>
                             </div>
                         </form>
+
                     </div>
 
                     <!-- Image Side -->
-                    <div class="col-lg-6 image-side"></div>
+
 
                 </div>
             </div>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crextio - Register</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="login d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row card-container">
+
+                    <!-- Form Side -->
+                    <div class="col-12 form-side ">
+                        <div>
+                            <h5 class="mb-2 fw-semibold text-primary">FixFinder</h5>
+                            <h3 class="fw-bold mb-2">បង្កើតគណនីថ្មី</h3>
+                            <p class="text-muted mb-2">សូមបំពេញព័ត៌មានរបស់អ្នក ដើម្បីចុះឈ្មោះ។</p>
+                        </div>
+
+                        <form class="needs-validation" novalidate>
+                            <!-- First & Last Name -->
+                            <div class="row">
+                                <!-- First Name -->
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name"
+                                            required>
+                                        <label for="firstName">នាមខ្លួន</label>
+                                        <div class="invalid-feedback">សូមបញ្ចូលនាមខ្លួន!</div>
+                                    </div>
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                                            required>
+                                        <label for="lastName">នាមត្រកូល</label>
+                                        <div class="invalid-feedback">សូមបញ្ចូលនាមត្រកូល!</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
+                                    required>
+                                <label for="email">អ៊ីមែល</label>
+                                <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ!</div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-floating mb-2">
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    required>
+                                <label for="password">ពាក្យសម្ងាត់</label>
+                                <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់!</div>
+                            </div>
+
+                            <!-- Confirm Password -->
+                            <div class="form-floating mb-2">
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Confirm Password" required>
+                                <label for="confirmPassword">បញ្ជាក់ពាក្យសម្ងាត់</label>
+                                <div class="invalid-feedback">សូមបញ្ជាក់ពាក្យសម្ងាត់របស់អ្នក!</div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn submit-btn w-100 py-2"><a
+                                    href="profile.html">ចុះឈ្មោះ</a></button>
+
+                            <!-- Social Buttons -->
+                            <div class="d-flex gap-2 mt-2">
+                                <a href="https://appleid.apple.com/auth/authorize" class="btn btn-dark w-50 social-btn">
+                                    <i class="fab fa-apple me-2 text-white"></i> Apple
+                                </a>
+                                <a href="https://accounts.google.com/o/oauth2/v2/auth"
+                                    class="btn btn-danger w-50 social-btn">
+                                    <i class="fab fa-google me-2 text-white"></i> Google
+                                </a>
+                            </div>
+
+                            <!-- Back to Login -->
+                            <div class="mt-4 text-center">
+                                <span class="small text-muted">មានគណនីរួចហើយ? </span>
+                                <a href="login.html" class="back-link">ចូលគណនី</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Validation Script -->
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+
+                    // check password match
+                    const pass = document.getElementById('password');
+                    const confirmPass = document.getElementById('confirmPassword');
+                    if (pass.value !== confirmPass.value) {
+                        event.preventDefault();
+                        confirmPass.setCustomValidity("Passwords do not match");
+                        confirmPass.reportValidity();
+                    } else {
+                        confirmPass.setCustomValidity("");
+                    }
+
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+
+</html>
