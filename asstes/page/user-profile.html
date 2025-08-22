@@ -27,7 +27,8 @@
                                 <div class="d-flex pb-2">
                                     <h2 class="pe-4 ">សុខ​ ដារ៉ា</h2>
                                     <div class="ms-auto">
-                                        <button type="button" class="btn btn-primary"><span><i
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#edit-profile"><span><i
                                                     class="fa-solid fa-pen-to-square"></i></span> កែប្រែព័ត៍មាន</button>
                                     </div>
                                 </div>
@@ -45,7 +46,75 @@
                                     sokdara168@gmail.com</p>
                                 <p class="text-secondary"><span><i class="fa-solid fa-phone"></i></span> 0987654345</p>
                             </div>
+                            <!------------------------------ modal edit profile user ---------------------------->
+                            <div class="modal fade" id="edit-profile" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content bg-light">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3" id="exampleModalLabel">កែប្រែព័ត៍មាន</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div
+                                                class="edit-profile-user bg-white p-4 rounded">
+                                                <h4 class="text-">ប្ដូររូបភាព</h4>
+                                                <div class="position-relative d-flex justify-content-center">
+                                                     <div class="profile-img">
+                                                    <img src="../img/user-profile-img/GettyImages-1341554760.jpg"
+                                                        alt="user-profile" class="img-fluid rounded-circle ">
+                                                    <div class="btn-edit-profile position-absolute">
+                                                        <button type="button"
+                                                            class="btn bg-primary-subtle text-dark px-2 rounded-circle"><span><i
+                                                                    class="fa-solid fa-pen"></i></span></button>
+                                                    </div>
 
+                                                </div>
+                                                </div>
+                                               
+
+                                            </div>
+                                            <div class="edit-username bg-white p-4 my-4 rounded">
+                                                <h4 class="pb-4">ប្ដូរឈ្មោះ</h4>
+                                                <div class="form-floating mb-3">
+                                                    <input type="email" class="form-control" id="floatingInput" value="សុខ"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">នាមត្រកូល</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingPassword" value="ដារ៉ា"
+                                                        placeholder="Password">
+                                                    <label for="floatingPassword">នាមបុគ្គល</label>
+                                                </div>
+                                            </div>
+                                             <div class="edit-password bg-white p-4 my-4 rounded">
+                                                <h4 class="pb-4">ប្ដូរពាក្យសម្ងាត់</h4>
+                                                <div class="form-floating mb-3">
+                                                    <input type="password" class="form-control" id="floatingInput"
+                                                        placeholder="name@example.com">
+                                                    <label for="floatingInput">ពាក្យសម្ងាត់ចាស់</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <input type="password" class="form-control" id="floatingPassword"
+                                                        placeholder="Password">
+                                                    <label for="floatingPassword">ពាក្យសម្ងាត់ថ្មី</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="password" class="form-control" id="floatingPassword"
+                                                        placeholder="Password">
+                                                    <label for="floatingPassword">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,13 +162,13 @@
                                 <i class="fa-solid fa-user"></i>
                             </div>
                             <div class="ps-3">
-                                ជាង ពន្លឺ
+                                ជាង សៅ
                             </div>
 
                         </div>
 
                         <div class="d-flex ">
-                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.៣
+                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.១
                             </div>
                             <div class="contact"><span><i class="fa-solid fa-address-book"></i></span> ទំនាក់ទំនង</div>
                         </div>
@@ -161,13 +230,13 @@
                                 <i class="fa-solid fa-user"></i>
                             </div>
                             <div class="ps-3">
-                                ជាង ពន្លឺ
+                                ជាង ឧត្តម
                             </div>
 
                         </div>
 
                         <div class="d-flex ">
-                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.៣
+                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.៥
                             </div>
                             <div class="contact"><span><i class="fa-solid fa-address-book"></i></span> ទំនាក់ទំនង</div>
                         </div>
@@ -201,7 +270,7 @@
                         </div>
 
                         <div class="d-flex ">
-                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.៣
+                            <div class="rating pe-4"><span><i class="fa-solid fa-star text-warning"></i></span> ៤.៨
                             </div>
                             <div class="contact"><span><i class="fa-solid fa-address-book"></i></span> ទំនាក់ទំនង</div>
                         </div>
@@ -209,9 +278,9 @@
                 </div>
 
             </div>
-            <div class="user-setting">
-                <div class="container bg-light tab-pane fade p-4" id="pills-setting" role="tabpanel"
-                    aria-labelledby="pills-profile-tab">
+            <div class="user-setting  tab-pane fade p-4" id="pills-setting" role="tabpanel"
+                aria-labelledby="pills-profile-tab">
+                <div class="container bg-light">
                     <h2 class="pb-3">ការកំណត់</h2>
                     <div class="notification-setting border-bottom bg-white p-3 mx-3 mb-4 rounded-4">
                         <h4 class="py-2"><span><i class="fa-solid fa-bell"></i></span> ការជូនដំណឹង</h4>
@@ -272,7 +341,8 @@
                                 <span class="lh-base fs-5 text-danger">លុបគណនី</span><br>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-outline-danger">លុប <span><i class="fa-solid fa-trash"></i></span></button>
+                                <button type="button" class="btn btn-outline-danger">លុប <span><i
+                                            class="fa-solid fa-trash"></i></span></button>
                             </div>
                         </div>
                         <div class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
@@ -286,11 +356,12 @@
                             </div>
                         </div>
                         <div class="my-3 d-flex justify-content-between">
-                        
-                        <button type="button" class="btn btn-outline-primary">ចាកចេញ <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></button>
+
+                            <button type="button" class="btn btn-outline-primary">ចាកចេញ <span><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i></span></button>
+                        </div>
                     </div>
-                    </div>
-                    
+
                 </div>
             </div>
         </section>
