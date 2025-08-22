@@ -952,6 +952,12 @@ body {
 .user-profile-top .profile-info .address{
     flex-direction: column;
 }
+.user-profile-top .profile-info .modal-body .btn-edit-profile{
+   
+    
+    margin-top: 50px;
+    margin-right:-60px;
+}
 }
 /*====================== service history ============= */
 .user-profile-body .service-detail, 
