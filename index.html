@@ -16,13 +16,13 @@
 </head>
 
 <body>
-    <div>
+
+    <header>
+        <!-- navbar-top -->
         <nav class="navbar-top py-2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                    </div>
-                    <div class="d-none d-lg-block col-lg-7 ps-5">
+                <div class="row justify-content-between">
+                    <div class="col-lg-8 d-none d-lg-block">
                         <div class="d-flex align-items-center ps-4">
                             <div class="me-3">
                                 <i class="ri-phone-line fs-5 "></i>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="d-flex justify-content-end ">
                             <a class="nav-link dropdown-toggle ms-2 " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -51,50 +51,110 @@
                 </div>
             </div>
         </nav>
-    </div> 
-    <header>
-        <nav class="navbar navbar-expand-xl p-0">
-            <div class="container bg-primary p-0">
-                <a class="navbar-brand p-0 text-white" href="#">
-                    <img src="asstes/img/Logo-2.png" class="img-fluid " alt="">
-                    <div class="bg-after"></div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-lg-auto ms-sm-auto mb-2 mb-lg-0">
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
-                                ទំព័រដើម</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link " href="#">បញ្ជីអ្នកជំនាញ </a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ប្រវត្តិការងារ</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ជំនួយ</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">អំពីពួកយើង</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ទំនាក់ទំនង</a>
-                        </li>
-                    </ul>
+
+        <!-- navbar-center -->
+        <nav class="navbar navbar-center navbar-expand-lg">
+            <div class="container-lg justify-content-between align-items-center ">
+                <div>
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="asstes/img/Landing-page/logo-2.png" alt="">
+                    </a>
                 </div>
-                <div class="d-flex">
-                    <a href="" class="btn btn-outline-light me-3">ចូលប្រើប្រាស់</a>
-                    <a href="" class="btn btn-light me-3">ចុះឈ្មោះ</a>
+                <div>
+                    <form class="d-flex search-form d-none d-lg-block" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
                 </div>
-                <div class="bg-nav-after"></div>
+                <div class="d-flex align-items-center">
+                    <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"></i>
+                    <a href="" class="btn btn-outline-primary me-3">ចូលប្រើប្រាស់</a>
+                    <a href="" class="btn btn-primary me-3">ចុះឈ្មោះ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-body-tertiary m-auto">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="py-3 d-flex justify-content-center d-lg-none d-block">
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
+                        ទំព័រដើម</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link " href="#"><i class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#"><i class="ri-question-line"></i> ជំនួយ</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                </li>
+                <li class="nav-item hvr-underline-from-center">
+                    <a class="nav-link" href="#"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navbar-bottom -->
+        <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block" data-bs-theme="dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" >
+                    <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link active " aria-current="page" href="#"><i
+                                        class="ri-home-gear-line"></i>
+                                    ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link " href="#"><i class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link" href="#"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link" href="#"><i class="ri-question-line"></i> ជំនួយ</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link" href="#"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -252,7 +312,7 @@
                     </div>
                     <div class="col-lg-6" data-aos="fade-up-left">
                         <div class="card w-75 m-auto">
-                            <img src="asstes/img/find-fixer.png" class="img-fluid rounded-1" alt="">
+                            <img src="asstes/img/Landing-page/find-fixer.png" class="img-fluid rounded-1" alt="">
                         </div>
                     </div>
                 </div>
@@ -385,10 +445,10 @@
                                 </div>
                             </div>
                             <div class="d-flex mt-2">
-                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">5
+                                <span class="bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">5
                                         ឆ្នាំ</span></span>
-                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">450</span></span>
-                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
+                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
                             <div class="d-flex justify-content-center my-3">
@@ -453,15 +513,15 @@
                                     <span class="bg-secondary-subtle p-1 rounded me-2">Circuit Repair</span> <br>
                                     <div class="mt-3">
                                         <span class="bg-secondary-subtle p-1 rounded me-2">Panel Upgrade</span>
-                                        <span class="bg-secondary-subtle p-1 rounded">Safety Inspection</span>
+                                        <span class="bg-secondary-subtle p-1 rounded ">Safety Inspection</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex mt-2">
-                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">2
+                                <span class="bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">2
                                         ឆ្នាំ</span></span>
-                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">450</span></span>
-                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.9 <i
+                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.9 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
                             <div class="d-flex justify-content-center my-3">
@@ -525,14 +585,14 @@
                                     <span class="bg-secondary-subtle p-1 rounded me-2">ទូទឹកកក</span>
                                     <span class="bg-secondary-subtle p-1 rounded me-2">ម៉ាសុីនបោកគក់</span>
                                     <span class="bg-secondary-subtle p-1 rounded me-2">ម៉ាស៊ីនត្រជាក់</span>
-                                    <span class="bg-secondary-subtle p-1 rounded">ចង្ក្រានអគ្គីសនី</span>
+                                    <span class="bg-secondary-subtle p-1 rounded mt-lg-3">ចង្ក្រានអគ្គីសនី</span>
                                 </div>
                             </div>
                             <div class="d-flex mt-2">
-                                <span class="bg-info p-1 rounded me-2">បទពិសោធន៍ : <span class="fw-bold">5
+                                <span class=" bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">5
                                         ឆ្នាំ</span></span>
-                                <span class="bg-info p-1 rounded me-2">គម្រោង : <span class="fw-bold">250</span></span>
-                                <span class="bg-info p-1 rounded">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
+                                <span class=" bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">250</span></span>
+                                <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
                             <div class="d-flex justify-content-center my-3">
@@ -553,7 +613,7 @@
                     <span>នេះជាអ្នកជំនាញដែលសម្រេចបានការងារជាច្រើនប្រកបដោយប្រសិទ្ធិភាព</span>
                 </div>
                 <div class="row g-3">
-                    <div class="col-12 col-lg-8" data-aos="fade-right" data-aos-offset="300">
+                    <div class="col-12 col-lg-8" data-aos="fade-right">
                         <div class="px-3">
                             <div class="accordion" id="accordionFlushExample">
                                 <div class="accordion-item mb-3">
@@ -656,7 +716,7 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card rounded-3 p-2">
-                            <img src="asstes/img/Question.png" class="img-fluid rounded-3 w-100" alt="">
+                            <img src="asstes/img/Landing-page/Question-1.png" class="img-fluid rounded-3 w-100" alt="">
                             <form class="row">
                                 <h3 class="fw-bold py-2 text-center m-0">បើមានចម្ងល់បន្ថែមអាចបំពេញនៅទីនេះបាន</h3>
                                 <div class="mb-3">
@@ -680,7 +740,7 @@
         <div class="footer py-5 bg-black">
             <div class="container">
                 <div class="row g-3">
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div>
                             <h3 class="text-primary">FixFinder</h3>
                             <div class="style-line bg-primary my-2"></div>
@@ -698,7 +758,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div>
                             <h3 class="text-white">សេវាកម្ម</h3>
                             <div class="style-line bg-primary my-2"></div>
@@ -712,7 +772,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div>
                             <h3 class="text-white">ក្រុមហ៊ុន</h3>
                             <div class="style-line bg-primary my-2"></div>
@@ -725,7 +785,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3">
                         <div>
                             <h3 class="text-white">ទំនាក់ទំនង</h3>
                             <div class="style-line bg-primary my-2"></div>
