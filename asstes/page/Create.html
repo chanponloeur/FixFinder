@@ -79,8 +79,7 @@
                             </div>
 
                             <!-- Submit Button -->
-                            <button type="submit" class="btn submit-btn w-100 py-2"><a
-                                    href="profile.html">ចុះឈ្មោះ</a></button>
+                            <button type="submit" class="btn submit-btn w-100 py-2">ចុះឈ្មោះ</button>
 
                             <!-- Social Buttons -->
                             <div class="d-flex gap-2 mt-2">
@@ -105,35 +104,34 @@
             </div>
         </section>
     </main>
-
-    <!-- Bootstrap Validation Script -->
-    <script>
-        (() => {
-            'use strict';
-            const forms = document.querySelectorAll('.needs-validation');
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-
-                    // check password match
-                    const pass = document.getElementById('password');
-                    const confirmPass = document.getElementById('confirmPassword');
-                    if (pass.value !== confirmPass.value) {
-                        event.preventDefault();
-                        confirmPass.setCustomValidity("Passwords do not match");
-                        confirmPass.reportValidity();
-                    } else {
-                        confirmPass.setCustomValidity("");
-                    }
-
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        })();
-    </script>
 </body>
+<!-- Bootstrap Validation Script -->
+<script>
+    (() => {
+        'use strict';
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                // check password match
+                const pass = document.getElementById('password');
+                const confirmPass = document.getElementById('confirmPassword');
+                if (pass.value !== confirmPass.value) {
+                    event.preventDefault();
+                    confirmPass.setCustomValidity("Passwords do not match");
+                    confirmPass.reportValidity();
+                } else {
+                    confirmPass.setCustomValidity("");
+                }
+
+                form.classList.add('was-validated');
+            }, false);
+        });
+    })();
+</script>
 
 </html>

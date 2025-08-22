@@ -2,9 +2,9 @@
 
 body {
     font-family: 'Poppins', "Noto Sans Khmer", sans-serif;
-
 }
-/*--background Login pageRegister pageForget password page--*/
+
+/*--background Login page, Register page, Forget password page--*/
 .login {
     background: linear-gradient(rgb(24, 1, 68), rgba(11, 0, 167, 0.712), rgba(69, 4, 173, 0.356)),
         url(../image.login.register/background.jpg) no-repeat top center;
@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-.card-container {
+.login .container .card-container {
     max-width: 500px;
     margin: 0 auto;
     border-radius: 20px;
@@ -21,19 +21,19 @@ body {
     background: #fff;
 }
 
-.form-side {
+.login .card-container .form-side {
     padding: 40px;
     background: linear-gradient(to left, rgb(237, 246, 255), #ecf0fe);
 }
 
-.form-control {
+.login .form-side .form-control {
     border-radius: 12px;
     height: 40px;
     padding: 12px 15px;
     font-size: 15px;
 }
 
-.submit-btn {
+.login .form-side .submit-btn {
     border-radius: 10px;
     background: #0D6EFD;
     font-weight: 600;
@@ -42,43 +42,40 @@ body {
     transition: all 0.3s ease;
 }
 
-.submit-btn a {
+.login .form-side .submit-btn a {
     text-decoration: none;
     color: whitesmoke;
-
 }
 
-.submit-btn:hover {
+.login .form-side .submit-btn:hover {
     color: rgb(216, 213, 213);
     background: #0B5ED7;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
 }
 
-.social-btn {
+.login .form-side .social-btn {
     transition: all 0.3s ease;
 }
 
-.social-btn:hover {
+.login .form-side .social-btn:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Responsive Adjustments */
 @media (max-width: 767px) {
-    .form-side {
+    .login .card-container .form-side {
         padding: 25px;
     }
 
-    .image-side {
+    .login .card-container .image-side {
         min-height: 200px;
     }
 }
 
-
 /*--verify--*/
-.otp-inputs input {
+.login .form-side .otp-inputs input {
     width: 60px;
     height: 60px;
     font-size: 22px;
@@ -87,203 +84,57 @@ body {
     text-align: center;
 }
 
-.otp-inputs input:focus {
+.login .form-side .otp-inputs input:focus {
     border-color: #0D6EFD;
     box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
     outline: none;
 }
 
-
-
 /*--back link--*/
-.back-link {
+.login .form-side .back-link {
     font-size: 15px;
     font-weight: 500;
     color: #0D6EFD;
     transition: all 0.2s ease;
 }
 
-.back-link:hover {
+.login .form-side .back-link:hover {
     color: #0B5ED7;
     text-decoration: underline;
 }
 
+/* Hostory */
 
-
-/*--profile--*/
-.profile-cover {
-    background: #0d8bd9;
-    height: 170px;
-    position: relative;
-    border-radius: .5rem .5rem 0 0;
-}
-.cover-action {
-    position: absolute;
-    top: .75rem;
-    right: .75rem;
-}
-.avatar-wrap {
-    position: absolute;
-    left: 1rem;
-    bottom: -32px;
-    display: flex;
-    align-items: end;
-    gap: .5rem;
-}
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: url(../image.login.register/verify.jpg) no-repeat top center;
-    background-size: cover;
-    border: 4px solid #fff;
-    position: relative;
-    display: grid;
-    place-items: center;
-    font-size: 28px;
-    color: #9aa6b2;
-}
-.avatar .camera {
-    position: absolute;
-    right: -2px;
-    bottom: -2px;
-    background: #0d8bd9;
-    color: #fff;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 12px;
-    border: 2px solid #fff;
-}
-.profile-header {
-    padding: 50px 1rem 1rem 1rem;
-
-}
-.handle {
-    color: #637381;
-    font-size: .95rem;
-}
-.pill {
-    background: #fff1e6;
-    color: #ff7f2a;
-    font-size: .75rem;
-    padding: .15rem .5rem;
-    border-radius: 999px;
-    border: 1px solid #ffd7be;
-}
-.stat {
-    color: #6b7280;
-    font-size: .9rem;
-}
-.tabs-bar {
-    border: 1px solid #e5e7eb;
-    border-radius: .375rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-}
-
-.tabs-bar>div {
-    padding: .5rem .75rem;
-    background: #f9fafb;
-}
-
-.tabs-bar>div+div {
-    border-left: 1px solid #e5e7eb;
-}
-.empty-card {
-    border: 1px solid #e5e7eb;
-    border-radius: .5rem;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    min-height: 260px;
-    padding: 2rem;
-}
-.empty-icon {
-    width: 64px;
-    height: 64px;
-    border: 2px dashed #cbd5e1;
-    border-radius: .75rem;
-    display: grid;
-    place-items: center;
-    margin: 0 auto 1rem;
-    font-size: 28px;
-    color: #94a3b8;
-}
-.btn-orange {
-    background: #ff7f2a;
-    color: #fff;
-    border: none;
-    border-radius: 999px;
-    padding: .6rem 1.25rem;
-}
-.btn-orange:hover {
-    background: #f0701c;
-    color: #fff;
-}
-
-
-/*--history--*/
-
-body {
-    background-color: #f8f9fa;
-}
-.navbar-brand {
-    font-weight: bold;
-    color: #2c5aa0 !important;
-}
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    transition: transform 0.2s ease-in-out;
-}
-.card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-}
-.status-completed {
-    background: linear-gradient(135deg, #28a745, #20c997);
-    color: white;
-}
-.status-in-progress {
-    background: linear-gradient(135deg, #007bff, #17a2b8);
-    color: white;
-}
-.status-requested {
-    background: linear-gradient(135deg, #ffc107, #fd7e14);
-    color: white;
-}
 .job-card {
-    position: relative;
-    overflow: hidden;
+    border-left: 5px solid #dee2e6;
+    transition: all 0.3s ease;
 }
-.job-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    background: #007bff;
+
+.job-card.completed {
+    border-left-color: #28a745;
 }
-.completed::before {
-    background: #28a745 ;
+
+.job-card.in-progress {
+    border-left-color: #17a2b8;
 }
-.in-progress::before {
-    background: #17a2b8 ;
+
+.job-card.requested {
+    border-left-color: #ffc107;
 }
-.requested::before {
-    background: #ffc107 ;
+
+.job-card.priority-high {
+    border-left-color: #dc3545;
 }
-.video-thumbnail{
-    width: 40px;
-    height: 30px;
-    background: #fa2626;
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+    width: 50px;
+    height: 35px;
+    background: #dc3545;
     color: white;
     border-radius: 8px;
     display: flex;
@@ -291,53 +142,56 @@ body {
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s;
-}
-.video-thumbnail a{
-    width: 40px;
     text-decoration: none;
-    height: 30px;
-    background: #fa2626;
-    color: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s;
 }
+
 .video-thumbnail:hover {
-    background: #ff0000b9;
-    box-shadow: 3px 3px 5px blue;
+    background: #c82333;
+    transform: scale(1.1);
     color: white;
 }
-.pdf-icon {
-    color: #dc3545;
-    font-size: 24px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.pdf-icon:hover {
-    color: #c82333;
-    transform: scale(1.1);
-}
+
 .section-title {
     color: #2c5aa0;
     border-bottom: 3px solid #007bff;
     padding-bottom: 10px;
-    margin-bottom: 30px;
+    display: inline-block;
 }
+
 .filter-btn {
     border-radius: 25px;
-    margin-right: 10px;
-    margin-bottom: 10px;
     transition: all 0.3s;
 }
+
 .filter-btn.active {
-    background: #007bff;
-    color: white;
     transform: scale(1.05);
 }
-.profile .avatar{
-    width: 70px;
-    height: 70px;
+
+.customer-info {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.problem-image {
+    transition: transform 0.3s;
+}
+
+.problem-image:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-animation {
+    animation: fadeIn 0.5s ease;
 }
