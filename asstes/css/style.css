@@ -974,6 +974,22 @@ body {
     top:75%;
     right: 42%;
 }
+/*======================== service  ===============================*/
+@media  (min-width:768px){
+
+    .banner-service .carousel .carousel-inner .carousel-item img
+    {
+        height: 750px;
+        object-fit: cover;
+    }
+}
+.banner-service{
+    height:100vh;
+    /* overflow: hidden; */
+    
+    background-color: rebeccapurple;
+}
+
 
 
 /*--background Login page, Register page, Forget password page--*/
