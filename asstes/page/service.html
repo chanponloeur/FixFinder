@@ -7,13 +7,14 @@
     <title>Service</title>
 
     <link rel="stylesheet" href="../css/bootstrap.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body >
+<body>
     <main>
-        <section class="banner-service h-100 position-relative">
+        <section class="banner-service vh-100">
             <div class="banner-img position-absolute">
                 <img src="../img/service-img/service-img/repairman_ride_car.jpg" alt="" class="img-fluid">
             </div>
@@ -22,20 +23,106 @@
                     <h5 class="fw-bold">អស់បញ្ហារាល់ពេលមានបញ្ហាយាន្តយន្តនៅតាមដងវិថី</h5>
                     <h2>ជួបជាមួយ គេហទំព័រ <span class="text-primary fw-bold">Fix Finder</span></h2>
                     <h2>សេវាកម្មរហ័ស និង​ គុណភាពក្នុងការជួសជុល</h2>
-                    
+                    <button type="button" class="btn btn-outline-primary">មើលបន្ថែម <span><i
+                                class="fa-solid fa-arrow-right"></i></span></button>
                 </div>
-
             </div>
         </section>
-        <section class="service-area py-4 bg-warning d-block">
-            <div class="row">
-                <div class="col-12 col-md-6 col-xl-4">
-                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus molestiae reprehenderit culpa deserunt vel voluptatum cupiditate commodi modi incidunt, soluta exercitationem ullam a officia ab, nobis nostrum fuga esse itaque?</p>
+        <section class="service-area py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center fw-bold py-3">សេវាកម្មជួសជុល</h2>
+                <ul class="nav nav-pills mb-3 align-items-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Contact</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                            aria-selected="false" disabled>Disabled</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                        tabindex="0">...</div>
+                </div>
+                <div class="style-line bg-primary m-auto mb-4 "></div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-1.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលផ្ទះ</h4>
+                                <p class="m-0 my-2">ជួសជុលគ្រប់ប្រភេទបញ្ហាដែលលោកអ្នកកំពុងជួបប្រទះនៅក្នុងផ្ទះរបស់អ្នក</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$50-150</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-2.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលសម្ភារះប្រើប្រាស់</h4>
+                                <p class="m-0 my-2">ជួសជុលសម្ភារះគ្រប់ប្រភេទនៅក្នុងគេហដ្ធានរបស់លោកអ្នក</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$15-50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 m-md-auto mt-md-3" data-aos="zoom-in-up">
+                        <div class="card card-height">
+                            <div class="card-img p-1">
+                                <img src="asstes/img/popular-service/popular-img-3.jpg" class="img-fluid rounded-2"
+                                    alt="">
+                            </div>
+                            <div class="card-body pt-2 pb-3 px-3">
+                                <h4 class="fw-bold mt-2">ជួសជុលរថយន្ត</h4>
+                                <p class="m-0 my-2">ជួសជុលគ្រប់ប្រភេទបញ្ហារបស់រថយន្តគ្រប់ប្រភេទ</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="service-rating">★★★★★ <span class="text-black">4.9</span></div>
+                                    <div class="service-price">$15-50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

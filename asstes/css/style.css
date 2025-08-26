@@ -1289,18 +1289,20 @@ html {
   .banner-service .title{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .banner-service .title h2{
     font-size: 50px;
     font-weight: bolder;
     
   }
-
-.service-area {
-    z-index: 5;
-    height: 100vh;
+  .banner-service .title button i{
+  transition: 0.3s;
 }
+.banner-service .title button:hover  i{
+  transform: translateX(8px);
+}
+
 
 /*--background Login page, Register page, Forget password page--*/
 .login {
