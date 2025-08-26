@@ -1107,15 +1107,16 @@ body {
     color: #0B5ED7;
     text-decoration: underline;
 }
-/*====================== Hostory ====================== */
 
+/*====================== History ====================== */
 .job-card {
     border-left: 5px solid #09cc54;
     transition: all 0.3s ease;
+    background: linear-gradient(rgba(97, 11, 255, 0.384), rgba(27, 11, 247, 0.308), rgba(168, 118, 248, 0.014));
 }
 
 .job-card.completed {
-    border-left-color: 2px solid #28a745;
+    border-left-color: #28a745;
 }
 
 .job-card.in-progress {
@@ -1184,20 +1185,12 @@ body {
     transform: scale(1.1);
 }
 
-.card-body .progress {
-    width: 70%;
+.progress {
     height: 10px;
-    background-color: #ebebeb;
-    border-radius: 5px;
-    transition: width 0.5s;
 }
 
-.card-body .progress-bar {
+.progress-bar {
     width: 70%;
-    height: 10px;
-    background-color: #4caf50;
-    border-radius: 5px;
-    transition: width 0.5s;
 }
 
 @keyframes fadeIn {
@@ -1212,12 +1205,11 @@ body {
     }
 }
 
-.fade-in-animation {
+.fade-in {
     animation: fadeIn 0.5s ease;
 }
 
-/*====================== sidebar======================*/
-
+/*====================== Sidebar ====================== */
 .sidebar {
     position: fixed;
     top: 0;
@@ -1273,4 +1265,53 @@ body {
     background: linear-gradient(rgb(24, 1, 68), rgba(11, 0, 167, 0.712));
     border-bottom: 1px solid #333;
     padding: 15px 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .filter-btn {
+        font-size: 0.875rem;
+        padding: 0.375rem 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-thumbnail {
+        width: 40px;
+        height: 30px;
+    }
+
+    .customer-info {
+        padding: 0.75rem !important;
+    }
 }
