@@ -1303,6 +1303,26 @@ html {
   transform: translateX(8px);
 }
 
+/*================================ service detail  ========================*/
+.service-area .nav-pills .nav-item .nav-link{
+  font-weight:bold;
+}
+.service-area .nav-pills .nav-item .nav-link.active{
+  background-color:transparent;
+  border-bottom: 2px solid var(--primary);
+  border-radius: 0;
+  color:var(--primary);
+}
+.service-area .card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.service-area .card .phone-number{
+  background-color:rgba(9, 128, 15,0.1);
+  color:#09800f;
+  border-radius: 30px;
+  padding:0 15px;
+  font-weight: 600;
+}
 
 /*--background Login page, Register page, Forget password page--*/
 .login {
