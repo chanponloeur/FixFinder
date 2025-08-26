@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FixFinder</title>
-    <link rel="icon" href="asstes/img/Landing-page/title-icon.png">
-    <link rel="stylesheet" href="asstes/css/bootstrap.css">
+    <title>FixFinder - ស្វែងរកការជួសជុល</title>
+    <link rel="icon" href="../img/Landing-page/title-icon.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- remixicon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <!-- Animate-style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="asstes/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -52,50 +52,13 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <header>
-        <nav class="navbar navbar-expand-xl p-0">
-            <div class="container bg-primary p-0">
-                <a class="navbar-brand p-0 text-white" href="#">
-                    <img src="asstes/img/Logo-2.png" class="img-fluid " alt="">
-                    <div class="bg-after"></div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-lg-auto ms-sm-auto mb-2 mb-lg-0">
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
-                                ទំព័រដើម</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link " href="#">បញ្ជីអ្នកជំនាញ </a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ប្រវត្តិការងារ</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ជំនួយ</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">អំពីពួកយើង</a>
-                        </li>
-                        <li class="nav-item hvr-underline-from-center">
-                            <a class="nav-link" href="#">ទំនាក់ទំនង</a>
-                        </li>
-                    </ul>
+
         <!-- navbar-center -->
         <nav class="navbar navbar-center navbar-expand-lg">
-            <div class="container-lg justify-content-between align-items-center ">
+            <div class="container justify-content-between align-items-center ">
                 <div>
                     <a class="navbar-brand fw-bold" href="#">
-                        <img src="asstes/img/Landing-page/logo-2.png" alt="">
+                        <img src="../img/Landing-page/logo-2.png" alt="">
                     </a>
                 </div>
                 <div>
@@ -110,13 +73,76 @@
                     <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne"></i>
-                    <a href="asstes/page/login.html" class="btn btn-outline-primary me-3">ចូលប្រើប្រាស់</a>
-                    <a href="asstes/page/Create.html" class="btn btn-primary me-3">ចុះឈ្មោះ</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link position-relative" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="ri-notification-2-line fs-4 me-3"></i>
+                            <span
+                                class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
+                                3+
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-notification ">
+                            <div class="d-flex px-4 pt-2 align-items-center justify-content-between">
+                                <div class="d-flex w-50">
+                                    <i class="ri-notification-2-line fs-5 me-3"></i>
+                                    <h5 class="fs-5 m-0">ការជូនដំណឹង</h5>
+                                </div>
+                            </div>
+                            <hr>
+                            <li><a class="dropdown-item " href="#">
+                                    <span class="fw-bold text-primary fs-6">ថ្មីៗនេះ</span>
+                                    <hr>
+                                    <div>
+                                        <h5 class="fw-bold">ការកក់បានទទួល:</h5>
+                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួលដោយជោគជ័យ។</p>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="fw-bold text-primary fs-6">ថ្ងៃនេះ</span>
+                                    <hr>
+                                    <div>
+                                        <h5 class="fw-bold">ការជួសជុលបានបញ្ចប់</h5>
+                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់។ សូមវាយតម្លៃសេវា។</p>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span class="fw-bold text-primary fs-6">ម្សិលមិញ</span>
+                                    <hr>
+                                    <div>
+                                        <h5 class="fw-bold">ការផ្តល់ជូនពិសេស:</h5>
+                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួសជុលគ្រឿងអគ្គិសនី។</p>
+                                    </div>
+                                </a></li>
+                            <div class="w-100 d-flex justify-content-center py-2">
+                                <div> <a href="#"
+                                        class="btn btn-outline-primary rounded-pill hvr-shutter-in-horizontal overflow-hidden">​​មើលទាំងអស់</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="profile-image-container me-3">
+                                <img src="../img/Landing-page/user-profile.png" class="profile-image" alt="">
+                            </div>
+                            <span
+                                class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a class="dropdown-item " href="#"><i class="ri-user-3-line"></i> គណនី</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="ri-arrow-right-line"></i> ចាកចេញ</a></li>
+                        </ul>
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+
                 </div>
             </div>
         </nav>
@@ -135,17 +161,17 @@
         </div>
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
                         ទំព័រដើម</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="#"><i class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="#"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
                 </li>
                 <li class="nav-item ">
@@ -154,7 +180,7 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="#"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
                 </li>
             </ul>
@@ -163,8 +189,8 @@
         <!-- navbar-bottom -->
         <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block" data-bs-theme="dark">
             <div class="container">
-                <div class="collapse navbar-collapse" >
-                    <div class="collapse navbar-collapse" >
+                <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                             <li class="nav-item ">
                                 <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#"><i
@@ -172,22 +198,28 @@
                                     ទំព័រដើម</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i
+                                        class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-tools-fill"></i>
+                                    សេវាកម្ម</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i
+                                        class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-question-line"></i> ជំនួយ</a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-question-line"></i>
+                                    ជំនួយ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-team-line"></i>
+                                    អំពីពួកយើង</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-phone-line"></i>
+                                    ទំនាក់ទំនង</a>
                             </li>
                         </ul>
                     </div>
@@ -196,6 +228,7 @@
         </nav>
     </header>
     <main>
+        <!-- Herobanner -->
         <section class="herobanner py-5">
             <div class="container py-5">
                 <div class="row">
@@ -208,14 +241,14 @@
                         <p class="fs-5 text-white my-4 ">
                             ភ្ជាប់ទំនាក់ទំនងជាមួយអ្នកជំនាញដែលមានការបញ្ជាក់
                             ដែលអាចដោះស្រាយបញ្ហារបស់អ្នកបាន ធានានូវគុណភាពនិងប្រសិទ្ធភាព</p>
-                        <a href=""
-                            class="btn btn-outline-primary me-3 fw-bold ">ស្វែងយល់បន្ថែម</a>
-                        <a href=""
-                            class="btn btn-primary fw-bold ">ទំនាក់ទំនង</a>
+                        <a href="" class="btn btn-outline-primary me-3 fw-bold">ស្វែងយល់បន្ថែម</a>
+                        <a href="" class="btn btn-primary fw-bold">ទំនាក់ទំនង</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Why-US -->
         <section class="why-us py-5">
             <div class="container">
                 <div class="popular-title py-3 text-center">
@@ -306,6 +339,45 @@
                 </div>
             </div>
         </section>
+
+        <!-- testimonials -->
+        <section class="testimonial py-5">
+            <div class="container">
+                <div class="popular-title py-3 text-center mb-5">
+                    <h2 class="fw-bold">មតិរបស់អតិថិជន</h2>
+                    <div class="style-line bg-primary m-auto my-2"></div>
+                    <span>អ្វីដែលអតិថិជនរបស់យើងនិយាយអំពីយើង</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-container">
+                        <div class="testimonial-grid">
+                            <div class="image-container" id="image-container"></div>
+                            <div class="testimonial-content">
+                                <div>
+                                    <h3 class="name" id="name"></h3>
+                                    <p class="designation" id="designation"></p>
+                                    <p class="quote" id="quote"></p>
+                                </div>
+                                <div class="arrow-buttons">
+                                    <button class="arrow-button prev-button" id="prev-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                                        </svg>
+                                    </button>
+                                    <button class="arrow-button next-button" id="next-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find-Fixer -->
         <section class="find-fixer py-5">
             <div class="container">
                 <div class="row g-3">
@@ -349,12 +421,14 @@
                     </div>
                     <div class="col-lg-6" data-aos="fade-up-left">
                         <div class="card w-75 m-auto">
-                            <img src="asstes/img/Landing-page/find-fixer.png" class="img-fluid rounded-1" alt="">
+                            <img src="../img/Landing-page/find-fixer.png" class="img-fluid rounded-1" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Popular-Service -->
         <section class="popular-service py-5">
             <div class="container">
                 <div class="popular-title py-3 text-center">
@@ -366,8 +440,7 @@
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                         <div class="card card-height">
                             <div class="card-img p-1">
-                                <img src="asstes/img/popular-service/popular-img-1.jpg" class="img-fluid rounded-2"
-                                    alt="">
+                                <img src="../img/popular-service/popular-img-1.jpg" class="img-fluid rounded-2" alt="">
                             </div>
                             <div class="card-body pt-2 pb-3 px-3">
                                 <h4 class="fw-bold mt-2">ជួសជុលផ្ទះ</h4>
@@ -382,8 +455,7 @@
                     <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                         <div class="card card-height">
                             <div class="card-img p-1">
-                                <img src="asstes/img/popular-service/popular-img-2.jpg" class="img-fluid rounded-2"
-                                    alt="">
+                                <img src="../img/popular-service/popular-img-2.jpg" class="img-fluid rounded-2" alt="">
                             </div>
                             <div class="card-body pt-2 pb-3 px-3">
                                 <h4 class="fw-bold mt-2">ជួសជុលសម្ភារះប្រើប្រាស់</h4>
@@ -398,8 +470,7 @@
                     <div class="col-12 col-md-6 col-lg-4 m-md-auto mt-md-3" data-aos="zoom-in-up">
                         <div class="card card-height">
                             <div class="card-img p-1">
-                                <img src="asstes/img/popular-service/popular-img-3.jpg" class="img-fluid rounded-2"
-                                    alt="">
+                                <img src="../img/popular-service/popular-img-3.jpg" class="img-fluid rounded-2" alt="">
                             </div>
                             <div class="card-body pt-2 pb-3 px-3">
                                 <h4 class="fw-bold mt-2">ជួសជុលរថយន្ត</h4>
@@ -411,9 +482,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-center py-5">
+                        <a href=""
+                            class="btn btn-outline-primary rounded-pill fs-5 hvr-shutter-in-horizontal overflow-hidden">សេវាកម្មទាំងអស់</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Popular-Fixer -->
         <section class="popular-fixer py-5">
             <div class="container">
                 <div class="popular-title py-3 text-center">
@@ -422,12 +499,12 @@
                     <span>នេះជាអ្នកជំនាញដែលសម្រេចបានការងារជាច្រើនប្រកបដោយប្រសិទ្ធិភាព</span>
                 </div>
                 <div class="row g-3">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-duration="1000">
                         <div class="card p-3">
                             <div class="p-2">
                                 <div class="d-flex">
                                     <div class="w-25">
-                                        <img src="asstes/img/popular-fixer/Fixer-1.png" class="img-fluid rounded-circle"
+                                        <img src="../img/popular-fixer/Fixer-1.png" class="img-fluid rounded-circle"
                                             alt="">
                                     </div>
                                     <div class="w-75 ps-3">
@@ -484,7 +561,8 @@
                             <div class="d-flex mt-2">
                                 <span class="bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">5
                                         ឆ្នាំ</span></span>
-                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span
+                                        class="fw-bold">450</span></span>
                                 <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
@@ -495,12 +573,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-duration="1000">
                         <div class="card p-3">
                             <div class="p-2">
                                 <div class="d-flex">
                                     <div class="w-25">
-                                        <img src="asstes/img/popular-fixer/Fixer-2.png" class="img-fluid rounded-circle"
+                                        <img src="../img/popular-fixer/Fixer-2.png" class="img-fluid rounded-circle"
                                             alt="">
                                     </div>
                                     <div class="w-75 ps-3">
@@ -557,7 +635,8 @@
                             <div class="d-flex mt-2">
                                 <span class="bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">2
                                         ឆ្នាំ</span></span>
-                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">450</span></span>
+                                <span class="bg-tag p-1 rounded me-2 text-center">គម្រោង : <span
+                                        class="fw-bold">450</span></span>
                                 <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.9 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
@@ -568,12 +647,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" data-aos="fade-down" data-aos-duration="1000">
                         <div class="card p-3">
                             <div class="p-2">
                                 <div class="d-flex">
                                     <div class="w-25">
-                                        <img src="asstes/img/popular-fixer/Fixer-3.png" class="img-fluid rounded-circle"
+                                        <img src="../img/popular-fixer/Fixer-3.png" class="img-fluid rounded-circle"
                                             alt="">
                                     </div>
                                     <div class="w-75 ps-3">
@@ -628,7 +707,8 @@
                             <div class="d-flex mt-2">
                                 <span class=" bg-tag p-1 rounded me-2 text-center">បទពិសោធន៍ : <span class="fw-bold">5
                                         ឆ្នាំ</span></span>
-                                <span class=" bg-tag p-1 rounded me-2 text-center">គម្រោង : <span class="fw-bold">250</span></span>
+                                <span class=" bg-tag p-1 rounded me-2 text-center">គម្រោង : <span
+                                        class="fw-bold">250</span></span>
                                 <span class="bg-tag p-1 rounded text-center">ការវាយតម្លៃ : <span class="fw-bold">4.8 <i
                                             class="ri-star-fill text-warning"></i></span></span>
                             </div>
@@ -639,9 +719,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-center py-5">
+                        <a href=""
+                            class="btn btn-outline-primary rounded-pill fs-5 hvr-shutter-in-horizontal overflow-hidden">អ្នកជំនាញទាំងអស់</a>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Question -->
         <section class="question py-5">
             <div class="container">
                 <div class="popular-title py-3 text-center">
@@ -753,7 +839,7 @@
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="card rounded-3 p-2">
-                            <img src="asstes/img/Landing-page/Question-1.png" class="img-fluid rounded-3 w-100" alt="">
+                            <img src="../img/Landing-page/Question-1.png" class="img-fluid rounded-3 w-100" alt="">
                             <form class="row">
                                 <h3 class="fw-bold py-2 text-center m-0">បើមានចម្ងល់បន្ថែមអាចបំពេញនៅទីនេះបាន</h3>
                                 <div class="mb-3">
@@ -773,13 +859,14 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer py-5 bg-black">
             <div class="container">
                 <div class="row g-3">
                     <div class="col-sm-6 col-lg-3">
                         <div>
-                            <img src="asstes/img/Landing-page/logo-2.png" class="img-fluid w-50 mb-2" alt="">
+                            <img src="../img/Landing-page/logo-2.png" class="img-fluid w-50 mb-2" alt="">
                             <div class="style-line bg-primary my-2"></div>
                             <p class="text-white">វេទិកាដែលភ្ជាប់អ្នកប្រើប្រាស់ជាមួយអ្នកជំនាញដោះស្រាយបញ្ហាដោយងាយស្រួល
                                 និងរហ័ស។</p>
@@ -855,7 +942,7 @@
                     increment = end > start ? 1 : -1,
                     step = Math.abs(Math.floor(duration / range)),
                     timer = setInterval(() => {
-                        current += increment;   
+                        current += increment;
                         obj.textContent = current;
                         if (current == end) {
                             clearInterval(timer);
@@ -866,8 +953,115 @@
             counter("count2", 49500, 50000, 2000);
             counter("count3", 0, 25, 2000);
         });
+
+
+        const testimonials = [
+            {
+                quote: "អ្នកជំនាញបានមកដល់មុនម៉ោងដែលបានកំណត់ ហើយការងារត្រូវបានធ្វើឡើងដោយមានការយកចិត្តទុកដាក់ខ្ពស់។ ពួកគេពន្យល់ពីដំណើរការជួសជុល និងផ្តល់អនុសាសន៍អំពីវិធីថែទាំបន្ទាប់ពីជួសជុល។ ខ្ញុំមានអារម្មណ៍ថា FixFinder គឺជាក្រុមហ៊ុនដែលអាចទុកចិត្តបានក្នុងការផ្តល់សេវាកម្មគ្រប់ពេល។",
+                name: "ពិសី សុផា",
+                designation: "ភ្នំពេញ",
+                src: "https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            },
+            {
+                quote: "នៅពេលប្រហែលម៉ោង 10 យប់ ខ្ញុំបានជួបបញ្ហាអគ្គិសនីក្នុងផ្ទះ ដែលធ្វើឲ្យខ្ញុំមានការបារម្ភ និងគិតថាមិនអាចរកជំនួយបានទាន់ពេលទេ។ ទោះជាយ៉ាងណា ដោយសារតែ FixFinder ខ្ញុំអាចទាក់ទងអ្នកជំនាញបានភ្លាមៗ ហើយពួកគេបានមកដល់យ៉ាងឆាប់។ វាជួយសន្សំសម្រួលទាំងពេលវេលា ក៏ដូចជាកាត់បន្ថយការបារម្ភរបស់ខ្ញុំផងដែរ។ ខ្ញុំមានអារម្មណ៍ថា FixFinder គឺជាដៃគូសេវាកម្មដែលអាចទុកចិត្តបានជានិច្ច។",
+                name: "ពូ​​ ត្នោត",
+                designation: "ខេត្ត កណ្តាល",
+                src: "https://images.unsplash.com/photo-1628749528992-f5702133b686?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+            },
+            {
+                quote: "ខ្ញុំបានសាកល្បងប្រើសេវាកម្មជួសជុលជាច្រើនកន្លែង មុននឹងស្គាល់ FixFinder។ តែខ្ញុំមិនដែលបានជួបសេវាកម្មណាមួយដែលមានគុណភាព និងតម្លៃសមរម្យដូចនេះ។ អ្នកជំនាញមានការអនុវត្តដោយជំនាញ និងមានទំនួលខុសត្រូវខ្ពស់។ ខ្ញុំនឹងប្រើ FixFinder ជានិច្ច ហើយនឹងណែនាំឲ្យមិត្តភក្តិ និងគ្រួសាររបស់ខ្ញុំប្រើផងដែរ។",
+                name: "ធឿន ឌីណា",
+                designation: "កំពង់ស្ពឺ",
+                src: "https://images.unsplash.com/photo-1524267213992-b76e8577d046?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D",
+            },
+        ];
+
+        let activeIndex = 0;
+        const imageContainer = document.getElementById('image-container');
+        const nameElement = document.getElementById('name');
+        const designationElement = document.getElementById('designation');
+        const quoteElement = document.getElementById('quote');
+        const prevButton = document.getElementById('prev-button');
+        const nextButton = document.getElementById('next-button');
+
+        function updateTestimonial(direction) {
+            const oldIndex = activeIndex;
+            activeIndex = (activeIndex + direction + testimonials.length) % testimonials.length;
+
+            testimonials.forEach((testimonial, index) => {
+                let img = imageContainer.querySelector(`[data-index="${index}"]`);
+                if (!img) {
+                    img = document.createElement('img');
+                    img.src = testimonial.src;
+                    img.alt = testimonial.name;
+                    img.classList.add('testimonial-image');
+                    img.dataset.index = index;
+                    imageContainer.appendChild(img);
+                }
+
+                const offset = index - activeIndex;
+                const absOffset = Math.abs(offset);
+                const zIndex = testimonials.length - absOffset;
+                const opacity = index === activeIndex ? 1 : 0.7;
+                const scale = 1 - (absOffset * 0.15);
+                const translateY = offset === -1 ? '-20%' : offset === 1 ? '20%' : '0%';
+                const rotateY = offset === -1 ? '15deg' : offset === 1 ? '-15deg' : '0deg';
+
+                img.style.zIndex = zIndex;
+                img.style.opacity = opacity;
+                img.style.transform = `translateY(${translateY}) scale(${scale}) rotateY(${rotateY})`;
+            });
+
+            nameElement.textContent = testimonials[activeIndex].name;
+            designationElement.textContent = testimonials[activeIndex].designation;
+            quoteElement.innerHTML = testimonials[activeIndex].quote.split(' ').map(word => `<span class="word">${word}</span>`).join(' ');
+
+            animateWords();
+        }
+
+        function animateWords() {
+            const words = quoteElement.querySelectorAll('.word');
+            words.forEach((word, index) => {
+                word.style.opacity = '0';
+                word.style.transform = 'translateY(10px)';
+                word.style.filter = 'blur(10px)';
+                setTimeout(() => {
+                    word.style.transition = 'opacity 0.2s ease-in-out, transform 0.2s ease-in-out, filter 0.2s ease-in-out';
+                    word.style.opacity = '1';
+                    word.style.transform = 'translateY(0)';
+                    word.style.filter = 'blur(0)';
+                }, index * 20);
+            });
+        }
+
+        function handleNext() {
+            updateTestimonial(1);
+        }
+
+        function handlePrev() {
+            updateTestimonial(-1);
+        }
+
+        prevButton.addEventListener('click', handlePrev);
+        nextButton.addEventListener('click', handleNext);
+
+        // Initial setup
+        updateTestimonial(0);
+
+        // Autoplay functionality
+        const autoplayInterval = setInterval(handleNext, 5000);
+
+        // Stop autoplay on user interaction
+        [prevButton, nextButton].forEach(button => {
+            button.addEventListener('click', () => {
+                clearInterval(autoplayInterval);
+            });
+        });
     </script>
-    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
