@@ -1477,7 +1477,7 @@ html {
   margin-left: 0;
 }
 
-.navbar {
+.main-content .navbar {
   background: linear-gradient(rgb(24, 1, 68), rgba(11, 0, 167, 0.712));
   border-bottom: 1px solid #333;
   padding: 15px 20px;
