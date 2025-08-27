@@ -1730,64 +1730,6 @@ html {
     text-align: center;
     font-size: 16px;
     color: #6c757d;
-
 }
-
-.slider-container {
-  position: relative;
-  width: 300px;
-}
-
-.slider {
-  position: relative;
-  height: 5px;
-  background: #ddd;
-  border-radius: 5px;
-}
-
-.progress {
-  position: absolute;
-  height: 5px;
-  background: blue;
-  border-radius: 5px;
-}
-
-.range-input {
-  position: absolute;
-  top: -6px;
-  width: 100%;
-  -webkit-appearance: none;
-  background: none;
-  pointer-events: none;
-}
-
-.range-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background: #007bff;
-  border: 2px solid #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.values {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.search-service .collapse .card-body {
-  padding: 20px;
-  background: #f8f9fa;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-top: 1px solid #eee;
-}
-
-.search-service .collapse .card-body .values {
-  display: flex;
-  gap: 240px;
-  margin-top: 10px;
-}
+=========
+>>>>>>>>> Temporary merge branch 2
