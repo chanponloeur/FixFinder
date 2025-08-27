@@ -70,12 +70,127 @@
                     <div class="circle">
                         <p>4</p>
                     </div>
-                    <h4>បញ្ជាក់តម្លៃ និងលក្ខខណ្ឌ</h4>
+                    <h4>ព័ត៌មានទំនាក់ទំនង និងការទូទាត់</h4>
+                </div>
+
+                <div class="info-detail mb-5">
+                    <div class="contact-info">
+                        <h5 class="mb-4">ព័ត៌មានទំនាក់ទំនង</h5>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">ឈ្មោះ</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">អ៊ីមែល</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">លេខទូរស័ព្ទ</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <h5 class="mb-4">វិធីសាស្រ្តការទូទាត់</h5>
+                        <form action="#">
+                            <div class="chooce">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                    <label class="form-check-label" for="radioDefault1">
+                                        <i class="ri-bank-card-2-line"></i>
+                                        ABA Mobile
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="chooce">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                                    <label class="form-check-label" for="radioDefault2">
+                                        <i class="ri-bank-card-2-line"></i>
+                                        Wing
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="chooce">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                                    <label class="form-check-label" for="radioDefault3">
+                                        <i class="ri-bank-card-2-line"></i>
+                                        ACLEDA Mobile
+                                    </label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="final-pay mt-5">
+                        <div>
+                            <h5 class="mb-4">សង្ខេបការទូទាត់</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span>សេវាកម្ម:</span>
+                                <span>ប្តូរអេក្រង់ថ្មី​ , ជួសជុលប៊ូតុងបើក</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span>កាលបរិច្ឆេទ:</span>
+                                <span>2025-09-05 នៅម៉ោង 3:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span>ទីតាំង:</span>
+                                <span>46, សៀមរាប</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold text-primary">តម្លៃសរុប:</span>
+                                <span class="fw-bold text-primary">$40</span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 <div class="next-step mb-5">
                     <div class="d-flex w-100 justify-content-end align-items-center gap-3 mb-5">
-                        <a href="#" class="btn-next-step btn btn-primary">បន្ត</a>
+                        <button type="button" class="btn btn-primary btn-next-step " data-bs-target="#pay"
+                            data-bs-toggle="modal">
+                            <span class="text-white">ទូទាត់</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="pay" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button> -->
+                            </div>
+                            <div class="modal-body d-flex justify-content-center align-items-center">
+                                <div>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6"
+                                            stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                        <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6"
+                                            stroke-linecap="round" stroke-miterlimit="10"
+                                            points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                    </svg>
+                                    <p class="success">ប្រតិបត្តិការបានជោគជ័យ</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <a href="home.html" class="btn btn-primary">ចាកចេញ</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

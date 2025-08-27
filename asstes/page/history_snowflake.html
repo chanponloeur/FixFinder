@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixFinder</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <header>
+        <nav id="sidebar" class="sidebar">
+            <h5><i class="fas fa-cog me-2"></i>ប្រវត្តិការងារ</h5>
+            <a href="history_moto.html"><i class="fas fa-motorcycle me-2"></i>ម៉ូតូ</a>
+            <a href="history_car.html"><i class="fas fa-car-side me-2"></i>រថយន្ត</a>
+            <a href="history_mobile.html"><i class="fas fa-mobile-alt me-2"></i>ទូរសព្ទ</a>
+            <a href="history_laptop.html"><i class="fas fa-laptop me-2"></i>កុំព្យូទ័រ</a>
+            <a href="history_soap.html"><i class="fas fa-soap me-2"></i>ម៉ាស៊ីនបោកគក់</a>
+            <a href="history_snowflake.html"><i class="fas fa-snowflake me-2"></i>ទូទឹកកក</a>
+            <a href="history_fan.html"><i class="fas fa-fan me-2"></i>ម៉ាស៊ីនត្រជាក់</a>
+            <a href="history_bolt.html"><i class="fas fa-bolt me-2"></i>អគ្គិសនី</a>
+
+            <h5 class="mt-4"><i class="fas fa-user me-2"></i>គណនីរបស់ខ្ញុំ</h5>
+            <a href="user-profile.html"><i class="fas fa-id-card me-2"></i>ប្រវត្តិរូប</a>
+            <a href="notifications.html"><i class="fas fa-bell me-2"></i>ការជូនដំណឹង</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Header Top-->
+        <div class="navbar">
+            <div class="container-fluid d-flex align-items-center justify-content-start">
+                <button class="btn btn-dark toggle-btn me-3" id="sidebarToggle" aria-label="បើក/បិទ sidebar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h4 class="text-light mb-0">ប្រវត្តិការងារ (ម៉ាស៊ីនបោកគក់) <i class="fas fa-tshirt me-2"></i></h4>
+            </div>
+        </div>
+
+        <!-- Page Header Section -->
+        <section class="page-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-4">
+                            <h1 class="section-title fw-bold mb-3">
+                                <i class="fas fa-history me-2"></i>ប្រវត្តិការងារ
+                            </h1>
+                            <p class="text-muted fs-6">តាមដានការងារជួសជុលរបស់អ្នក និងរៀនពីវីដេអូបង្រៀនផ្សេងៗ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap gap-2" role="group">
+                            <button class="btn btn-outline-primary filter-btn active" data-filter="all">
+                                <i class="fas fa-list me-1"></i>ទាំងអស់
+                            </button>
+                            <button class="btn btn-outline-success filter-btn" data-filter="completed">
+                                <i class="fas fa-check-circle me-1"></i>បានបញ្ចប់
+                            </button>
+                            <button class="btn btn-outline-info filter-btn" data-filter="in-progress">
+                                <i class="fas fa-clock me-1"></i>កំពុងដំណើរការ
+                            </button>
+                            <button class="btn btn-outline-warning filter-btn" data-filter="requested">
+                                <i class="fas fa-paper-plane me-1"></i>វីដេអូណែនាំ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work History Section -->
+        <section class="work-history">
+            <div class="container-fluid">
+                <div class="row g-4" id="jobsContainer">
+                    <!-- Washing Machine Repair - Completed -->
+                    <div class="col-12 job-item" data-status="completed">
+                        <div class="card job-card completed shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div class="flex-grow-1">
+                                        <h5 class="card-title text-primary mb-2">
+                                            <i class="fas fa-tshirt me-2"></i>ជួសជុលម៉ាស៊ីនបោកគក់ Samsung
+                                        </h5>
+                                        <p class="text-muted small mb-1">
+                                            <i class="fas fa-user me-1"></i>អ្នកជំនាញ៖ លោក សុខា
+                                        </p>
+                                        <p class="text-muted small mb-0">
+                                            <i class="fas fa-calendar me-1"></i>បញ្ចប់៖ ២៥/០៧/២០២៤
+                                        </p>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="badge bg-success rounded-pill mb-2">
+                                            <i class="fas fa-check me-1"></i>បានបញ្ចប់
+                                        </span>
+                                        <div class="h5 mb-0 text-dark">១៨០ ដុល្លារ</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <p class="card-text small">សម្អាត ម៉ាស៊ីន <strong>៣០ ដុល្លារ</strong></p>
+                                    <p class="card-text small">ជួសជុល ម៉ូទ័រ <strong>៥០ ដុល្លារ</strong></p>
+                                    <p class="card-text small">ប្តូរ ស្នប់ទឹក <strong>៤០ ដុល្លារ</strong></p>
+                                    <p class="card-text small">ត្រួតពិនិត្យ ខ្សែក្រវ៉ាត់ <strong>២០ ដុល្លារ</strong></p>
+                                    <p class="card-text small">ប្តូរ បន្ទះគ្រប់គ្រង <strong>៤០ ដុល្លារ</strong></p>
+                                </div>
+
+                                <div class="customer-info p-3 rounded mb-3">
+                                    <div class="row g-2">
+                                        <div class="col-sm-6">
+                                            <small class="text-muted d-block">អតិថិជន៖</small>
+                                            <strong class="text-primary">លោក ចាន់ដារា</strong>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <small class="text-muted d-block">ទូរស័ព្ទ៖</small>
+                                            <strong class="text-primary">០១២ ៣៤៥ ៦៧៨</strong>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <small class="text-muted d-block">ទីតាំង៖</small>
+                                        <a href="https://maps.app.goo.gl/fbUoP5Pq6qNCfdB16"
+                                            class="text-decoration-none">
+                                            <i class="fas fa-map-marker-alt text-danger me-1"></i> ផ្លូវជាតិលេខ ៦A,
+                                            សង្កាត់ព្រែកលៀប, ខណ្ឌជ្រោយចង្វារ, ភ្នំពេញ
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                    <div class="d-flex align-items-center mb-2 mb-sm-0">
+                                        <span class="me-2 small fw-bold">ការវាយតម្លៃ៖</span>
+                                        <div class="text-warning me-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="small text-warning fw-bold">៥.០</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <span class="me-2 small">វីដេអូបង្រៀន៖</span>
+                                        <a href="#" class="video-thumbnail" data-bs-toggle="modal"
+                                            data-bs-target="#videoModal" aria-label="មើលវីដេអូបង្រៀន">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Motorcycle Repair - In Progress -->
+                    <div class="col-12 job-item" data-status="in-progress">
+                        <div class="card job-card in-progress shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div class="flex-grow-1">
+                                        <h5 class="card-title text-primary mb-2">
+                                            <i class="fas fa-tshirt me-2"></i>ជួសជុលម៉ាស៊ីនបោកគក់ Samsung
+                                        </h5>
+                                        <p class="text-muted small mb-1">
+                                            <i class="fas fa-user me-1"></i>អ្នកជំនាញ៖ លោកស្រី ច័ន្ទ
+                                        </p>
+                                        <p class="text-muted small mb-0">
+                                            <i class="fas fa-calendar me-1"></i>ចាប់ផ្តើម៖ ២០/០៨/២០២៤
+                                        </p>
+                                    </div>
+                                    <span class="badge bg-info rounded-pill">
+                                        <i class="fas fa-clock me-1"></i>កំពុងដំណើរការ
+                                    </span>
+                                </div>
+
+                                <div class="customer-info p-3 rounded mb-3">
+                                    <div class="row g-2 align-items-center">
+                                        <div class="col-sm-6 d-flex align-items-center">
+                                            <img src="../img/image.login.register/Moto profile.webp"
+                                                alt="Customer Avatar" class="rounded-circle me-2" width="50"
+                                                height="50">
+                                            <div>
+                                                <small class="text-muted d-block">អតិថិជន៖</small>
+                                                <strong class="text-primary">លោក វិច្ឆិកា</strong>
+                                                <div class="text-primary small">០៩២ ១២៣ ៤៥៦</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 d-flex align-items-center">
+                                            <img src="../img/image.login.register/profile user.png"
+                                                alt="Customer Avatar" class="rounded-circle me-2" width="50"
+                                                height="50">
+                                            <div>
+                                                <small class="text-muted d-block">អ្នកជំនាញ៖</small>
+                                                <strong class="text-primary">លោកស្រី ច័ន្ទ</strong>
+                                                <div class="text-primary small">០៩២ ១២៣ ៤៥៦</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-2 mt-2">
+                                        <div class="col-6">
+                                            <small class="text-muted d-block">ទីតាំង៖</small>
+                                            <a href="https://maps.app.goo.gl/fbUoP5Pq6qNCfdB16"
+                                                class="text-decoration-none">
+                                                <i class="fas fa-map-marker-alt text-danger me-1"></i> ផ្លូវជាតិលេខ ៦A,
+                                                សង្កាត់ព្រែកលៀប
+                                            </a>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="text-muted d-block">ទីតាំងអ្នកជំនាញ៖</small>
+                                            <a href="https://maps.app.goo.gl/fbUoP5Pq6qNCfdB16"
+                                                class="text-decoration-none">
+                                                <i class="fas fa-map-marker-alt text-danger me-1"></i> ផ្លូវជាតិលេខ ៦A,
+                                                សង្កាត់ព្រែកលៀប
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">ជួសជុលម៉ាស៊ីន, ប្តូរច្រវាក់ និងត្រួតពិនិត្យហ្វ្រាំង</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-info mb-0">១៥០ ដុល្លារ</span>
+                                    <span class="text-muted small">កំពុងដំណើរការ ៦០%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutorial Videos Section -->
+        <section class="tutorials">
+            <div class="container-fluid py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title fw-bold mb-4">
+                            <i class="fas fa-video me-2"></i>វីដេអូបង្រៀន
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100 border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-mobile-alt fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="card-title">ជួសជុលទូរសព្ទ</h5>
+                                <p class="card-text text-muted">រៀនពីរបៀបថែរក្សា និងជួសជុលទូរសព្ទដោយខ្លួនឯង</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tutorialModal">
+                                    <i class="fas fa-play me-1"></i>មើលវីដេអូ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100 border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-laptop fa-3x text-success"></i>
+                                </div>
+                                <h5 class="card-title">ជួសជុលកុំព្យូទ័រ</h5>
+                                <p class="card-text text-muted">ដំបូន្មានសម្រាប់ការថែរក្សាកុំព្យូទ័រឱ្យប្រើបានយូរ</p>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#tutorialModal">
+                                    <i class="fas fa-play me-1"></i>មើលវីដេអូ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm h-100 border-0">
+                            <div class="card-body text-center p-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-car fa-3x text-warning"></i>
+                                </div>
+                                <h5 class="card-title">ជួសជុលយានយន្ត</h5>
+                                <p class="card-text text-muted">ការថែរក្សាម៉ាស៊ីន និងការពិនិត្យមុនប្រើប្រាស់</p>
+                                <button class="btn btn-warning text-dark" data-bs-toggle="modal"
+                                    data-bs-target="#tutorialModal">
+                                    <i class="fas fa-play me-1"></i>មើលវីដេអូ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF Documents Section -->
+        <section class="pdf-documents">
+            <div class="container-fluid py-4">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title fw-bold mb-4">
+                            <i class="fas fa-file-pdf me-2"></i>ឯកសារយោង
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-file-pdf fa-2x text-danger me-3"></i>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">មគ្គុទ្ទេសក៍ជួសជុលទូរសព្ទ</h6>
+                                    <small class="text-muted">វិធីជួសជុលទូរសព្ទដោយលម្អិត</small>
+                                </div>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="fas fa-download me-1"></i>ទាញយក
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="fas fa-file-pdf fa-2x text-danger me-3"></i>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1">សុវត្ថិភាពក្នុងការជួសជុល</h6>
+                                    <small class="text-muted">ការពារខ្លួនពេលជួសជុលឧបករណ៍</small>
+                                </div>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="fas fa-download me-1"></i>ទាញយក
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Video Modals -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">វីដេអូបង្រៀន - ជួសជុលទូរសព្ទ iPhone</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="បិទ"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <div class="d-flex align-items-center justify-content-center bg-dark text-white rounded">
+                            <div class="text-center">
+                                <i class="fas fa-play fa-3x mb-3"></i>
+                                <p>វីដេអូបង្រៀនជួសជុលអេក្រង់ iPhone ១៣</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="tutorialModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">វីដេអូបង្រៀន</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="បិទ"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <div class="d-flex align-items-center justify-content-center bg-dark text-white rounded">
+                            <div class="text-center">
+                                <i class="fas fa-play fa-3x mb-3"></i>
+                                <p>វីដេអូបង្រៀនជួសជុល</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebar = document.getElementById('sidebar'),
+                main = document.getElementById('mainContent'),
+                overlay = document.getElementById('overlay'),
+                toggleBtn = document.getElementById('sidebarToggle');
+
+            // Sidebar toggle
+            const toggleSidebar = () => {
+                if (innerWidth <= 768) {
+                    sidebar.classList.toggle('show');
+                    overlay.classList.toggle('show');
+                    document.body.style.overflow = sidebar.classList.contains('show') ? 'hidden' : 'auto';
+                } else {
+                    sidebar.classList.toggle('collapsed');
+                    main.classList.toggle('expanded');
+                }
+            };
+            toggleBtn.onclick = toggleSidebar;
+            overlay.onclick = () => toggleSidebar();
+
+            // Resize fix
+            onresize = () => {
+                if (innerWidth > 768) {
+                    overlay.classList.remove('show'); sidebar.classList.remove('show');
+                    document.body.style.overflow = 'auto';
+                    main.classList.toggle('expanded', sidebar.classList.contains('collapsed'));
+                } else { main.classList.remove('expanded'); sidebar.classList.remove('collapsed'); }
+            };
+
+            // Filter jobs
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.onclick = () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const f = btn.dataset.filter;
+                    document.querySelectorAll('.job-item').forEach(i => {
+                        i.style.display = (f === 'all' || i.dataset.status === f) ? 'block' : 'none';
+                    });
+                };
+            });
+
+            // Animate jobs on scroll
+            const io = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('fade-in')),
+                { threshold: .1 });
+            document.querySelectorAll('.job-item').forEach(i => io.observe(i));
+
+
+
+            // Search
+            const search = document.createElement('input');
+            search.className = 'form-control mb-3'; search.placeholder = 'ស្វែងរកការងារ...';
+            document.querySelector('.row.mb-4 .col-12').prepend(search);
+            search.oninput = () => {
+                let t = search.value.toLowerCase();
+                document.querySelectorAll('.job-item').forEach(i => {
+                    i.style.display = i.textContent.toLowerCase().includes(t) ? 'block' : 'none';
+                });
+            };
+
+            // Fade in effect when load
+            document.body.style.opacity = 0;
+            setTimeout(() => { document.body.style.transition = '0.5s'; document.body.style.opacity = 1; }, 100);
+        });
+    </script>
+
+
+</body>
+
+</html>
