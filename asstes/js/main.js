@@ -1,31 +1,5 @@
-document.querySelectorAll('.rating').forEach(rating => {
-    const stars = rating.querySelectorAll('.star');
-    const input = rating.querySelector('input[type="hidden"]');
 
-    function paint(val) {
-        stars.forEach(star => {
-            star.classList.toggle('active', Number(star.dataset.value) <= val);
-        });
-    }
-
-    stars.forEach(star => {
-        star.addEventListener('click', () => {
-            const val = Number(star.dataset.value);
-            input.value = val;
-            paint(val);
-        });
-
-        star.addEventListener('mouseenter', () => {
-            paint(Number(star.dataset.value));
-        });
-
-        rating.addEventListener('mouseleave', () => {
-            paint(Number(input.value));
-        });
-    });
-});
-
-// ================= counter
+// ================= counter number
 
 function compact(n, decimals) {
     if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
@@ -78,3 +52,38 @@ const observer = new IntersectionObserver((entries, obs) => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.counter').forEach(el => observer.observe(el));
+
+// range slider
+
+const rangeMin = document.getElementById("rangeMin");
+const rangeMax = document.getElementById("rangeMax");
+const progress = document.querySelector(".progress");
+const minVal = document.getElementById("minVal");
+const maxVal = document.getElementById("maxVal");
+
+function updateSlider() {
+    let min = parseInt(rangeMin.value);
+    let max = parseInt(rangeMax.value);
+
+    if (max - min < 5) {
+        if (event.target.id === "rangeMin") {
+            rangeMin.value = max - 5;
+        } else {
+            rangeMax.value = min + 5;
+        }
+    }
+
+    min = parseInt(rangeMin.value);
+    max = parseInt(rangeMax.value);
+
+    progress.style.left = (min / rangeMin.max) * 100 + "%";
+    progress.style.right = 100 - (max / rangeMax.max) * 100 + "%";
+
+    minVal.textContent = min;
+    maxVal.textContent = max;
+}
+
+rangeMin.addEventListener("input", updateSlider);
+rangeMax.addEventListener("input", updateSlider);
+
+updateSlider();
