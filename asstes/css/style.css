@@ -67,7 +67,7 @@ html {
 }
 
 .navbar-center .dropdown .dropdown-menu.dropdown-notification {
-    width: 450px;
+    width: 300px;
     right: 20px;
 }
 
@@ -230,6 +230,7 @@ html {
         height: 100vh;
     }
 }
+
 /* ===== find-fixer ===== */
 .find-fixer {
     background-color: #f8fafc;
@@ -252,11 +253,13 @@ html {
     border-radius: 50%;
     color: blue;
 }
-@media (max-width: 576px){
-    .why-us .bg-primary .col-12{
+
+@media (max-width: 576px) {
+    .why-us .bg-primary .col-12 {
         width: 50%;
     }
 }
+
 /* ===== Popular-Service ===== */
 .popular-service {
     background-color: var(--background);
@@ -319,6 +322,7 @@ html {
 .popular-fixer .bg-tag {
     background-color: #EFF6FF;
 }
+
 @media (min-width: 1025px) {
     .popular-fixer .card {
         height: 620px;
@@ -500,7 +504,16 @@ html {
     }
 }
 
+/* ================ Notification ================ */
+.notification .card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 
+.notification .dropdown-item:hover {
+    background-color: #00a6fb;
+    transform: translateX(5px);
+    transition: 0.5s;
+}
 
 
 /* ================ perfessional profile ================ */
