@@ -36,12 +36,31 @@ html {
     height: 61px;
 }
 
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+    position: relative;
+}
+
+.navbar .navbar-brand img {
+    height: 62px;
+}
+
+.navbar .bg-nav-after::after {
+    content: '';
+    width: 113px;
+    height: 62px;
+    background-color: rgb(13, 110, 253);
+
 .navbar-center form {
     width: 450px;
     position: relative;
 }
 
 .navbar-center form button {
+
     position: absolute;
     right: 3px;
     top: 1.8px;
@@ -97,6 +116,12 @@ html {
 .navbar-bottom {
     position: sticky;
     top: 0;
+    right: 0;
+}
+
+.navbar .bg-after::after {
+    content: '';
+
 }
 
 /* ====== Hover-Master ======*/
@@ -120,6 +145,24 @@ html {
     position: absolute;
     z-index: -1;
     top: 0;
+    right: -62px;
+    border-style: solid;
+    border-width: 62px 62px 0 0;
+    border-color: white transparent transparent transparent;
+    transform: rotate(0deg);
+}
+
+.navbar .navbar-nav .nav-item {
+    padding-inline: 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+
     bottom: 0;
     left: 0;
     right: 0;
@@ -150,7 +193,7 @@ html {
 
 }
 
-/* Underline From Center */
+
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
@@ -228,7 +271,6 @@ html {
         height: 100vh;
     }
 }
-
 /* ===== find-fixer ===== */
 .find-fixer {
     background-color: #f8fafc;
@@ -302,6 +344,8 @@ html {
     color: yellowgreen;
 }
 
+
+
 .popular-fixer .tag span {
     font-size: 14px;
     background-color: #f5f5f5;
@@ -326,6 +370,7 @@ html {
         height: 680px;
     }
 }
+
 
 /* ===== Q&A-Customer ===== */
 .question {
@@ -815,15 +860,18 @@ html {
   font-weight: 400;
 }
 
-.profile-contant .modal .modal-body svg {
-  width: 100px;
-  display: block;
-  margin: 40px auto 0;
+
+.modal-body svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
 }
 
-.profile-contant .modal .modal-body .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 0;
+
+.modal-body .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+
 
   &.circle {
     -webkit-animation: dash 0.9s ease-in-out;
@@ -843,10 +891,11 @@ html {
   }
 }
 
-.profile-contant .modal .modal-body p {
-  text-align: center;
-  margin: 20px 0 60px;
-  font-size: 1.25em;
+
+.modal-body p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
 
   &.success {
     color: #73af55;
@@ -1221,6 +1270,51 @@ html {
   display: block;
 }
 
+.contact-pay .info-detail {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+}
+
+.contact-pay .info-detail .contact-info {
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #F8FAFC;
+}
+
+.contact-pay .info-detail .contact-info .chooce {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.contact-pay .info-detail .contact-info .form-check {
+    display: flex;
+}
+
+.contact-pay .info-detail .contact-info .form-check input {
+    margin-right: 10px;
+
+}
+
+.contact-pay .info-detail .contact-info .form-check label {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.contact-pay .info-detail .final-pay {
+    background-color: #f9fafb;
+    padding: 30px;
+    border-radius: 10px;
+}
+
 /*========================= user profile  ================================*/
 @media (min-width:768px) {
     .user-profile-top .profile-img img {
@@ -1229,6 +1323,7 @@ html {
         object-fit: cover;
     }
 }
+
 
 @media (max-width:767px) {
     .user-profile-top .profile-img img {
@@ -1496,4 +1591,107 @@ html {
 
 .fade-in-animation {
     animation: fadeIn 0.5s ease;
+
+
+}
+
+/* ===================  professional-list ================*/
+
+.banner-professional-list {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../img/professional_list/banner.172Z.png) no-repeat bottom center;
+    background-size: cover;
+}
+
+.banner-professional-list .tag {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: auto;
+    width: fit-content;
+    background-color: #f5f5f542;
+    border-radius: 15px;
+    padding: 3px 10px;
+    margin-bottom: 20px;
+}
+
+.banner-professional-list .tag i {
+    font-size: 14px;
+    color: #ffc107;
+    margin-right: 10px;
+}
+
+.banner-professional-list .tag span {
+    font-size: 14px;
+    color: white;
+}
+
+.banner-professional-list .counter {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0056b3
+}
+
+.banner-professional-list .counter-wrap {
+    padding: 60px 0
+}
+
+.banner-professional-list .text-counter {
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media (min-width:1024px) {
+    .w-lg-75{
+        width: 70% !important;
+    }
+}
+
+.question .icon {
+    
+    font-size: 24px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.question .icon.shield {
+    background-color: #e0e7ff;
+    color: #0056b3;
+}
+
+.question .icon.time {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.question .icon.award {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+}
+
+.question .icon i {
+    font-size: 28px;
+}
+
+.question h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.question p {
+    text-align: center;
+    font-size: 16px;
+    color: #6c757d;
+
 }
