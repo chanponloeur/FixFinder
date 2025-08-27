@@ -1408,6 +1408,18 @@ html {
   padding:0 15px;
   font-weight: 600;
 }
+/*====================== auto typing ========================== */
+.typeJsWrapper {
+  padding: 50px;
+}
+.typeJsWrapper .typeJsText {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+  display: inline-block;
+  padding: 0;
+  border-right: 1px solid #414141;
+}
 
 /*--background Login page, Register page, Forget password page--*/
 .login {
