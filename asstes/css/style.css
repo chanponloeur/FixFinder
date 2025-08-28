@@ -1572,45 +1572,45 @@ html {
     margin-left: 0;
 }
 
-.navbar {
+.main-content .navbar {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.toggle-btn {
+.navbar .container-fluid .toggle-btn {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
 }
 
-.toggle-btn:hover {
+.navbar .container-fluid .toggle-btn:hover {
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
 
-.section-title {
+.page-header .container-fluid .section-title {
     color: #333;
     font-size: 1.8rem;
 }
 
-.job-card {
+.work-history .container-fluid .job-item .job-card {
     border-radius: 15px;
     transition: all 0.3s ease;
     border: none;
     overflow: hidden;
 }
 
-.job-card:hover {
+.work-history .container-fluid .job-item .job-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.job-card.completed {
+.work-history .container-fluid .job-item .job-card.completed {
     border-left: 5px solid #28a745;
 }
 
-.job-card.in-progress {
+.work-history .container-fluid .job-item  .job-card.in-progress {
     border-left: 5px solid #17a2b8;
 }
 
