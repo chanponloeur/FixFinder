@@ -1546,7 +1546,7 @@ html {
     padding-bottom: 10px;
 }
 
-.sidebar a {
+.header-sidebar .sidebar a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     display: block;
@@ -1613,13 +1613,12 @@ html {
 .work-history .container-fluid .job-item  .job-card.in-progress {
     border-left: 5px solid #17a2b8;
 }
-
-.customer-info {
+.work-history .container-fluid .job-item .job-card .card-body .customer-info {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 10px;
 }
 
-.video-thumbnail {
+.work-history .card-body .video .video-thumbnail {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1632,34 +1631,34 @@ html {
     transition: transform 0.3s ease;
 }
 
-.video-thumbnail:hover {
+.work-history .card-body .video .video-thumbnail:hover {
     transform: scale(1.1);
     color: white;
 }
 
-.filter-btn {
+.page-header .container-fluid .filter-btn {
     border-radius: 25px;
     padding: 8px 20px;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
-.filter-btn.active {
+.page-header .container-fluid  .filter-btn.active {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.progress-bar{
+.page-header .container-fluid .progress-bar{
     height: 30px;
 }
 
-.job-item {
+.page-header .container-fluid .job-item {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
 }
 
-.job-item.fade-in {
+.page-header .container-fluid .job-item.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
