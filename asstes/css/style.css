@@ -1443,6 +1443,18 @@ html {
 .service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
 }
+/*====================== auto typing ========================== */
+.typeJsWrapper {
+  padding: 50px;
+}
+.typeJsWrapper .typeJsText {
+  text-align: center;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-size: 50px;
+  display: inline-block;
+  padding: 0;
+  border-right: 1px solid #414141;
+}
 
 .service-area .nav-pills .nav-item .nav-link.active {
   background-color: transparent;
