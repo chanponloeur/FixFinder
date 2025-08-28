@@ -57,12 +57,14 @@ html {
   width: 113px;
   height: 62px;
   background-color: rgb(13, 110, 253);
+
 }
 
-.navbar-center form {
-  width: 450px;
-  position: relative;
-}
+  .navbar-center form {
+    width: 450px;
+    position: relative;
+  }
+
 
 .navbar-center form button {
   position: absolute;
@@ -121,21 +123,22 @@ html {
 }
 
 
-/* ====== Hover-Master ======*/
-/* Shutter In Horizontal */
-.hvr-shutter-in-horizontal {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  background: #3058cf;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
+  /* ====== Hover-Master ======*/
+  /* Shutter In Horizontal */
+  .hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #3058cf;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
 
 .hvr-shutter-in-horizontal:before {
   content: "";
@@ -194,6 +197,7 @@ html {
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
+
 
 }
 
@@ -383,11 +387,15 @@ html {
     color: yellowgreen;
 }
 
+
+.professional-list .tag span,
 .popular-fixer .tag span {
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 12px;
-    background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 12px;
+  background-color: #f5f5f5;
+
 }
 
 .professional-list span,
@@ -581,6 +589,7 @@ html {
 
   .testimonial-grid {
     grid-template-columns: 1fr 1fr;
+
   }
 
     .arrow-buttons {
@@ -594,6 +603,7 @@ html {
 }
 
 .notification .dropdown-item:hover {
+
   background-color: #00a7fb0a;
   transform: translateX(5px);
   transition: 0.5s;
@@ -1367,7 +1377,6 @@ html {
   }
 
   .user-profile-top .profile-img {
-
     display: flex;
     justify-content: center;
     line-height: 30px;
@@ -1379,6 +1388,8 @@ html {
     justify-content: center;
   }
 
+
+  
 
   .user-profile-top .profile-info .address {
     flex-direction: column;
@@ -1442,6 +1453,7 @@ html {
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
+
 }
 /*====================== auto typing ========================== */
 .typeJsWrapper {
@@ -1478,6 +1490,7 @@ html {
 
 /* --background Login page, Register page, Forget password page-- */
 .login {
+
 
     background: linear-gradient(rgba(15, 1, 37, 0.144),
             rgba(15, 1, 37, 0.144),
@@ -1536,6 +1549,7 @@ html {
 .login .form-side .social-btn:hover {
   transform: translateY(-2px) scale(1.03);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .progress {
@@ -1582,6 +1596,7 @@ html {
 .login .form-side .back-link:hover {
   color: #0b5ed7;
   text-decoration: underline;
+
 }
 
 /*========================Hostory ===============================*/
@@ -1612,6 +1627,7 @@ html {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
 }
+
 
 .sidebar a {
     color: rgba(255, 255, 255, 0.8);
@@ -1920,20 +1936,14 @@ html {
 }
 
 .values {
-    margin-top: 20px;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
-.search-service .collapse .card-body {
-    padding: 20px;
-    background: #f8f9fa;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-top: 1px solid #eee;
-}
+.testimonial.bg-gray{
+  background-color: #f8f9fa;
 
-.search-service .collapse .card-body .values {
-    display: flex;
-    gap: 240px;
-    margin-top: 10px;
 }
