@@ -1788,3 +1788,6 @@ html {
   font-weight: bold;
 }
 
+.testimonial.bg-gray{
+  background-color: #f8f9fa;
+}
