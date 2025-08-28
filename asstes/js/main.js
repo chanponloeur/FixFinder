@@ -52,38 +52,27 @@ const observer = new IntersectionObserver((entries, obs) => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.counter').forEach(el => observer.observe(el));
+//---------------- auto typing script --------------------------
+let typeJsText = document.querySelector(".typeJsText");
+let textArray = typeJsText.dataset.typetext.split("");
+let counter = -1;
 
-// range slider
+typeJsText.innerHTML = "";
 
-const rangeMin = document.getElementById("rangeMin");
-const rangeMax = document.getElementById("rangeMax");
-const progress = document.querySelector(".progress");
-const minVal = document.getElementById("minVal");
-const maxVal = document.getElementById("maxVal");
-
-function updateSlider() {
-    let min = parseInt(rangeMin.value);
-    let max = parseInt(rangeMax.value);
-
-    if (max - min < 5) {
-        if (event.target.id === "rangeMin") {
-            rangeMin.value = max - 5;
-        } else {
-            rangeMax.value = min + 5;
-        }
+function typeJs() {
+  if (counter < typeJsText.dataset.typetext.length) {
+    counter++;
+    typeJsText.innerHTML += typeJsText.dataset.typetext.charAt(counter);
+    textArray = typeJsText.dataset.typetext.split("");
+  } else {
+    textArray.pop();
+    typeJsText.innerHTML = textArray.join("");
+    if (textArray.length == 0) {
+      counter = -1;
     }
-
-    min = parseInt(rangeMin.value);
-    max = parseInt(rangeMax.value);
-
-    progress.style.left = (min / rangeMin.max) * 100 + "%";
-    progress.style.right = 100 - (max / rangeMax.max) * 100 + "%";
-
-    minVal.textContent = min;
-    maxVal.textContent = max;
+  }
 }
 
-rangeMin.addEventListener("input", updateSlider);
-rangeMax.addEventListener("input", updateSlider);
-
-updateSlider();
+setInterval(() => {
+  typeJs();
+}, 100);
