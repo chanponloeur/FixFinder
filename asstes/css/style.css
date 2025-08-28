@@ -57,32 +57,43 @@ html {
     width: 113px;
     height: 62px;
     background-color: rgb(13, 110, 253);
+
+}
+
+.navbar-center form {
+    width: 450px;
+    position: relative;
+}
+
+
+.navbar-center form button {
     position: absolute;
     right: 3px;
     top: 1.8px;
 }
 
 .navbar-bottom .nav-item .nav-link {
-    padding-inline: 15px;
-    color: white;
+    padding-inline: 8px !important;
+    color: white !important;
 }
 
-.navbar-center .profile-image-container {
+.navbar-center .dropdown .profile-image-container {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.navbar-center .profile-image {
+.navbar-center .dropdown .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .navbar-center .dropdown .dropdown-menu.dropdown-notification {
-    width: 450px;
+    width: 300px;
     right: 20px;
+
 }
 
 .navbar-center .dropdown .dropdown-menu.dropdown-profile {
@@ -111,14 +122,26 @@ html {
     left: 75%;
 }
 
-.navbar-bottom {
-    position: sticky;
-    top: 0;
-    right: 0;
+
+/* ====== Hover-Master ======*/
+/* Shutter In Horizontal */
+.hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #3058cf;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 }
 
-.navbar .bg-after::after {
-    content: '';
+
+.hvr-shutter-in-horizontal:before {
+    content: "";
     position: absolute;
     z-index: -1;
     top: 0;
@@ -127,6 +150,7 @@ html {
     border-width: 62px 62px 0 0;
     border-color: white transparent transparent transparent;
     transform: rotate(0deg);
+
 }
 
 .navbar .navbar-nav .nav-item {
@@ -139,7 +163,6 @@ html {
     color: var(--text);
 }
 
-/* ====== Hover-Master ======*/
 /* Shutter In Horizontal */
 .hvr-shutter-in-horizontal {
     display: inline-block;
@@ -148,7 +171,7 @@ html {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    background: #3058cf;
+    background: #2098D1;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -174,6 +197,8 @@ html {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+
+
 }
 
 .hvr-shutter-in-horizontal:hover,
@@ -207,7 +232,7 @@ html {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: white;
+    background: #fff;
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -215,6 +240,7 @@ html {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+
 }
 
 .hvr-underline-from-center:hover:before,
@@ -222,6 +248,7 @@ html {
 .hvr-underline-from-center:active:before {
     left: 0;
     right: 0;
+
 }
 
 /* ===== Herobanner ===== */
@@ -239,8 +266,9 @@ html {
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(to right, rgba(141, 164, 226, 0.411), rgba(255, 255, 255, 0.044));
+    background: linear-gradient(to right, rgba(24, 24, 25, 0.411), rgba(255, 255, 255, 0.044));
     position: absolute;
+
 }
 
 .herobanner .banner-title {
@@ -272,7 +300,9 @@ html {
 
 /* ===== Why-us ===== */
 .why-us {
+
     background-color: var(--background);
+
 }
 
 .why-us .card-icon i {
@@ -357,11 +387,15 @@ html {
     color: yellowgreen;
 }
 
+
+.professional-list .tag span,
 .popular-fixer .tag span {
     padding: 5px 10px;
     border-radius: 10px;
+    display: inline-block;
     font-size: 12px;
     background-color: #f5f5f5;
+
 }
 
 .professional-list span,
@@ -414,9 +448,11 @@ html {
 
 /* ===== footer ===== */
 .footer .style-line {
+
     width: 70px;
     padding: 2.5px;
     border-radius: 10px;
+
 }
 
 .footer .social-links a {
@@ -553,6 +589,7 @@ html {
 
     .testimonial-grid {
         grid-template-columns: 1fr 1fr;
+
     }
 
     .arrow-buttons {
@@ -566,9 +603,24 @@ html {
 }
 
 .notification .dropdown-item:hover {
-    background-color: #00a6fb;
+
+    background-color: #00a7fb0a;
     transform: translateX(5px);
     transition: 0.5s;
+}
+
+.notification .dropdown-item {
+    white-space: wrap;
+    text-align: justify;
+}
+
+.navbar-center .dropdown-notification .dropdown-item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
 }
 
 /* ================ perfessional profile ================ */
@@ -891,6 +943,7 @@ html {
 .modal-body .path {
     stroke-dasharray: 1000;
     stroke-dashoffset: 0;
+
 
     &.circle {
         -webkit-animation: dash 0.9s ease-in-out;
@@ -1330,9 +1383,13 @@ html {
     }
 
     .user-profile-top .profile-info {
+
         display: flex;
         justify-content: center;
     }
+
+
+
 
     .user-profile-top .profile-info .address {
         flex-direction: column;
@@ -1346,7 +1403,9 @@ html {
 .user-profile-top .profile-info .modal-body .edit-profile-user,
 .user-profile-top .profile-info .modal-body .edit-username,
 .user-profile-top .profile-info .modal-body .edit-password {
+
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
 /* ====================== modal edit profile ====================== */
@@ -1358,11 +1417,14 @@ html {
 /* ---------------------------- service page ----------------------------- */
 /* ======================== service banner =============================== */
 .banner-service .banner-img {
+
     width: 100%;
     height: 100%;
+
 }
 
 .banner-service .banner-img img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1377,6 +1439,7 @@ html {
 .banner-service .title h2 {
     font-size: 50px;
     font-weight: bolder;
+
 }
 
 .banner-service .title button i {
@@ -1387,9 +1450,24 @@ html {
     transform: translateX(8px);
 }
 
-/* ================================ service detail ======================== */
+/*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
     font-weight: bold;
+
+}
+
+/*====================== auto typing ========================== */
+.typeJsWrapper {
+    padding: 50px;
+}
+
+.typeJsWrapper .typeJsText {
+    text-align: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 50px;
+    display: inline-block;
+    padding: 0;
+    border-right: 1px solid #414141;
 }
 
 .service-area .nav-pills .nav-item .nav-link.active {
@@ -1409,10 +1487,13 @@ html {
     border-radius: 30px;
     padding: 0 15px;
     font-weight: 600;
+
 }
 
 /* --background Login page, Register page, Forget password page-- */
 .login {
+
+
     background: linear-gradient(rgba(15, 1, 37, 0.144),
             rgba(15, 1, 37, 0.144),
             rgba(15, 1, 37, 0.144)),
@@ -1470,6 +1551,7 @@ html {
 .login .form-side .social-btn:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 .progress {
@@ -1516,15 +1598,17 @@ html {
 .login .form-side .back-link:hover {
     color: #0b5ed7;
     text-decoration: underline;
+
 }
 
 /*========================Hostory ===============================*/
 /*====================== sidebar======================*/
 
-.sidebar {
+
+.header-sidebar .sidebar {
     width: 280px;
     height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #002679a4 0%, #2102418f 100%);
     position: fixed;
     left: 0;
     top: 0;
@@ -1534,17 +1618,18 @@ html {
     padding: 20px;
 }
 
-.sidebar.collapsed {
+.header-sidebar .sidebar.collapsed {
     transform: translateX(-100%);
 }
 
-.sidebar h5 {
+.header-sidebar .sidebar h5 {
     color: white;
     margin-bottom: 20px;
     font-size: 1.1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
 }
+
 
 .header-sidebar .sidebar a {
     color: rgba(255, 255, 255, 0.8);
@@ -1557,8 +1642,8 @@ html {
     font-size: 0.9rem;
 }
 
-.sidebar a:hover {
-    background: rgba(255, 255, 255, 0.1);
+.header-sidebar .sidebar a:hover {
+    background: rgba(63, 62, 62, 0.377);
     color: white;
     transform: translateX(5px);
 }
@@ -1594,6 +1679,19 @@ html {
     font-size: 1.8rem;
 }
 
+.work-history .container-fluid .custom-bg {
+    background: linear-gradient(180deg, #0423aa38 0%, #764ba200 100%);
+    padding: 15px 0;
+}
+.profile-link{
+    text-decoration: none;
+}
+
+.work-history .container-fluid .custom-inprogress {
+    background: linear-gradient(180deg, #17a3b85b 0%, #764ba200 100%);
+    padding: 15px 0;
+}
+
 .work-history .container-fluid .job-item .job-card {
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -1610,9 +1708,10 @@ html {
     border-left: 5px solid #28a745;
 }
 
-.work-history .container-fluid .job-item  .job-card.in-progress {
+.work-history .container-fluid .job-item .job-card.in-progress {
     border-left: 5px solid #17a2b8;
 }
+
 .work-history .container-fluid .job-item .job-card .card-body .customer-info {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 10px;
@@ -1636,6 +1735,44 @@ html {
     color: white;
 }
 
+.progres {
+    width: 100%;
+    height: 10px;
+    background-color: #dee0de;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progres .progres-bar {
+    height: 10px;
+    background-color: #3056d5;
+    border-radius: 20px;
+    width: 0;
+    animation: loadProgress 2s ease forwards;
+}
+
+/* Keyframes Animation */
+@keyframes loadProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+
+@keyframes loadProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
 .page-header .container-fluid .filter-btn {
     border-radius: 25px;
     padding: 8px 20px;
@@ -1643,12 +1780,12 @@ html {
     transition: all 0.3s ease;
 }
 
-.page-header .container-fluid  .filter-btn.active {
+.page-header .container-fluid .filter-btn.active {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.page-header .container-fluid .progress-bar{
+.page-header .container-fluid .progress-bar {
     height: 30px;
 }
 
@@ -1711,6 +1848,9 @@ html {
 .page-header {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
     margin-bottom: 2rem;
+}
+.pdf-bg{
+    background-color: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);;
 }
 
 /* ===================  professional-list ================ */
@@ -1808,6 +1948,7 @@ html {
     text-align: center;
     font-size: 16px;
     color: #6c757d;
+
 }
 
 .slider-container {
@@ -1851,20 +1992,14 @@ html {
 }
 
 .values {
+    display: flex;
+    align-items: center;
+    gap: 240px;
     margin-top: 20px;
     font-weight: bold;
 }
 
-.search-service .collapse .card-body {
-    padding: 20px;
-    background: #f8f9fa;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-top: 1px solid #eee;
-}
+.testimonial.bg-gray {
+    background-color: #f8f9fa;
 
-.search-service .collapse .card-body .values {
-    display: flex;
-    gap: 240px;
-    margin-top: 10px;
 }
