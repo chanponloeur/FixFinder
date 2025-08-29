@@ -1478,6 +1478,12 @@ html {
 }
 
 /* ---------------------------- service page ----------------------------- */
+/*============================ navbar active on header  =======================*/
+.header-area .navbar-bottom .nav-item .nav-link.active {
+   border-bottom: 4px solid white;
+   padding-block: 6px;
+   
+}
 /* ======================== service banner =============================== */
 .banner-service .banner-img {
 
@@ -1496,7 +1502,7 @@ html {
 .banner-service .title {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .banner-service .title h2 {
@@ -1512,7 +1518,24 @@ html {
 .banner-service .title button:hover i {
     transform: translateX(8px);
 }
-
+/*=============================== popular service on service page ======================= */
+.service-popular .carousel .carousel-control-prev{
+  left:-80px;
+  
+}
+.service-popular .carousel .carousel-control-next{
+  right:-80px;
+  
+}
+.service-popular .carousel .carousel-control-prev,
+.service-popular .carousel .carousel-control-next{
+display: none;
+transition: 0.8s;
+}
+.service-popular:hover .carousel .carousel-control-prev,
+.service-popular:hover .carousel .carousel-control-next{
+display: block;
+}
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
     font-weight: bold;
