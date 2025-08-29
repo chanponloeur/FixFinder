@@ -1424,7 +1424,13 @@ html {
     object-fit: cover;
   }
 }
+.btn-tap .nav .nav-link.active{
 
+  border-radius: 0;
+  border-bottom:2px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
 @media (max-width:767px) {
     .user-profile-top .profile-img img {
         width: 350px;
@@ -1460,6 +1466,9 @@ html {
 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+}
+.user-setting .form-switch:hover .form-check-input{
+  cursor: pointer;
 }
 
 /* ====================== modal edit profile ====================== */
