@@ -29,6 +29,7 @@ html {
 }
 
 .navbar-top {
+
   display: none;
   background-color: #f0f2fa;
 }
@@ -647,6 +648,33 @@ html {
   white-space: wrap;
 }
 
+/* ================ Contact US ================ */
+.contact-banner {
+  height: 698px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat top center;
+  background-size: cover;
+  align-content: center;
+}
+.contact-us .form-label{
+  margin-bottom: 5px !important;
+  margin-left: 5px ;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact-us .style{
+  width: 50px;
+  padding: 2px;
+  background-color: var(--primary);
+}
+.google-map .style{
+  width: 50px;
+  padding: 2px;
+  background-color: var(--primary);
+}
+.contact-us .card{
+  height: 455px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 /* ================ perfessional profile ================ */
 .profile-top .btn-do {
   transition: all 0.3s ease;
@@ -1480,6 +1508,7 @@ html {
 
 }
 
+
 .service-area .tab-content .card .card-img{
   overflow: hidden;
 }
@@ -1510,18 +1539,6 @@ html {
   
 }
 
-/*============================= service popular on service page  ==================*/
-.service-popular{
-  background-color:#eff6ffbd ;
-}
-@media (min-width:768px) {
-  .service-popular .carousel .carousel-control-prev{
-    left: -70px;
-  }
-  .service-popular .carousel .carousel-control-next{
-    right: -70px;
-  }
-}
 /*====================== auto typing ========================== */
 .typeJsWrapper {
   padding: 50px;
