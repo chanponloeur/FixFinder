@@ -1480,6 +1480,48 @@ html {
 
 }
 
+.service-area .tab-content .card .card-img{
+  overflow: hidden;
+}
+.service-area .tab-content .card .card-img img{
+  transition:0.3s;
+  
+}
+.service-area .tab-content .card .card-img:hover img{
+  transform: scale(1.1);
+  
+}
+/*================================ service detail modal ========================*/
+.service-area .modal-service .modal-body .card .card-img:hover img{
+  transform: scale(1);
+}
+.service-area .modal-service .modal-body .card .note{
+  
+  background-color: #ffc9c986;
+
+}
+.service-area .modal-service .modal-body .card .note p{
+  line-height: 18px;
+  text-align: start;
+  margin-bottom: 20px;
+  color:#ff6467;
+  font-size: 14px;
+  
+  
+}
+
+/*============================= service popular on service page  ==================*/
+.service-popular{
+  background-color:#eff6ffbd ;
+}
+@media (min-width:768px) {
+  .service-popular .carousel .carousel-control-prev{
+    left: -70px;
+  }
+  .service-popular .carousel .carousel-control-next{
+    right: -70px;
+  }
+}
 /*====================== auto typing ========================== */
 .typeJsWrapper {
   padding: 50px;
