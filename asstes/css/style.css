@@ -29,7 +29,16 @@ html {
 }
 
 .navbar-top {
+
+  display: none;
   background-color: #f0f2fa;
+}
+
+@media (min-width: 992px) {
+  .navbar-top {
+    display: block;
+  }
+
 }
 
 .navbar-center .navbar-brand img {
@@ -464,6 +473,15 @@ html {
   text-align: center;
   align-content: center;
   border-radius: 50%;
+  transition: 0.3s;
+
+}
+
+.footer .social-links a:hover {
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-5px);
 }
 
 .footer .footer-service {
@@ -474,6 +492,13 @@ html {
   color: white;
   display: block;
   padding: 5px 0;
+  transition: 0.3s;
+}
+
+.footer .footer-service li a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+  text-decoration: none;
 }
 
 /* ===== Testimonials ===== */
@@ -1483,6 +1508,37 @@ html {
 
 }
 
+
+.service-area .tab-content .card .card-img{
+  overflow: hidden;
+}
+.service-area .tab-content .card .card-img img{
+  transition:0.3s;
+  
+}
+.service-area .tab-content .card .card-img:hover img{
+  transform: scale(1.1);
+  
+}
+/*================================ service detail modal ========================*/
+.service-area .modal-service .modal-body .card .card-img:hover img{
+  transform: scale(1);
+}
+.service-area .modal-service .modal-body .card .note{
+  
+  background-color: #ffc9c986;
+
+}
+.service-area .modal-service .modal-body .card .note p{
+  line-height: 18px;
+  text-align: start;
+  margin-bottom: 20px;
+  color:#ff6467;
+  font-size: 14px;
+  
+  
+}
+
 /*====================== auto typing ========================== */
 .typeJsWrapper {
   padding: 50px;
@@ -1975,4 +2031,44 @@ html {
 .testimonial.bg-gray {
   background-color: #f8f9fa;
 
+}
+
+.pagination .page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  text-align: center;
+}
+
+.pagination .page-item button {
+  border: 1px solid rgb(11, 94, 215, 0.3);
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.pagination .page-item button.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.pagination .page-item button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* ===================  help =================== */
+
+.banner-help {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/help/1.405Z.png) no-repeat top center;
+  background-size: cover;
+}
+
+.banner-help h1 {
+  /* font-size: 2.5rem; */
+  font-weight: 800;
+  color: white;
 }
