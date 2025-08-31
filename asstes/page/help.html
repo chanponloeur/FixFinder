@@ -17,17 +17,18 @@
     <main>
         <section class="banner-help">
             <div class="container">
-                <div class="d-flex justify-content-center align-items-center text-center vh-100">
+                <div class="d-flex justify-content-center align-items-center text-center banner-help-content">
                     <div class="banner-content">
                         <div>
-                            <i class="ri-question-line display-1 text-white"></i>
+                            <i class="ri-question-line display-1 text-primary"></i>
                         </div>
-                        <h1 class="text-primary display-5 mb-4">មជ្ឈមណ្ឌលជំនួយ</h1>
+                        <h1 class="text-white display-5 mb-4">តើយើងអាចជួយអ្នកយ៉ាងដូចម្តេច?</h1>
                         <p class="text-white fs-5 mb-5">
                             ស្វែងរកចម្លើយសម្រាប់សំណួររបស់អ្នក និងរៀនពីរបៀបប្រើប្រាស់សេវាកម្មរបស់យើង
                         </p>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control py-2 rounded-start-3" placeholder="ស្វែងរកជំនួយ...(ឧ.តម្លៃសេវាកម្ម, កាទូទាត)"
+                            <input type="text" class="form-control py-2 rounded-start-3"
+                                placeholder="ស្វែងរកជំនួយ...(ឧ.តម្លៃសេវាកម្ម, កាទូទាត)"
                                 aria-describedby="button-addon2">
                             <button class="btn btn-primary px-4 rounded-end-3" type="button" id="button-addon2">
                                 <i class="ri-search-line"></i>
@@ -38,13 +39,287 @@
             </div>
         </section>
 
-        <section class="help-content">
+        <section class="help-content py-5">
             <div class="container">
-                
-            </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="help-question">
+                            <div class="mb-4 ps-3">
+                                <h3>
+                                    <i class="ri-question-answer-line text-primary"></i>
+                                    សំណួរដែលសួរញឹកញាប់
+                                </h3>
+                                <p class="text-black-50">ចម្លើយសម្រាប់សំណួរទូទៅអំពីFixFinder</p>
+                            </div>
+                            <div>
+                                <div class="col-12" data-aos="fade-right">
+                                    <div class="px-3">
+                                        <div class="accordion" id="accordionFlushExample">
+                                            <div class="accordion-item mb-3">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button " type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#question-1"
+                                                        aria-expanded="false" aria-controls="question-1">
+                                                        <h5 class="fw-bold m-0">
+                                                            <i class="ri-question-line"></i>
+                                                            1.តើខ្ញុំអាចកក់សេវាកម្មយ៉ាងដូចម្តេច?
+                                                        </h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="question-1" class=" collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body fs-5">
+                                                        <i class="ri-arrow-right-circle-line"></i>
+                                                        អ្នកអាចកក់សេវាកម្មតាមរយៈទំព័រ "ជួសជុល" ដោយធ្វើតាមដំណាក់កាល
+                                                        ៤ ជំហាន៖ ជ្រើសរើសសេវាកម្ម, បញ្ចូលព័ត៌មានទីតាំង, បញ្ជាក់តម្លៃ,
+                                                        និងបំពេញព័ត៌មានទំនាក់ទំនង។
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#question-3"
+                                                        aria-expanded="false" aria-controls="question-3">
+                                                        <h5 class="fw-bold m-0">
+                                                            <i class="ri-question-line"></i>
+                                                            2.តើតម្លៃសេវាកម្មគណនាយ៉ាងដូចម្តេច?
+                                                        </h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="question-3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body fs-5">
+                                                        <i class="ri-arrow-right-circle-line"></i>
+                                                        តម្លៃសេវាកម្មអាស្រ័យលើប្រភេទបញ្ហា, ម៉ាកទូរសព្ទ,
+                                                        និងកម្រិតបន្ទាន់។
+                                                        អ្នកនឹងទទួលបានការប៉ាន់ស្មានតម្លៃមុនពេលបញ្ជាក់ការកក់។
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#question-4"
+                                                        aria-expanded="false" aria-controls="question-4">
+                                                        <h5 class="fw-bold m-0">
+                                                            <i class="ri-question-line"></i>
+                                                            3.តើការធានាសេវាកម្មដូចម្តេច?
+                                                        </h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="question-4" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body fs-5">
+                                                        <i class="ri-arrow-right-circle-line"></i>
+                                                        យើងផ្តល់ការធានា ៣០ ថ្ងៃសម្រាប់ការជួសជុលទាំងអស់ និងការធានា ៩០
+                                                        ថ្ងៃសម្រាប់គ្រឿងបន្លាស់ថ្មី។
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#question-8"
+                                                        aria-expanded="false" aria-controls="question-8">
+                                                        <h5 class="fw-bold m-0">
+                                                            <i class="ri-question-line"></i>
+                                                            4.តើអ្នកជំនាញមកដល់ផ្ទះបានទេ?
+                                                        </h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="question-8" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body fs-5">
+                                                        <i class="ri-arrow-right-circle-line"></i>
+                                                        បាទ! យើងផ្តល់សេវាកម្មនៅផ្ទះសម្រាប់តំបន់ទាំងអស់​
+                                                        និងជុំវិញភ្នំពេញ។
+                                                        សេវាកម្មនៅផ្ទះមានថ្លៃបន្ថែម $2-5 អាស្រ័យលើចម្ងាយ។
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item mb-3">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#question-9"
+                                                        aria-expanded="false" aria-controls="question-9">
+                                                        <h5 class="fw-bold m-0">
+                                                            <i class="ri-question-line"></i>
+                                                            5. តើអ្នកទទួលយកការទូទាត់អ្វីខ្លះ?
+                                                        </h5>
+                                                    </button>
+                                                </h2>
+                                                <div id="question-9" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body fs-5">
+                                                        <i class="ri-arrow-right-circle-line"></i>
+                                                        យើងទទួលយកការទូទាត់តាមរយៈ ABA Mobile, Wing, ACLEDA Mobile,
+                                                        និងការទូទាត់ជាសាច់ប្រាក់។
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="active-service mb-3">
+                            <div class="mb-4 ps-3">
+                                <h3>
+                                    <i class="ri-star-line text-primary"></i>
+                                    របៀបប្រើប្រាស់សេវាកម្ម
+                                </h3>
+                                <p>ណែនាំលម្អិតអំពីការប្រើប្រាស់វេទិការបស់យើង</p>
+                            </div>
+                            <div class="d-flex align-items-start ps-3 mb-4">
+                                <div>
+                                    <div class="number">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="detile">
+                                    <h4>ជ្រើសរើសសេវាកម្ម</h4>
+                                    <p class="text-black-50 fs-6">ចូលទៅកាន់ទំព័រ "កក់សេវាកម្ម"
+                                        និងជ្រើសរើសប្រភេទបញ្ហាដែលអ្នកជួបប្រទះ។
+                                        យើងមានសេវាកម្មជួសជុលអេក្រង់, ប្ដូរថ្ម, ជួសជុលទឹកចូល, និងច្រើនទៀត។
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start ps-3 mb-4">
+                                <div>
+                                    <div class="number">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="detile">
+                                    <h4>បញ្ចូលព័ត៌មានទីតាំង</h4>
+                                    <p class="text-black-50 fs-6">បញ្ចូលអាសយដ្ឋានរបស់អ្នក និងជ្រើសរើសពេលវេលាដែលសមរម្យ។
+                                        អ្នកអាចជ្រើសរើសសេវាកម្មនៅផ្ទះ ឬនាំទូរសព្ទមកហាងជួសជុល។
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start ps-3 mb-4">
+                                <div>
+                                    <div class="number">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="detile">
+                                    <h4>បញ្ជាក់តម្លៃ</h4>
+                                    <p class="text-black-50 fs-6">ពិនិត្យមើលការប៉ាន់ស្មានតម្លៃ និងលក្ខខណ្ឌសេវាកម្ម។
+                                        តម្លៃនឹងត្រូវបានបង្ហាញយ៉ាងច្បាស់លាស់មុនពេលអ្នកបញ្ជាក់។
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start ps-3 mb-4">
+                                <div>
+                                    <div class="number">
+                                        4
+                                    </div>
+                                </div>
+                                <div class="detile">
+                                    <h4>បញ្ជាក់ការកក់</h4>
+                                    <p class="text-black-50 fs-6">បំពេញព័ត៌មានទំនាក់ទំនង និងជ្រើសរើសវិធីទូទាត់។
+                                        អ្នកនឹងទទួលបាន SMS និង Email បញ្ជាក់ការកក់។
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition">
+                            <div class="mb-4 ps-3">
+                                <h3>
+                                    <i class="ri-shield-check-line text-primary"></i>
+                                    គោលការណ៍សេវាកម្ម
+                                </h3>
+                                <p>ណែនាំលម្អិតអំពីការប្រើប្រាស់វេទិការបស់យើង</p>
+                            </div>
+                            <div class="ps-3 mb-4 d-flex align-items-start">
+                                <div>
+                                    <div class="number">
+                                        1
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>ការធានាគុណភាព</h4>
+                                    <p class="text-black-50 fs-6">
+                                        យើងធានាគុណភាពការងារ ១០០% ជាមួយនឹងការធានា ៣០ ថ្ងៃសម្រាប់ការជួសជុល និង ៩០
+                                        ថ្ងៃសម្រាប់គ្រឿងបន្លាស់។
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ps-3 mb-4 d-flex align-items-start">
+                                <div>
+                                    <div class="number">
+                                        2
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>ការលុបចោលការកក់</h4>
+                                    <p class="text-black-50">អ្នកអាចលុបចោលការកក់បានដោយមិនគិតថ្លៃ មុនពេល ២
+                                        ម៉ោងពីពេលកំណត់។
+                                        ការលុបចោលក្រោយពេលនេះអាចមានការគិតថ្លៃបោះបង់។</p>
+                                </div>
+                            </div>
+                            <div class="ps-3 mb-4 d-flex align-items-start">
+                                <div>
+                                    <div class="number">
+                                        3
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>ការការពារព័ត៌មាន</h4>
+                                    <p class="text-black-50 fs-6">ព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នកនឹងត្រូវបានការពារយ៉ាងម៉ត់ចត់
+                                        និងនឹងមិនត្រូវបានចែករំលែកទៅភាគីទីបីទេ។</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="help-contact">
+                            <div class="mb-4 ps-3">
+                                <h3>
+                                    <i class="ri-phone-line text-primary"></i>
+                                    ទំនាក់ទំនងយើងខ្ញុំ
+                                </h3>
+                                <p class="text-black-50">មានសំណួរទៀតទេ? យើងនៅទីនេះដើម្បីជួយ!</p>
+                            </div>
+                            <div class="ps-3 mb-4 d-flex align-items-start align-items-center">
+                                <div class="fs-4">
+                                    <i class="ri-phone-line text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <span class="d-block mb-2 fw-bold">ទូរសព្ទ</span>
+                                    <span class="d-block">023 123 456</span>
+                                </div>
+                            </div>
+                            <div class="ps-3 mb-4 d-flex align-items-start align-items-center">
+                                <div class="fs-4">
+                                    <i class="ri-telegram-2-line text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <span class="d-block mb-2 fw-bold">Telegram</span>
+                                    <span class="d-block">@fixfinder</span>
+                                </div>
+                            </div>
+                            <div class="ps-3 mb-5 d-flex align-items-start align-items-center">
+                                <div class="fs-4">
+                                    <i class="ri-mail-line text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <span class="d-block mb-2 fw-bold">អ៊ីមែល</span>
+                                    <span class="d-block">fixfnder@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="contact_us.html" class="btn btn-primary w-100">ទំនាក់ទំនងយើង</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
     <footer></footer>
 </body>
+<script src="../js/bootstrap.bundle.min.js"></script>
 
 </html>
