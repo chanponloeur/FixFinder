@@ -19,18 +19,18 @@
     <header class="header-sidebar">
         <nav id="sidebar" class="sidebar">
             <h5><i class="fas fa-cog me-2"></i>ប្រវត្តិការងារ</h5>
-            <a href="history_moto.html"><i class="fas fa-motorcycle me-2"></i>ម៉ូតូ</a>
-            <a href="history_car.html"><i class="fas fa-car-side me-2"></i>រថយន្ត</a>
-            <a href="history_mobile.html"><i class="fas fa-mobile-alt me-2"></i>ទូរសព្ទ</a>
-            <a href="history_laptop.html"><i class="fas fa-laptop me-2"></i>កុំព្យូទ័រ</a>
-            <a href="history_soap.html"><i class="fas fa-soap me-2"></i>ម៉ាស៊ីនបោកគក់</a>
-            <a href="history_snowflake.html"><i class="fas fa-snowflake me-2"></i>ទូទឹកកក</a>
-            <a href="history_fan.html"><i class="fas fa-fan me-2"></i>ម៉ាស៊ីនត្រជាក់</a>
-            <a href="history_bolt.html"><i class="fas fa-bolt me-2"></i>អគ្គិសនី</a>
+            <a href="history_moto.html"><i>🏍️</i>ម៉ូតូ</a>
+            <a href="history_car.html"><i>🚗</i>រថយន្ត</a>
+            <a href="history_mobile.html"><i>📱</i>ទូរសព្ទ</a>
+            <a href="history_laptop.html"><i>💻</i>កុំព្យូទ័រ</a>
+            <a href="history_soap.html"><i>🧺</i>ម៉ាស៊ីនបោកគក់</a>
+            <a href="history_snowflake.html"><i>🧊</i>ទូទឹកកក</a>
+            <a href="history_fan.html"><i>❄️</i>ម៉ាស៊ីនត្រជាក់</a>
+            <a href="history_bolt.html"><i>⚡</i>អគ្គិសនី</a>
 
             <h5 class="mt-4"><i class="fas fa-user me-2"></i>គណនីរបស់ខ្ញុំ</h5>
             <a href="user-profile.html"><i class="fas fa-id-card me-2"></i>ប្រវត្តិរូប</a>
-            <a href="notifications.html"><i class="fas fa-bell me-2"></i>ការជូនដំណឹង</a>
+            <a href="notifications.html"><i>🔔</i>ការជូនដំណឹង</a>
         </nav>
     </header>
 
@@ -39,10 +39,10 @@
         <!-- Header Top-->
         <div class="navbar">
             <div class="container-fluid d-flex align-items-center justify-content-start">
-                <button class="btn btn-dark toggle-btn me-3" id="sidebarToggle" aria-label="បើក/បិទ sidebar">
+                <button class="btn  text-primary toggle-btn me-3" id="sidebarToggle" aria-label="បើក/បិទ sidebar">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h4 class="text-light mb-0">ប្រវត្តិការងារ (ម៉ូតូ) <i class="fas fa-motorcycle me-2"></i></h4>
+                <h4 class="text-primary mb-0">ប្រវត្តិការងារ (ម៉ូតូ) <i class="fas fa-motorcycle me-2"></i></h4>
             </div>
         </div>
 
@@ -1063,33 +1063,31 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sidebar = document.getElementById('sidebar'),
-                main = document.getElementById('mainContent'),
-                overlay = document.getElementById('overlay'),
-                toggleBtn = document.getElementById('sidebarToggle');
+            const sidebar = document.getElementById("sidebar");
+            const main = document.getElementById("mainContent");
+            const overlay = document.getElementById("overlay");
+            const toggleBtn = document.getElementById("sidebarToggle");
 
-            // Sidebar toggle
-            const toggleSidebar = () => {
-                if (innerWidth <= 768) {
-                    sidebar.classList.toggle('show');
-                    overlay.classList.toggle('show');
-                    document.body.style.overflow = sidebar.classList.contains('show') ? 'hidden' : 'auto';
+            let sidebarOpen = false;
+
+            function toggleSidebar() {
+                sidebarOpen = !sidebarOpen;
+                if (window.innerWidth <= 768) {
+                    // Mobile
+                    sidebar.classList.toggle("show", sidebarOpen);
+                    overlay.classList.toggle("show", sidebarOpen);
+                    document.body.style.overflow = sidebarOpen ? "hidden" : "auto";
                 } else {
-                    sidebar.classList.toggle('collapsed');
-                    main.classList.toggle('expanded');
+                    // Desktop
+                    sidebar.classList.toggle("show", sidebarOpen);
+                    main.classList.toggle("sidebar-open", sidebarOpen);
                 }
-            };
-            toggleBtn.onclick = toggleSidebar;
-            overlay.onclick = () => toggleSidebar();
+            }
 
-            // Resize fix
-            onresize = () => {
-                if (innerWidth > 768) {
-                    overlay.classList.remove('show'); sidebar.classList.remove('show');
-                    document.body.style.overflow = 'auto';
-                    main.classList.toggle('expanded', sidebar.classList.contains('collapsed'));
-                } else { main.classList.remove('expanded'); sidebar.classList.remove('collapsed'); }
-            };
+            toggleBtn.addEventListener("click", toggleSidebar);
+            overlay.addEventListener("click", () => {
+                if (sidebarOpen) toggleSidebar();
+            });
 
             // Filter jobs
             document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -1107,19 +1105,6 @@
             const io = new IntersectionObserver(e => e.forEach(x => x.isIntersecting && x.target.classList.add('fade-in')),
                 { threshold: .1 });
             document.querySelectorAll('.job-item').forEach(i => io.observe(i));
-
-
-
-            // Search
-            const search = document.createElement('input');
-            search.className = 'form-control mb-3'; search.placeholder = 'ស្វែងរកការងារ...';
-            document.querySelector('.row.mb-4 .col-12').prepend(search);
-            search.oninput = () => {
-                let t = search.value.toLowerCase();
-                document.querySelectorAll('.job-item').forEach(i => {
-                    i.style.display = i.textContent.toLowerCase().includes(t) ? 'block' : 'none';
-                });
-            };
 
             // Fade in effect when load
             document.body.style.opacity = 0;
