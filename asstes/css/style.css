@@ -267,7 +267,7 @@ html {
 .herobanner {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
-    url(../img/Landing-page/herobanner.jpg) no-repeat top center;
+    url(../asstes/img/Landing-page/herobanner.jpg) no-repeat top center;
   background-size: cover;
   align-content: center;
   position: relative;
@@ -641,7 +641,7 @@ html {
 
 .contact-banner {
   height: 698px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../asstes/img/Landing-page/contact-us.jpg) no-repeat top center;
   background-size: cover;
   align-content: center;
 }
@@ -1609,15 +1609,16 @@ html {
 .service-area .modal-service .modal-body .card .card-img:hover img {
   transform: scale(1);
 }
-
-.service-area .modal-service .modal-body .card .note {}
+/* 
+.service-area .modal-service .modal-body .card .note {
+} */
 .login {
 
 
   background: linear-gradient(rgba(0, 0, 0, 0.486),
       rgba(0, 0, 0, 0.527),
       rgba(0, 0, 0, 0.377)),
-    url(../img/image.login.register/background.jpg) no-repeat top center;
+    url(../asstes/img/image.login.register/background.jpg) no-repeat top center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -2129,7 +2130,7 @@ html {
 /* ===================  professional-list ================ */
 .banner-professional-list {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/professional_list/banner.172Z.png) no-repeat bottom center;
+    url(../asstes/img/professional_list/banner.172Z.png) no-repeat bottom center;
   background-size: cover;
 }
 
@@ -2309,7 +2310,7 @@ html {
 .banner-help {
   height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/help/banner.png) no-repeat bottom center;
+    url(../asstes/img/help/banner.png) no-repeat bottom center;
   background-size: cover;
 }
 
