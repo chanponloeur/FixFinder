@@ -1508,10 +1508,10 @@ html {
 }
 
 .banner-service .title {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .banner-service .title h2 {
@@ -1526,24 +1526,7 @@ html {
 
 .banner-service .title button:hover i {
   transform: translateX(8px);
-}
-/*=============================== popular service on service page ======================= */
-.service-popular .carousel .carousel-control-prev{
-  left:-80px;
-  
-}
-.service-popular .carousel .carousel-control-next{
-  right:-80px;
-  
-}
-.service-popular .carousel .carousel-control-prev,
-.service-popular .carousel .carousel-control-next{
-display: none;
-transition: 0.8s;
-}
-.service-popular:hover .carousel .carousel-control-prev,
-.service-popular:hover .carousel .carousel-control-next{
-display: block;
+
 }
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
@@ -1558,19 +1541,6 @@ display: block;
 .service-area .tab-content .card .card-img img {
   transition: 0.3s;
 
-}
-
-.service-area .tab-content .card .card-img:hover img {
-  transform: scale(1.1);
-
-}
-
-/*================================ service detail modal ========================*/
-.service-area .modal-service .modal-body .card .card-img:hover img {
-  transform: scale(1);
-}
-
-.service-area .modal-service .modal-body .card .note {
 
   background-color: #ffc9c986;
 
@@ -1620,30 +1590,44 @@ display: block;
 
 }
 
-/* --background Login page, Register page, Forget password page-- */
+/*=================== background Login page, Register page, Forget password page ===================*/
+}
+
+.service-area .tab-content .card .card-img:hover img {
+  transform: scale(1.1);
+
+}
+
+/*================================ service detail modal ========================*/
+.service-area .modal-service .modal-body .card .card-img:hover img {
+  transform: scale(1);
+}
+
+.service-area .modal-service .modal-body .card .note {
 .login {
 
 
-  background: linear-gradient(rgba(15, 1, 37, 0.144),
-      rgba(15, 1, 37, 0.144),
-      rgba(15, 1, 37, 0.144)),
+  background: linear-gradient(rgba(0, 0, 0, 0.486),
+      rgba(0, 0, 0, 0.527),
+      rgba(0, 0, 0, 0.377)),
     url(../img/image.login.register/background.jpg) no-repeat top center;
   background-size: cover;
   min-height: 100vh;
 }
 
+.logo-form {
+  width: 150px;
+}
+
+
 .login .container .card-container {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 50px rgb(0, 0, 0);
-  background: #fff;
-}
+  box-shadow: 0 0 25px rgba(105, 105, 105, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.041);
 
-.login .card-container .form-side {
-  padding: 40px;
-  background: linear-gradient(to left, rgb(237, 246, 255), #ecf0fe);
 }
 
 .login .form-side .form-control {
@@ -1690,6 +1674,43 @@ display: block;
   color: #0056b3;
 }
 
+/* ====== Form Card ====== */
+.login .card-container .form-side {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating label style */
+.form-floating>label {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-25%);
+  padding: 0 .25rem;
+  color: #6c757d;
+  pointer-events: none;
+  transition: all .2s ease-in-out;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label {
+  top: 0;
+  transform: translateY(-3%) scale(0.90);
+  color: #011738a6;
+}
+
+/* Eye icon for password */
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
 /* ====================== Responsive Adjustments ====================== */
 @media (max-width: 767px) {
   .login .card-container .form-side {
@@ -1731,65 +1752,95 @@ display: block;
 
 }
 
-/*========================Hostory ===============================*/
-/*====================== sidebar======================*/
+/*======================================== History ===============================*/
+/*========================================= sidebar======================*/
 
-
+/* Sidebar */
 .header-sidebar .sidebar {
-  width: 280px;
+  width: 260px;
   height: 100vh;
-  background: linear-gradient(180deg, #002679a4 0%, #2102418f 100%);
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1000;
+  transform: translateX(-100%);
   transition: transform 0.3s ease;
   overflow-y: auto;
   padding: 20px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.header-sidebar .sidebar.collapsed {
-  transform: translateX(-100%);
+.header-sidebar .sidebar.show {
+  transform: translateX(0);
 }
 
 .header-sidebar .sidebar h5 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 1.1rem;
+  color: #000000;
+  margin: 20px 0 15px;
+  font-size: 1rem;
+  font-weight: 600;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 10px;
+  padding-bottom: 8px;
+
 }
 
-
 .header-sidebar .sidebar a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
-  display: block;
-  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
   border-radius: 8px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   transition: all 0.3s ease;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .header-sidebar .sidebar a:hover {
-  background: rgba(63, 62, 62, 0.377);
-  color: white;
-  transform: translateX(5px);
+  background: rgba(151, 149, 149, 0.637);
+  color: #081bc7;
+  transform: translateX(6px);
 
 }
 
+/* Main Content */
 .main-content {
-  margin-left: 280px;
+  margin-left: 0;
   transition: margin-left 0.3s ease;
 }
 
-.main-content.expanded {
-  margin-left: 0;
+/* Desktop sidebar behavior */
+@media (min-width: 769px) {
+  .main-content.sidebar-open {
+    margin-left: 260px;
+  }
+}
+
+/* Mobile sidebar behavior */
+@media (max-width: 768px) {
+  .header-sidebar .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .header-sidebar .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .main-content.sidebar-open {
+    margin-left: 0;
+    /* Don't push content on mobile */
+  }
 }
 
 .main-content .navbar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: rgba(255, 255, 255, 0.1);
   padding: 15px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1798,11 +1849,13 @@ display: block;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
+  transition: all 0.3s ease;
 }
 
 .navbar .container-fluid .toggle-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   color: white;
+  transform: scale(1.05);
 }
 
 .page-header .container-fluid .section-title {
@@ -1810,19 +1863,22 @@ display: block;
   font-size: 1.8rem;
 }
 
-.work-history .container-fluid .custom-bg {
-  background: linear-gradient(180deg, #0423aa38 0%, #764ba200 100%);
-  padding: 15px 0;
+
+
+.container-fluid,
+.work-history {
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+
 
 .profile-link {
   text-decoration: none;
+
 }
 
-.work-history .container-fluid .custom-inprogress {
-  background: linear-gradient(180deg, #17a3b85b 0%, #764ba200 100%);
-  padding: 15px 0;
-}
+
 
 .work-history .container-fluid .job-item .job-card {
   border-radius: 15px;
@@ -1894,17 +1950,6 @@ display: block;
   }
 }
 
-
-@keyframes loadProgress {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 70%;
-  }
-}
-
 .page-header .container-fluid .filter-btn {
   border-radius: 25px;
   padding: 8px 20px;
@@ -1942,24 +1987,12 @@ display: block;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  transition: opacity 0.3s ease;
 }
 
 .overlay.show {
   display: block;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    transform: translateX(-100%);
-  }
-
-  .sidebar.show {
-    transform: translateX(0);
-  }
-
-  .main-content {
-    margin-left: 0;
-  }
+  opacity: 1;
 }
 
 .tutorials .card {
@@ -1978,14 +2011,111 @@ display: block;
   border-radius: 8px;
 }
 
-.page-header {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  margin-bottom: 2rem;
+.tutorials {
+  background-color: #d8dcff50;
+  margin-top: 15px;
 }
 
-.pdf-bg {
-  background-color: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  ;
+/*========================history user===================*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;700&display=swap');
+
+.logo-glass {
+  width: 200px;
+}
+
+.pills {
+  background-color: #b6bdff33;
+  color: #000;
+  min-height: 100vh;
+}
+
+.pills .container-fluid  .glass-card {
+  background: rgba(97, 87, 236, 0.116);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+
+.locations-section .glass-card .map-card {
+  height: 300px;             
+  background: #f8f9fa;
+  overflow: hidden;          
+  border-radius: .5rem;      
+}
+
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;           
+  
+}
+
+
+.nav-pills .nav-link {
+  background-color: rgba(7, 21, 212, 0.616);
+  color: white;
+  border-radius: 15px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.history-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #28a745;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: scale(1.05);
+}
+
+.work-section {
+  background: rgba(248, 249, 250, 0.95);
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.parts-breakdown {
+  background: rgba(248, 249, 250, 0.95);
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.trouble-code-section {
+  display: none;
+  background: rgba(35, 0, 192, 0.295);
+  border-radius: 8px;
+}
+
+.location-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #007bff;
+}
+
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
 }
 
 /* ===================  professional-list ================ */
