@@ -278,7 +278,10 @@ html {
   width: 100%;
   height: 100%;
   top: 0;
-  background: linear-gradient(to right, rgba(24, 24, 25, 0.411), rgba(255, 255, 255, 0.044));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    no-repeat bottom center;
+  background-size: cover;
+
   position: absolute;
 
 }
@@ -336,43 +339,11 @@ html {
 }
 
 /* ===== Popular-Service ===== */
-.popular-service {
-  background-color: var(--background);
-}
-
-.popular-service .popular-title {
-  width: 100%;
-}
 
 .style-line {
   width: 100px;
   padding: 2.5px;
   border-radius: 10px;
-}
-
-.popular-service .card {
-  border: none;
-  box-shadow: rgba(163, 215, 255, 0.3) 0px 1px 2px 0px, rgba(163, 215, 255, 0.3) 0px 2px 6px 2px;
-}
-
-.popular-service .service-rating {
-  font-size: 18px;
-  color: yellow;
-}
-
-.popular-service .service-price {
-  color: var(--primary);
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.popular-service .card-height {
-  height: 400px;
-}
-
-.popular-service .card-height img {
-  height: 230px;
-  object-fit: cover;
 }
 
 /* ===== Popular-Fixer ===== */
@@ -505,6 +476,14 @@ html {
   color: var(--primary);
   transform: translateX(5px);
   text-decoration: none;
+}
+
+.footer .contact p {
+  font-size: 12px;
+}
+
+.footer .contact .w-25 {
+  width: 15% !important;
 }
 
 /* ===== Testimonials ===== */
@@ -656,6 +635,10 @@ html {
 }
 
 /* ================ Contact US ================ */
+.contact-us {
+  background-color: #f0f2fa;
+}
+
 .contact-banner {
   height: 698px;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat top center;
@@ -674,6 +657,15 @@ html {
   width: 50px;
   padding: 2px;
   background-color: var(--primary);
+}
+
+.contact-imfo .contact {
+  height: 200px;
+  border-right: 3px solid #2563eb;
+}
+
+.google-map {
+  background-color: #f0f2fa;
 }
 
 .google-map .style {
@@ -1527,6 +1519,7 @@ html {
 .banner-service .title button:hover i {
   transform: translateX(8px);
 
+
 }
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
@@ -1540,6 +1533,20 @@ html {
 
 .service-area .tab-content .card .card-img img {
   transition: 0.3s;
+
+}
+
+.service-area .tab-content .card .card-img:hover img {
+  transform: scale(1.1);
+
+}
+
+/*================================ service detail modal ========================*/
+.service-area .modal-service .modal-body .card .card-img:hover img {
+  transform: scale(1);
+}
+
+.service-area .modal-service .modal-body .card .note {
 
 
   background-color: #ffc9c986;
@@ -1614,6 +1621,7 @@ html {
   background-size: cover;
   min-height: 100vh;
 }
+
 
 .logo-form {
   width: 150px;
@@ -1787,6 +1795,7 @@ html {
 }
 
 .header-sidebar .sidebar a {
+
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
   display: flex;
@@ -1862,7 +1871,6 @@ html {
   color: #333;
   font-size: 1.8rem;
 }
-
 
 
 .container-fluid,
