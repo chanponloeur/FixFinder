@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <header>
         <!-- navbar-top -->
         <nav class="navbar-top py-2">
@@ -28,7 +27,7 @@
                             <div class="me-3">
                                 <i class="ri-phone-line fs-5 "></i>
                                 <span class=" fs-6">ទំនាក់ទំនង:</span>
-                                <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567 890</a>
+                                <a href="#" class="text-decoration-none">+1 (234) 567 890</a>
                             </div>
                             <div>
                                 <i class="ri-mail-line fs-5 "></i>
@@ -44,7 +43,7 @@
         <nav class="navbar navbar-center navbar-expand-lg">
             <div class="container-lg justify-content-between align-items-center ">
                 <div>
-                    <a class="navbar-brand fw-bold" href="#">
+                    <a class="navbar-brand fw-bold" href="home.html">
                         <img src="../img/Landing-page/logo-2.png" alt="">
                     </a>
                 </div>
@@ -61,8 +60,7 @@
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne"></i>
                     <div class="dropdown">
-                        <a href="#" class="nav-link position-relative" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a href="notification.html" class="nav-link position-relative">
                             <i class="ri-notification-2-line fs-4 me-3"></i>
                             <span
                                 class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
@@ -73,29 +71,31 @@
                             <div class="d-flex px-4 pt-2 align-items-center justify-content-between">
                                 <div class="d-flex align-items-center">
                                     <i class="ri-notification-2-line fs-5 me-3"></i>
-                                    <h5 class="fs-5 m-0">ការជូនដំណឹង</h5>
+                                    <h5 class="fs-5 m-0 ">ការជូនដំណឹង</h5>
                                 </div>
                             </div>
                             <hr class="mb-0">
-                            <li><a class="dropdown-item p-2" href="#">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
                                     <span class="fw-bold text-primary fs-6 pb-3">ថ្មីៗនេះ</span>
                                     <div>
-                                        <h5 class="fw-bold">ការកក់បានទទួល:</h5>
-                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួលដោយជោគជ័យ។</p>
+                                        <span class="fw-bold">ការកក់បានទទួល:</span>
+                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួល...</p>
                                     </div>
                                 </a></li>
-                            <li><a class="dropdown-item p-2" href="#">
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
                                     <span class="fw-bold text-primary fs-6">ថ្ងៃនេះ</span>
                                     <div>
-                                        <h5 class="fw-bold ">ការជួសជុលបានបញ្ចប់</h5>
-                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់។ សូមវាយតម្លៃសេវា។</p>
+                                        <span class="fw-bold ">ការជួសជុលបានបញ្ចប់</span>
+                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់...</p>
                                     </div>
                                 </a></li>
-                            <li><a class="dropdown-item p-2" href="#">
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
                                     <span class="fw-bold text-primary fs-6">ម្សិលមិញ</span>
                                     <div>
-                                        <h5 class="fw-bold">ការផ្តល់ជូនពិសេស:</h5>
-                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួសជុលគ្រឿងអគ្គិសនី។</p>
+                                        <span class="fw-bold">ការផ្តល់ជូនពិសេស:</span>
+                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួស...</p>
                                     </div>
                                 </a></li>
                             <hr class="m-0">
@@ -110,7 +110,7 @@
                         <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <div class="profile-image-container me-3">
-                                <img src="../img/Landing-page/user-profile.png" class="profile-image" alt="">
+                                <img src="../img/Landing-page/user-profile.png" class="img-fluid profile-image" alt="">
                             </div>
                             <span
                                 class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -118,8 +118,10 @@
                             </span>
                         </a>
                         <ul class="dropdown-menu dropdown-profile">
-                            <li><a class="dropdown-item " href="#"><i class="ri-user-3-line"></i> គណនី</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="ri-arrow-right-line"></i> ចាកចេញ</a></li>
+                            <li><a class="dropdown-item " href="user-profile.html"><i class="ri-user-3-line"></i>
+                                    គណនី</a></li>
+                            <li><a class="dropdown-item" href="../../index.html"><i class="ri-arrow-right-line"></i>
+                                    ចាកចេញ</a></li>
                         </ul>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -151,22 +153,23 @@
                         ទំព័រដើម</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="#"><i class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                    <a class="nav-link " href="professional_list.html"><i class="ri-file-list-3-line"></i>
+                        បញ្ជីអ្នកជំនាញ </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                    <a class="nav-link" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                    <a class="nav-link" href="history_bolt.html"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="ri-question-line"></i> ជំនួយ</a>
+                    <a class="nav-link" href="help.html"><i class="ri-question-line"></i> ជំនួយ</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="#"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                    <a class="nav-link" href="contact_us.html"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
                 </li>
             </ul>
         </div>
@@ -178,24 +181,26 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                             <li class="nav-item ">
-                                <a class="nav-link active hvr-underline-from-center" aria-current="page" href="#"><i
-                                        class="ri-home-gear-line"></i>
+                                <a class="nav-link active hvr-underline-from-center" aria-current="page"
+                                    href="home.html"><i class="ri-home-gear-line"></i>
                                     ទំព័រដើម</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i
+                                <a class="nav-link hvr-underline-from-center" href="professional_list.html"><i
                                         class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-tools-fill"></i>
+                                <a class="nav-link hvr-underline-from-center" href="service.html"><i
+                                        class="ri-tools-fill"></i>
                                     សេវាកម្ម</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i
+                                <a class="nav-link hvr-underline-from-center" href="history_bolt.html"><i
                                         class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-question-line"></i>
+                                <a class="nav-link hvr-underline-from-center" href="help.html"><i
+                                        class="ri-question-line"></i>
                                     ជំនួយ</a>
                             </li>
                             <li class="nav-item">
@@ -203,7 +208,8 @@
                                     អំពីពួកយើង</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="#"><i class="ri-phone-line"></i>
+                                <a class="nav-link hvr-underline-from-center" href="contact_us.html"><i
+                                        class="ri-phone-line"></i>
                                     ទំនាក់ទំនង</a>
                             </li>
                         </ul>
@@ -295,12 +301,13 @@
                             <h3 class="text-white">សេវាកម្ម</h3>
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
-                                <li><a href="#" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
-                                <li><a href="#" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
-                                <li><a href="#" class="text-decoration-none">រថយន្ត</a></li>
-                                <li><a href="#" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a></li>
-                                <li><a href="#" class="text-decoration-none">សំណង់</a></li>
-                                <li><a href="#" class="text-decoration-none">ទូទៅ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
+                                </li>
+                                <li><a href="service.html" class="text-decoration-none">សំណង់</a></li>
+                                <li><a href="service.html" class="text-decoration-none">ទូទៅ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -310,22 +317,50 @@
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
                                 <li><a href="#" class="text-decoration-none">អំពីយើង</a></li>
-                                <li><a href="#" class="text-decoration-none">ក្រុមការងារ</a></li>
-                                <li><a href="#" class="text-decoration-none">ការងារ</a></li>
-                                <li><a href="#" class="text-decoration-none">ព័ត៍មាន</a></li>
-                                <li><a href="#" class="text-decoration-none">គោលការណ៍ភាពឯកជន</a></li>
+                                <li><a href="history_bolt.html" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="help.html" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <div>
+                        <div class="contact">
                             <h3 class="text-white">ទំនាក់ទំនង</h3>
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
-                                <li><a href="#" class="text-decoration-none">ជំនួយ</a></li>
-                                <li><a href="#" class="text-decoration-none">ទំនាក់ទំនង</a></li>
-                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
-                                <li><a href="#" class="text-decoration-none">កន្លែងរបស់យើង</a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-25">
+                                                <i class="ri-map-pin-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អាស័យដ្ធាន</h6>
+                                                <p class="m-0">Lorem ipsum dolor sit amet,</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-phone-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">ទំនាក់ទំនង</h6>
+                                                <p class="m-0">+1(234),567,890</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-earth-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អុីម៉ែល</h6>
+                                                <p class="m-0">FixFinder@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
