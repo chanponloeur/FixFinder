@@ -1598,7 +1598,7 @@ html {
 }
 
 /*=================== background Login page, Register page, Forget password page ===================*/
-}
+
 
 .service-area .tab-content .card .card-img:hover img {
   transform: scale(1.1);
@@ -1609,8 +1609,9 @@ html {
 .service-area .modal-service .modal-body .card .card-img:hover img {
   transform: scale(1);
 }
-
+/* 
 .service-area .modal-service .modal-body .card .note {
+} */
 .login {
 
 
