@@ -278,7 +278,10 @@ html {
   width: 100%;
   height: 100%;
   top: 0;
-  background: linear-gradient(to right, rgba(24, 24, 25, 0.411), rgba(255, 255, 255, 0.044));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    no-repeat bottom center;
+  background-size: cover;
+
   position: absolute;
 
 }
@@ -336,43 +339,11 @@ html {
 }
 
 /* ===== Popular-Service ===== */
-.popular-service {
-  background-color: var(--background);
-}
-
-.popular-service .popular-title {
-  width: 100%;
-}
 
 .style-line {
   width: 100px;
   padding: 2.5px;
   border-radius: 10px;
-}
-
-.popular-service .card {
-  border: none;
-  box-shadow: rgba(163, 215, 255, 0.3) 0px 1px 2px 0px, rgba(163, 215, 255, 0.3) 0px 2px 6px 2px;
-}
-
-.popular-service .service-rating {
-  font-size: 18px;
-  color: yellow;
-}
-
-.popular-service .service-price {
-  color: var(--primary);
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.popular-service .card-height {
-  height: 400px;
-}
-
-.popular-service .card-height img {
-  height: 230px;
-  object-fit: cover;
 }
 
 /* ===== Popular-Fixer ===== */
@@ -445,10 +416,13 @@ html {
   background-color: var(--background);
 }
 
+.help-content .accordion-item,
 .question .accordion-item {
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
 }
 
+.help-content .accordion-item i,
 .question .accordion-item i {
   font-size: 24px;
   color: var(--primary)
@@ -502,6 +476,14 @@ html {
   color: var(--primary);
   transform: translateX(5px);
   text-decoration: none;
+}
+
+.footer .contact p {
+  font-size: 12px;
+}
+
+.footer .contact .w-25 {
+  width: 15% !important;
 }
 
 /* ===== Testimonials ===== */
@@ -644,6 +626,7 @@ html {
 
 .navbar-center .dropdown-notification .dropdown-item p {
   display: -webkit-box;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -652,6 +635,10 @@ html {
 }
 
 /* ================ Contact US ================ */
+.contact-us {
+  background-color: #f0f2fa;
+}
+
 .contact-banner {
   height: 698px;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat top center;
@@ -670,6 +657,15 @@ html {
   width: 50px;
   padding: 2px;
   background-color: var(--primary);
+}
+
+.contact-imfo .contact {
+  height: 200px;
+  border-right: 3px solid #2563eb;
+}
+
+.google-map {
+  background-color: #f0f2fa;
 }
 
 .google-map .style {
@@ -1428,7 +1424,13 @@ html {
     object-fit: cover;
   }
 }
+.btn-tap .nav .nav-link.active{
 
+  border-radius: 0;
+  border-bottom:2px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
 @media (max-width:767px) {
   .user-profile-top .profile-img img {
     width: 350px;
@@ -1465,6 +1467,9 @@ html {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
+.user-setting .form-switch:hover .form-check-input{
+  cursor: pointer;
+}
 
 /* ====================== modal edit profile ====================== */
 .user-profile-top .profile-info .modal-body .btn-edit-profile {
@@ -1473,6 +1478,12 @@ html {
 }
 
 /* ---------------------------- service page ----------------------------- */
+/*============================ navbar active on header  =======================*/
+.header-area .navbar-bottom .nav-item .nav-link.active {
+   border-bottom: 4px solid white;
+   padding-block: 6px;
+   
+}
 /* ======================== service banner =============================== */
 .banner-service .banner-img {
 
@@ -1492,6 +1503,7 @@ html {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .banner-service .title h2 {
@@ -1506,8 +1518,9 @@ html {
 
 .banner-service .title button:hover i {
   transform: translateX(8px);
-}
 
+
+}
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
@@ -1534,6 +1547,7 @@ html {
 }
 
 .service-area .modal-service .modal-body .card .note {
+
 
   background-color: #ffc9c986;
 
@@ -1584,6 +1598,17 @@ html {
 }
 
 /*=================== background Login page, Register page, Forget password page ===================*/
+
+.service-area .tab-content .card .card-img:hover img {
+  transform: scale(1.1);
+
+}
+
+/*================================ service detail modal ========================*/
+.service-area .modal-service .modal-body .card .card-img:hover img {
+  transform: scale(1);
+}
+
 .login {
 
 
@@ -1594,6 +1619,7 @@ html {
   background-size: cover;
   min-height: 100vh;
 }
+
 
 .logo-form {
   width: 150px;
@@ -1607,6 +1633,7 @@ html {
   overflow: hidden;
   box-shadow: 0 0 25px rgba(105, 105, 105, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.041);
+
 }
 
 .login .form-side .form-control {
@@ -1738,7 +1765,8 @@ html {
 .header-sidebar .sidebar {
   width: 260px;
   height: 100vh;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%);
+
   position: fixed;
   left: 0;
   top: 0;
@@ -1761,9 +1789,11 @@ html {
   font-weight: 600;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 8px;
+
 }
 
 .header-sidebar .sidebar a {
+
   color: rgba(0, 0, 0, 0.85);
   text-decoration: none;
   display: flex;
@@ -1780,6 +1810,7 @@ html {
   background: rgba(151, 149, 149, 0.637);
   color: #081bc7;
   transform: translateX(6px);
+
 }
 
 /* Main Content */
@@ -1840,7 +1871,6 @@ html {
 }
 
 
-
 .container-fluid,
 .work-history {
   max-width: 1200px;
@@ -1851,6 +1881,7 @@ html {
 
 .profile-link {
   text-decoration: none;
+
 }
 
 
@@ -1950,6 +1981,7 @@ html {
 .page-header .container-fluid .job-item.fade-in {
   opacity: 1;
   transform: translateY(0);
+
 }
 
 .overlay {
@@ -2088,6 +2120,7 @@ html {
 .location-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
 }
 
 /* ===================  professional-list ================ */
@@ -2200,8 +2233,8 @@ html {
   border-radius: 5px;
 }
 
-.progress {
-  position: absolute;
+.progress-range {
+  position: static;
   height: 5px;
   background: blue;
   border-radius: 5px;
@@ -2271,13 +2304,52 @@ html {
 /* ===================  help =================== */
 
 .banner-help {
+  height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/help/1.405Z.png) no-repeat top center;
+    url(../img/help/banner.png) no-repeat bottom center;
   background-size: cover;
 }
 
 .banner-help h1 {
-  /* font-size: 2.5rem; */
   font-weight: 800;
   color: white;
+}
+
+.banner-help .banner-help-content {
+  height: 60vh;
+}
+
+.help-content .help-question {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.help-content .active-service{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.help-content .condition .number,
+.help-content .active-service .number{
+  background-color: rgba(11, 94, 215,0.1);
+  color: #0b5ed7;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.help-content .help-contact,
+.help-content .condition{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px;
 }
