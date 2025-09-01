@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crextio - Login</title>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../asstes/css/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../asstes/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="login d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row card-container">
+
+                    <!-- Form Side -->
+                    <div class="col-12 form-side">
+                        <div>
+                            <div class=" logo-form text-center my-3">
+                                <img src="../asstes/img/image.login.register/logo-2 (1).png" alt="Logo" class="img-fluid">
+                            </div>
+                            <h2 class="fw-bold mb-3">ចូលទៅគណនីរបស់អ្នក</h2>
+                            <p class="text-muted mb-4">បញ្ចូលអ៊ីមែល និងពាក្យសម្ងាត់របស់អ្នក។</p>
+                        </div>
+
+                        <!-- Login Form -->
+                        <form class="needs-validation" action="home.html" method="get" novalidate>
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com" autocomplete="off" required>
+                                <label for="floatingInput">Email address</label>
+                                <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ។</div>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password" autocomplete="new-password" required>
+                                <label for="floatingPassword">Password</label>
+                                <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់។</div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn submit-btn w-100 py-2">ចូលករណី</button>
+
+                            <!-- Social Buttons -->
+                            <div class="d-flex gap-2 mt-3">
+                                <!-- Apple -->
+                                <a href="https://appleid.apple.com/auth/authorize"
+                                    class="btn btn-dark w-50 social-btn">
+                                    <i class="fab fa-apple me-2 text-white"></i>Apple
+                                </a>
+
+                                <!-- Google -->
+                                <a href="https://accounts.google.com/o/oauth2/v2/auth"
+                                    class="btn btn-danger w-50 social-btn">
+                                    <i class="fab fa-google me-2 text-white"></i>Google
+                                </a>
+                            </div>
+
+                            <!-- Links -->
+                            <div class="d-flex justify-content-between mt-4 small text-muted flex-wrap">
+                                <span>មិនមានគណនីមែនទេ? <a href="Create.html">ចុះឈ្មោះ</a></span>
+                                <a href="Forgot.html">ភ្លេចពាក្យសម្ងាត់?</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Validation Script -->
+    <script>
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+
+</html>

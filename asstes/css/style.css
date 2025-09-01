@@ -1424,13 +1424,16 @@ html {
     object-fit: cover;
   }
 }
-.btn-tap .nav .nav-link.active{
+
+
+.btn-tap .nav .nav-link.active {
 
   border-radius: 0;
-  border-bottom:2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
   background-color: transparent;
   color: var(--primary);
 }
+
 @media (max-width:767px) {
   .user-profile-top .profile-img img {
     width: 350px;
@@ -1467,7 +1470,8 @@ html {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 }
-.user-setting .form-switch:hover .form-check-input{
+
+.user-setting .form-switch:hover .form-check-input {
   cursor: pointer;
 }
 
@@ -1480,10 +1484,11 @@ html {
 /* ---------------------------- service page ----------------------------- */
 /*============================ navbar active on header  =======================*/
 .header-area .navbar-bottom .nav-item .nav-link.active {
-   border-bottom: 4px solid white;
-   padding-block: 6px;
-   
+  border-bottom: 4px solid white;
+  padding-block: 6px;
+
 }
+
 /* ======================== service banner =============================== */
 .banner-service .banner-img {
 
@@ -1521,6 +1526,7 @@ html {
 
 
 }
+
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
@@ -1609,6 +1615,9 @@ html {
   transform: scale(1);
 }
 
+/* 
+.service-area .modal-service .modal-body .card .note {
+} */
 .login {
 
 
@@ -2024,103 +2033,84 @@ html {
 
 /*========================history user===================*/
 
-.logo-glass {
-  width: 200px;
+
+.main-content .Dashboard .stats-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 22px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pills {
-  background-color: #b6bdff33;
-  color: #000;
-  min-height: 100vh;
+.main-content .Dashboardn .stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(31, 38, 135, 0.5);
 }
 
-.pills .container-fluid  .glass-card {
-  background: rgba(97, 87, 236, 0.116);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.History-Section .glass-card {
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-
-.locations-section .glass-card .map-card {
-  height: 300px;             
-  background: #f8f9fa;
-  overflow: hidden;          
-  border-radius: .5rem;      
+.Locations Section .location-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-.map-card iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;           
-  
+.Locations Section .location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
-
 
 .nav-pills .nav-link {
-  background-color: rgba(7, 21, 212, 0.616);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  border-radius: 15px;
   margin: 0 5px;
+  border-radius: 50px;
+  padding: 12px 25px;
   transition: all 0.3s ease;
 }
 
-.nav-pills .nav-link.active {
-  background-color: #0056b3;
+.nav-pills .nav-link:hover {
+  background: rgba(8, 2, 43, 0.836);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.history-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 4px solid #28a745;
+.nav-pills .nav-link{
+  background-color: rgb(67, 46, 255);
 }
 
-.history-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.nav-pills .nav-link.active {
+  background: rgba(4, 0, 255, 0.9);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
-.stats-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  transition: transform 0.3s ease;
+.tab-content {
+  min-height: 500px;
 }
 
-.stats-card:hover {
-  transform: scale(1.05);
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
 }
 
-.work-section {
-  background: rgba(248, 249, 250, 0.95);
-  border-radius: 10px;
-  max-height: 200px;
-  overflow-y: auto;
-}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 
-.parts-breakdown {
-  background: rgba(248, 249, 250, 0.95);
-  border-radius: 10px;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.trouble-code-section {
-  display: none;
-  background: rgba(35, 0, 192, 0.295);
-  border-radius: 8px;
-}
-
-.location-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 4px solid #007bff;
-}
-
-.location-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===================  professional-list ================ */
@@ -2328,15 +2318,15 @@ html {
   cursor: pointer;
 }
 
-.help-content .active-service{
+.help-content .active-service {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   padding: 20px;
 }
 
 .help-content .condition .number,
-.help-content .active-service .number{
-  background-color: rgba(11, 94, 215,0.1);
+.help-content .active-service .number {
+  background-color: rgba(11, 94, 215, 0.1);
   color: #0b5ed7;
   width: 30px;
   height: 30px;
@@ -2348,7 +2338,7 @@ html {
 }
 
 .help-content .help-contact,
-.help-content .condition{
+.help-content .condition {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   padding: 20px;
