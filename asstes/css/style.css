@@ -1483,7 +1483,7 @@ html {
 
 /* ---------------------------- service page ----------------------------- */
 /*============================ navbar active on header  =======================*/
-.header-area .navbar-bottom .nav-item .nav-link.active {
+header .nav-item .nav-link.active {
   border-bottom: 4px solid white;
   padding-block: 6px;
 
@@ -1507,7 +1507,7 @@ html {
 .banner-service .title {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -1566,6 +1566,29 @@ html {
   color: #ff6467;
   font-size: 14px;
 
+
+}
+/*=============================== about us page  =============================*/
+
+.about-us-banner .banner-img img{
+  width: 100%;
+ 
+  
+}
+.our-mission .carousel .controll-carousel{
+  display: none;
+  transition: 0.3s;
+}
+.our-mission .carousel:hover .controll-carousel{
+  display: block;
+}
+.about-us-banner .short-quote{
+    line-height: 42px;
+}
+header .navbar-bottom .nav-item .nav-link.active {
+   border-bottom: 4px solid white;
+
+   
 
 }
 
