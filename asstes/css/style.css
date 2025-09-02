@@ -2066,7 +2066,7 @@ html {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.nav-pills .nav-link {
+.Navigation-pills .nav-link {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
@@ -2076,17 +2076,17 @@ html {
   transition: all 0.3s ease;
 }
 
-.nav-pills .nav-link:hover {
+.Navigation-pills .nav-link:hover {
   background: rgba(8, 2, 43, 0.836);
   color: white;
   transform: translateY(-2px);
 }
 
-.nav-pills .nav-link{
+.Navigation-pills .nav-link{
   background-color: rgb(67, 46, 255);
 }
 
-.nav-pills .nav-link.active {
+.Navigation-pills .nav-link.active {
   background: rgba(4, 0, 255, 0.9);
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
