@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="../icon/font_awsome_6/fontawesome-6.2.0/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-area">
+            <!-- navbar-top -->
+            <nav class="navbar-top py-2">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-8 d-none d-lg-block">
+                            <div class="d-flex align-items-center ps-4">
+                                <div class="me-3">
+                                    <i class="ri-phone-line fs-5 "></i>
+                                    <span class=" fs-6">ទំនាក់ទំនង:</span>
+                                    <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567 890</a>
+                                </div>
+                                <div>
+                                    <i class="ri-mail-line fs-5 "></i>
+                                    <span class=" fs-6">FixFinder@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- navbar-center -->
+            <nav class="navbar navbar-center navbar-expand-lg">
+                <div class="container-lg justify-content-between align-items-center ">
+                    <div>
+                        <a class="navbar-brand fw-bold" href="#">
+                            <img src="../img/Landing-page/logo-2.png" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <form class="d-flex search-form d-none d-lg-block" role="search">
+                            <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                    class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne"></i>
+                        <a href="asstes/page/login.html" class="btn btn-outline-primary me-3">ចូលប្រើប្រាស់</a>
+                        <a href="asstes/page/Create.html" class="btn btn-primary me-3">ចុះឈ្មោះ</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="bg-body-tertiary m-auto">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                    <div class="py-3 d-flex justify-content-center d-lg-none d-block">
+                        <form class="d-flex search-form" role="search">
+                            <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                    class="ri-search-line"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse px-3 d-none" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="asstes/page/Create.html"><i
+                                class="ri-home-gear-line"></i>
+                            ទំព័រដើម</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="asstes/page/Create.html"><i class="ri-file-list-3-line"></i>
+                            បញ្ជីអ្នកជំនាញ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="asstes/page/Create.html"><i class="ri-chat-history-line"></i>
+                            ប្រវត្តិការងារ</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="asstes/page/#"><i class="ri-question-line"></i> ជំនួយ</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="asstes/page/#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="asstes/page/contact_us.html"><i class="ri-phone-line"></i>
+                            ទំនាក់ទំនង</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- navbar-bottom -->
+            <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block d-none" data-bs-theme="dark">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link hvr-underline-from-center" aria-current="page" href="#"><i
+                                            class="ri-home-gear-line"></i>
+                                        ទំព័រដើម</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link hvr-underline-from-center" href="asstes/page/Create.html"><i
+                                            class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link active hvr-underline-from-bottom d-block" href="#"><i
+                                            class="ri-tools-fill"></i>
+                                        សេវាកម្ម</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hvr-underline-from-center" href="asstes/page/Create.html"><i
+                                            class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hvr-underline-from-center" href="asstes/page/#"><i
+                                            class="ri-question-line"></i>
+                                        ជំនួយ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hvr-underline-from-center" href="asstes/page/#"><i
+                                            class="ri-team-line"></i>
+                                        អំពីពួកយើង</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hvr-underline-from-center" href="asstes/page/contact_us.html"><i
+                                            class="ri-phone-line"></i>
+                                        ទំនាក់ទំនង</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+    </header>
+    <main>
+        <section class="banner-service vh-100">
+            <div class="banner-img position-absolute">
+                <img src="../img/service-img/service-img/repairman_ride_car.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="title text-white align-content-center position-absolute w-100">
+                <div class="container">
+                    <h5 class="fw-bold" data-aos="zoom-out-left">អស់បញ្ហារាល់ពេលមានបញ្ហាយាន្តយន្តនៅតាមដងវិថី</h5>
+                    <h2 data-aos="fade-right">ជួបជាមួយ គេហទំព័រ <span class="typeJsText text-primary"
+                            data-typetext="Fix Finder"></span></h2>
+                    <h2 data-aos="fade-left">សេវាកម្មរហ័ស និង​ គុណភាពក្នុងការជួសជុល</h2>
+                    <a type="button" href="#service-area" class="btn btn-outline-primary"
+                        data-aos="fade-right">មើលបន្ថែម <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="service-popular py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center py-3">សេវាកម្មពេញនិយម</h2>
+                <div class="style-line bg-primary m-auto mb-3 "></div>
+                <div id="carouselExampleAutoplaying" class="carousel slide  px-1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row bg-light rounded-2 m-5">
+                                <div class="col-12 col-xl-6">
+                                    <div class="">
+                                        <img src="../img/service-img/service-img/machine_cut_rice.jpg"
+                                            class="d-block w-100 rounded-2" alt="...">
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-xl-6 pe-5">
+                                    <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
+
+                                    <div class="d-flex justify-content-between text-primary">
+                                        <h3 class="text-primary fw-bold">ជួសជុលម៉ាសុីនច្រូត</h3>
+                                        <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                        </p>
+                                    </div>
+                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 ">
+                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+
+
+                                    <div
+                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                        <div>
+                                            <div><i
+                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                        </div>
+                                        <div class="service-rating text-warning">★★★★★ <span
+                                                class="text-black">4.9</span></div>
+                                    </div>
+                                    <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
+                                        data-aos="fade-right">មើលបន្ថែម <span><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row bg-light rounded-2 m-5">
+                                <div class="col-12 col-xl-6">
+                                    <div class="">
+                                        <img src="../img/service-img/service-img/home_repair.jpg"
+                                            class="d-block w-100 rounded-2" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 pe-5">
+                                    <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
+
+                                    <div class="d-flex justify-content-between text-primary">
+                                        <h3 class="text-primary fw-bold">ជួសជុលផ្ទះ</h3>
+                                        <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                        </p>
+                                    </div>
+                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 ">
+                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+                                    <div
+                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                        <div>
+                                            <div><i
+                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                        </div>
+                                        <div class="service-rating text-warning">★★★★★ <span
+                                                class="text-black">4.9</span></div>
+                                    </div>
+                                    <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
+                                        data-aos="fade-right">មើលបន្ថែម <span><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row bg-light rounded-2 m-5">
+                                <div class="col-12 col-xl-6">
+                                    <div class="">
+                                        <img src="../img/service-img/service-img/paint_house.jpg"
+                                            class="d-block w-100 rounded-2" alt="...">
+                                    </div>
+
+                                </div>
+                                <div class="col-12 col-xl-6 pe-5">
+                                    <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
+
+                                    <div class="d-flex justify-content-between text-primary">
+                                        <h3 class="text-primary fw-bold">លាបពណ៍ផ្ទះ</h3>
+                                        <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                        </p>
+                                    </div>
+                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 ">
+                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+
+
+                                    <div
+                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                        <div>
+                                            <div><i
+                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                        </div>
+                                        <div class="service-rating text-warning">★★★★★ <span
+                                                class="text-black">4.9</span></div>
+                                    </div>
+                                    <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
+                                        data-aos="fade-right">មើលបន្ថែម <span><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row bg-light rounded-2 m-5">
+                                <div class="col-12 col-xl-6">
+                                    <div class="">
+                                        <img src="../img/service-img/service-img/car_repair_on_road.jpg"
+                                            class="d-block w-100 rounded-2" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6 pe-5">
+                                    <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
+
+                                    <div class="d-flex justify-content-between text-primary">
+                                        <h3 class="text-primary fw-bold">ជួសជុលរថយន្តធន់ធ្ងន់</h3>
+                                        <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                        </p>
+                                    </div>
+                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 ">
+                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+                                    <div
+                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                        <div>
+                                            <div><i
+                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                        </div>
+                                        <div class="service-rating text-warning">★★★★★ <span
+                                                class="text-black">4.9</span></div>
+                                    </div>
+                                    <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
+                                        data-aos="fade-right">មើលបន្ថែម <span><i
+                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <i class="fs-1 text-black fa-regular fa-circle-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <i class="fs-1 text-black fa-regular fa-circle-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section class="service-area py-5 bg-light">
+            <div class="container" id="service-area">
+                <h2 class="text-center fw-bold pb-3">សេវាកម្មជួសជុល</h2>
+                <div class="style-line bg-primary m-auto mb-3 "></div>
+                <div class=" border-bottom border-primary d-flex  mb-4 justify-content-center">
+                    <ul class="nav nav-pills my-0 align-items-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link show active " data-bs-toggle="pill" data-bs-target="#all-repair"
+                                type="button" role="tab" aria-controls="pills-all" aria-selected="true">ទាំងអស់</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#home-repair" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">លំនៅដ្ឋាន</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#vehicle-repair" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">យាន្តយន្ត</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#eletronic-repair" type="button" role="tab"
+                                aria-controls="pills-contact" aria-selected="false">គ្រឿងអេឡិចត្រូនិច</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tab-content" id="pills-tabContent">
+                    <!------------------------------------ all repair  ---------------------->
+                    <div class="tab-pane fade show active" id="all-repair" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row g-3">
+                            <!-- home reapir tap  -->
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+
+                                <div class="card card-height">
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../img/service-img/service-img/prepare_water_system.jpg"
+                                                class="img-fluid rounded-2" alt="">
+                                        </div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">ជួសជុលប្រព័ន្ធទឹក</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $50-150
+                                                </p>
+                                            </div>
+
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ប្រព័ន្ធទឹកពិតជាសំខាន់ណាស់សម្រាប់គេហដ្ឋានរបស់លោកអ្នក។​​
+                                                វាអាចបណ្ដាលអោយមានបញ្ហាផ្សេងៗ</p>
+                                            <div class="d-flex justify-content-between my-3 d-none">
+
+                                                <div class="phone-number  align-content-center"><span><i
+                                                            class="fw-bold fa-light fa-phone pe-1 "></i></span>09876542
+                                                </div>
+                                                <div class="py-2 link-underline-primary"><span><i
+                                                            class="text-primary fa-regular fa-map-location-dot"></i></span><a
+                                                        href="#" class="link-offset-3"> ស្ទឹងមានជ័យ​ ភ្នំពេញ</a> </div>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★★ <span
+                                                        class="text-black">4.9</span></div>
+                                            </div>
+                                            <div>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <!------------------------------ modal service details  ---------------------->
+                            <div class="modal modal-service fade" id="service-detail" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-4 text-primary" id="exampleModalLabel">
+                                                លម្អិតអំពីសេវាកម្ម</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card card-height border-0">
+                                                <div class="card-img">
+                                                    <img src="../img/service-img/service-img/prepare_water_system.jpg"
+                                                        class="img-fluid rounded-2" alt="">
+                                                </div>
+                                                <div class="card-body pt-3 px-3">
+                                                    <div
+                                                        class="title d-flex justify-content-between align-items-center text-primary">
+                                                        <span class="fs-3 fw-bold">ជួសជុលប្រព័ន្ធទឹក</span>
+                                                        <span
+                                                            class="fw-bold bg-secondary-subtle rounded-4 text-success px-2">
+                                                            $50-150
+                                                        </span>
+
+                                                    </div>
+
+                                                    <p class="text-start bg-light border-primary ms-2 my-2 mt-4 p-3">
+                                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច
+                                                        ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+                                                    <p class="text-danger text-start fs-4 mb-0">ចំណាំ *</p>
+                                                    <div class="note text-danger py-2 px-4 rounded-2">
+                                                        <p>ថ្លៃសេវាកម្មដល់កន្លែង (១គីឡូដី ៤០០រៀល)</p>
+                                                        <p>ដំណើរការ 24ម៉ោងក្នុងមួយសប្ដាហ៍</p>
+                                                        <p>មិនមានការបង់ប្រាក់មុននោះទេ ជួសជុលរួចទើបបង់ប្រាក់</p>
+                                                        <p>ជាងដែលមាននៅទីនេះទទួលបានការចុះឈ្មោះជាមួយក្រុមហ៊ុនត្រឹមត្រូវ
+                                                        </p>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-between py-3">
+
+                                                        <div class="phone-number  align-content-center">
+                                                            <button type="button" class="btn btn-transparent border-0 text-success fw-bold
+                                                                data-bs-toggle=" tooltip" data-bs-placement="top"
+                                                                data-bs-title="Tooltip on top">
+                                                                <span><i class="fw-bold fa-light fa-phone pe-1 "></i>
+                                                                    09876543</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="py-2 link-underline-primary"><span><i
+                                                                    class="text-primary fa-regular fa-map-location-dot"></i></span><a
+                                                                href="#" class="link-offset-3"> ស្ទឹងមានជ័យ​ ភ្នំពេញ</a>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center">
+                                                        <a href="../page/profile_professional.html"
+                                                            class="text-decoration-none d-block">
+                                                            <div>
+                                                                <div><i
+                                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​
+                                                                        ពន្លឺ</span></div>
+                                                            </div>
+                                                        </a>
+                                                        <div class="service-rating text-warning">★★★★★ <span
+                                                                class="text-black">4.9</span></div>
+                                                    </div>
+                                                    <div>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">បិទ</button>
+                                            <button type="button" class="btn btn-primary"
+                                                data-bs-dismiss="modal">យល់ព្រម</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/paint_house.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">លាបពណ៍ផ្ទះ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$90-250
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ដើម្បីអោយផ្ទះលោកអ្នកកាន់តែស្រស់ស្អាតកត្តាពណ៍ផ្ទះក៏ជាចំណុចសំខាន់ផងដែរ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- vehicle repair tap  -->
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/car_repair_on_road.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលរថយន្តធន់ធ្ងន់</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/car_repair_on_road_1.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលរថយន្តធន់តូច</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$150-350
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- eletronic repair  -->
+
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/washing_machine.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលម៉ាសុីនបោកខោអាវ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលម៉ាសុីនបោកខោអាវ
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/bicycle-repair.png"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលកង់អគ្គិសនី</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជួសជុលកង់អគ្គិសនី
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!------------------------------------ home repair  --------------------->
+                    <div class="tab-pane fade" id="home-repair" role="tabpanel" aria-labelledby="pills-home-tab"
+                        tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/prepare_water_system.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលប្រព័ន្ធទឹក</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-150
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ប្រព័ន្ធទឹកពិតជាសំខាន់ណាស់សម្រាប់គេហដ្ឋានរបស់លោកអ្នក។​​
+                                            វាអាចបណ្ដាលអោយមានបញ្ហាផ្សេងៗ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/paint_house.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">លាបពណ៍ផ្ទះ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$90-250
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ដើម្បីអោយផ្ទះលោកអ្នកកាន់តែស្រស់ស្អាតកត្តាពណ៍ផ្ទះក៏ជាចំណុចសំខាន់ផងដែរ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/eletric_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលប្រព័ន្ធភ្លើង</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ដើម្បីជៀសវៀងពីអគ្គិភ័យនានាដែលកើតឡើងដោយអចេនាកត្តាប្រព័ន្ធភ្លើងក៏រួមចំណែកផងដែរ
+                                        </p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ មន្នី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.5</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/home_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលផ្ទះ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$30-150
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ប្រព័ន្ធទឹកពិតជាសំខាន់ណាស់សម្រាប់គេហដ្ឋានរបស់លោកអ្នក។​​
+                                            វាអាចបណ្ដាលអោយមានបញ្ហាផ្សេងៗ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/home_painting.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">លាបពណ៍ផ្ទះ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$90-250
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ដើម្បីអោយផ្ទះលោកអ្នកកាន់តែស្រស់ស្អាតកត្តាពណ៍ផ្ទះក៏ជាចំណុចសំខាន់ផងដែរ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/building_house.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">សាងសង់ផ្ទះ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ដើម្បីជៀសវៀងពីអគ្គិភ័យនានាដែលកើតឡើងដោយអចេនាកត្តាប្រព័ន្ធភ្លើងក៏រួមចំណែកផងដែរ
+                                        </p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ មន្នី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.5</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------------------- vehicle repair  ------------------->
+                    <div class="tab-pane fade" id="vehicle-repair" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/car_repair_on_road.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលរថយន្តធន់ធ្ងន់</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/car_repair_on_road_1.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលរថយន្តធន់តូច</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$150-350
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/moto_repir_on_road.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលម៉ូតូ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជួសជុលម៉ូតូនៅតាមតំបន់ស្រយាលពុំមានផ្ទះប្រជាពលរដ្ឋ
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/machine_cut_rice.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលរថយន្តច្រូតស្រូវ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/tractor_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលត្រាក់ទ័រ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$150-350
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/tuktuk_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលម៉ូតូកង់បី</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
+                                            </p>
+                                        </div>
+
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជួសជុលម៉ូតូនៅតាមតំបន់ស្រយាលពុំមានផ្ទះប្រជាពលរដ្ឋ
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+
+
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!---------------------------------- eletronic repair  ------------------>
+                    <div class="tab-pane fade" id="eletronic-repair" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/watch-repair1.png"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលនាឡិការ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-250
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលនាឡិការថ្លៃរបស់លោកអ្នក
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/washing_machine.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលម៉ាសុីនបោកខោអាវ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលម៉ាសុីនបោកខោអាវ
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/bicycle-repair.png"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលកង់អគ្គិសនី</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជួសជុលកង់អគ្គិសនី
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/phone_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលទូរស័ព្ទ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-250
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលនាឡិការថ្លៃរបស់លោកអ្នក
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/laptop_repair.jpg"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលម៉ាសុីនកុំព្យូទ័រ</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលម៉ាសុីនបោកខោអាវ
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★ <span
+                                                    class="text-black">4.3</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
+                                <div class="card card-height">
+                                    <div class="card-img p-1">
+                                        <img src="../img/service-img/service-img/bicycle-repair.png"
+                                            class="img-fluid rounded-2" alt="">
+                                    </div>
+                                    <div class="card-body pt-3 pb-3 px-3">
+                                        <div class="d-flex justify-content-between text-primary">
+                                            <h4 class="">ជួសជុលកង់អគ្គិសនី</h4>
+                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
+                                            </p>
+                                        </div>
+                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                            ពិបាករកជាងជួសជុលកង់អគ្គិសនី
+                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                        <div
+                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                            <div>
+                                                <div><i
+                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                            </div>
+                                            <div class="service-rating text-warning">★★★★★ <span
+                                                    class="text-black">4.9</span></div>
+                                        </div>
+                                        <div>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                        tabindex="0">...</div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer py-5 bg-black">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <img src="../img/Landing-page/logo-2.png" class="img-fluid w-50 mb-2" alt="">
+                            <div class="style-line bg-primary my-2"></div>
+                            <p class="text-white">វេទិកាដែលភ្ជាប់អ្នកប្រើប្រាស់ជាមួយអ្នកជំនាញដោះស្រាយបញ្ហាដោយងាយស្រួល
+                                និងរហ័ស។</p>
+                            <div class="social-links d-flex ">
+                                <a href="https://www.facebook.com/" class="text-decoration-none"><i
+                                        class="ri-facebook-fill"></i></a>
+                                <a href="https://www.tiktok.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-tiktok-line"></i></a>
+                                <a href="https://web.telegram.org/" class="text-decoration-none mx-2"><i
+                                        class="ri-telegram-2-fill"></i></a>
+                                <a href="https://www.google.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-google-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">សេវាកម្ម</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="#" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="#" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="#" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណង់</a></li>
+                                <li><a href="#" class="text-decoration-none">ទូទៅ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ក្រុមហ៊ុន</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">អំពីយើង</a></li>
+                                <li><a href="#" class="text-decoration-none">ក្រុមការងារ</a></li>
+                                <li><a href="#" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="#" class="text-decoration-none">ព័ត៍មាន</a></li>
+                                <li><a href="#" class="text-decoration-none">គោលការណ៍ភាពឯកជន</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ទំនាក់ទំនង</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="#" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">ទំនាក់ទំនង</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
+                                <li><a href="#" class="text-decoration-none">កន្លែងរបស់យើង</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 border-top">
+            <p class="bg-black text-white m-0 py-2 fs-5 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
