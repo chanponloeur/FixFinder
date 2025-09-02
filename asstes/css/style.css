@@ -267,7 +267,7 @@ html {
 .herobanner {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
-    url(../img/Landing-page/herobanner.jpg) no-repeat top center;
+    url(../asstes/img/Landing-page/herobanner.jpg) no-repeat top center;
   background-size: cover;
   align-content: center;
   position: relative;
@@ -641,7 +641,7 @@ html {
 
 .contact-banner {
   height: 698px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(../asstes/img/Landing-page/contact-us.jpg) no-repeat top center;
   background-size: cover;
   align-content: center;
 }
@@ -1507,7 +1507,7 @@ html {
 .banner-service .title {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -1528,7 +1528,7 @@ html {
 }
 
 /*================================ service detail  ========================*/
-.service-area .nav-pills .nav-item .nav-link {
+.service-area .nav-pills .nav-item .nav-linkgit {
   font-weight: bold;
 
 }
@@ -1583,7 +1583,7 @@ html {
   border-right: 1px solid #414141;
 }
 
-.service-area .nav-pills .nav-item .nav-link.active {
+.service-area .Navigation-pills .nav-item .nav-link.active {
   background-color: transparent;
   border-bottom: 2px solid var(--primary);
   border-radius: 0;
@@ -2066,7 +2066,7 @@ html {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.nav-pills .nav-link {
+.Navigation-pills .nav-link {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
@@ -2076,17 +2076,17 @@ html {
   transition: all 0.3s ease;
 }
 
-.nav-pills .nav-link:hover {
+.Navigation-pills .nav-link:hover {
   background: rgba(8, 2, 43, 0.836);
   color: white;
   transform: translateY(-2px);
 }
 
-.nav-pills .nav-link{
+.Navigation-pills .nav-link{
   background-color: rgb(67, 46, 255);
 }
 
-.nav-pills .nav-link.active {
+.Navigation-pills .nav-link.active {
   background: rgba(4, 0, 255, 0.9);
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -2116,7 +2116,7 @@ html {
 /* ===================  professional-list ================ */
 .banner-professional-list {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/professional_list/banner.172Z.png) no-repeat bottom center;
+    url(../asstes/img/professional_list/banner.172Z.png) no-repeat bottom center;
   background-size: cover;
 }
 
@@ -2296,7 +2296,7 @@ html {
 .banner-help {
   height: 60vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../img/help/banner.png) no-repeat bottom center;
+    url(../asstes/img/help/banner.png) no-repeat bottom center;
   background-size: cover;
 }
 
