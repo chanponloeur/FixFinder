@@ -17,148 +17,209 @@
 
 <body>
     <header>
-        <section class="header-area">
-            <!-- navbar-top -->
-            <nav class="navbar-top py-2">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-8 d-none d-lg-block">
-                            <div class="d-flex align-items-center ps-4">
-                                <div class="me-3">
-                                    <i class="ri-phone-line fs-5 "></i>
-                                    <span class=" fs-6">ទំនាក់ទំនង:</span>
-                                    <a href="tel:+1234567890" class="text-decoration-none">+1 (234) 567 890</a>
-                                </div>
-                                <div>
-                                    <i class="ri-mail-line fs-5 "></i>
-                                    <span class=" fs-6">FixFinder@gmail.com</span>
-                                </div>
+        <!-- navbar-top -->
+        <nav class="navbar-top py-2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <div class="d-flex align-items-center ps-4">
+                            <div class="me-3">
+                                <i class="ri-phone-line fs-5 "></i>
+                                <span class=" fs-6">ទំនាក់ទំនង:</span>
+                                <a href="#" class="text-decoration-none">+1 (234) 567 890</a>
+                            </div>
+                            <div>
+                                <i class="ri-mail-line fs-5 "></i>
+                                <span class=" fs-6">FixFinder@gmail.com</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <!-- navbar-center -->
-            <nav class="navbar navbar-center navbar-expand-lg">
-                <div class="container-lg justify-content-between align-items-center ">
-                    <div>
-                        <a class="navbar-brand fw-bold" href="#">
-                            <img src="../asstes/img/Landing-page/logo-2.png" alt="">
+        <!-- navbar-center -->
+        <nav class="navbar navbar-center navbar-expand-lg">
+            <div class="container-lg justify-content-between align-items-center ">
+                <div>
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="../asstes/img/Landing-page/logo-2.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <form class="d-flex search-form d-none d-lg-block" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"></i>
+                    <div class="dropdown">
+                        <a href="notification.html" class="nav-link position-relative">
+                            <i class="ri-notification-2-line fs-4 me-3"></i>
+                            <span
+                                class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
+                                3+
+                            </span>
                         </a>
+                        <ul class="dropdown-menu dropdown-notification ">
+                            <div class="d-flex px-4 pt-2 align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="ri-notification-2-line fs-5 me-3"></i>
+                                    <h5 class="fs-5 m-0 ">ការជូនដំណឹង</h5>
+                                </div>
+                            </div>
+                            <hr class="mb-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6 pb-3">ថ្មីៗនេះ</span>
+                                    <div>
+                                        <span class="fw-bold">ការកក់បានទទួល:</span>
+                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួល...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ថ្ងៃនេះ</span>
+                                    <div>
+                                        <span class="fw-bold ">ការជួសជុលបានបញ្ចប់</span>
+                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ម្សិលមិញ</span>
+                                    <div>
+                                        <span class="fw-bold">ការផ្តល់ជូនពិសេស:</span>
+                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួស...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <div class="w-100 d-flex justify-content-center py-2">
+                                <div> <a href="notification.html"
+                                        class="btn btn-outline-primary rounded-pill hvr-shutter-in-horizontal overflow-hidden">​​មើលទាំងអស់</a>
+                                </div>
+                            </div>
+                        </ul>
                     </div>
-                    <div>
-                        <form class="d-flex search-form d-none d-lg-block" role="search">
-                            <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
-                                aria-label="Search" />
-                            <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
-                                    class="ri-search-line"></i></button>
-                        </form>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne"></i>
-                        <a href="../asstes/page/login.html" class="btn btn-outline-primary me-3">ចូលប្រើប្រាស់</a>
-                        <a href="../asstes/page/Create.html" class="btn btn-primary me-3">ចុះឈ្មោះ</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
+                    <div class="dropdown">
+                        <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="profile-image-container me-3">
+                                <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image"
+                                    alt="">
 
-            <div class="bg-body-tertiary m-auto">
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                    <div class="py-3 d-flex justify-content-center d-lg-none d-block">
-                        <form class="d-flex search-form" role="search">
-                            <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
-                                aria-label="Search" />
-                            <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
-                                    class="ri-search-line"></i></button>
-                        </form>
+                            </div>
+                            <span
+                                class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a class="dropdown-item " href="history_user.html"><i class="ri-user-3-line"></i>
+                                    គណនី</a></li>
+                            <li><a class="dropdown-item" href="../index.html"><i class="ri-arrow-right-line"></i>
+
+                                    ចាកចេញ</a></li>
+
+                        </ul>
                     </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
                 </div>
             </div>
-            <div class="collapse navbar-collapse px-3 d-none" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="../asstes/page/Create.html"><i
-                                class="ri-home-gear-line"></i>
-                            ទំព័រដើម</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="../asstes/page/Create.html"><i class="ri-file-list-3-line"></i>
-                            បញ្ជីអ្នកជំនាញ </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../asstes/page/Create.html"><i class="ri-chat-history-line"></i>
-                            ប្រវត្តិការងារ</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../asstes/page/#"><i class="ri-question-line"></i> ជំនួយ</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../asstes/page/#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../asstes/page/contact_us.html"><i class="ri-phone-line"></i>
-                            ទំនាក់ទំនង</a>
-                    </li>
-                </ul>
-            </div>
+        </nav>
 
-            <!-- navbar-bottom -->
-            <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block d-none" data-bs-theme="dark">
-                <div class="container">
+        <div class="bg-body-tertiary m-auto">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="py-3 d-flex justify-content-center d-lg-none d-block">
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
+                <li class="nav-item ">
+                    <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
+                        ទំព័រដើម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="professional_list.html"><i class="ri-file-list-3-line"></i>
+                        បញ្ជីអ្នកជំនាញ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="history_bolt.html"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html"><i class="ri-question-line"></i> ជំនួយ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact_us.html"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navbar-bottom -->
+        <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block" data-bs-theme="dark">
+            <div class="container">
+                <div class="collapse navbar-collapse">
                     <div class="collapse navbar-collapse">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-                                <li class="nav-item ">
-                                    <a class="nav-link hvr-underline-from-center" aria-current="page" href="#"><i
-                                            class="ri-home-gear-line"></i>
-                                        ទំព័រដើម</a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link hvr-underline-from-center" href="../asstes/page/Create.html"><i
-                                            class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
-                                </li>
-                                <li class="nav-item ">
-                                    <a class="nav-link active hvr-underline-from-bottom d-block" href="#"><i
-                                            class="ri-tools-fill"></i>
-                                        សេវាកម្ម</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link hvr-underline-from-center" href="../asstes/page/Create.html"><i
-                                            class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link hvr-underline-from-center" href="../asstes/page/#"><i
-                                            class="ri-question-line"></i>
-                                        ជំនួយ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link hvr-underline-from-center" href="../asstes/page/#"><i
-                                            class="ri-team-line"></i>
-                                        អំពីពួកយើង</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link hvr-underline-from-center"
-                                        href="../asstes/page/contact_us.html"><i class="ri-phone-line"></i>
-                                        ទំនាក់ទំនង</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" aria-current="page" href="home.html"><i
+                                        class="ri-home-gear-line"></i>
+                                    ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" href="professional_list.html"><i
+                                        class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="service.html"><i class="ri-tools-fill"></i>
+                                    សេវាកម្ម</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="history_bolt.html"><i
+                                        class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="help.html"><i
+                                        class="ri-question-line"></i>
+                                    ជំនួយ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i
+                                        class="ri-team-line"></i>
+                                    អំពីពួកយើង</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="contact_us.html"><i
+                                        class="ri-phone-line"></i>
+                                    ទំនាក់ទំនង</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </section>
-
+            </div>
+        </nav>
     </header>
     <main>
         <section class="banner-service vh-100">
@@ -180,7 +241,10 @@
             <div class="container">
                 <h2 class="fw-bold text-center py-3">សេវាកម្មពេញនិយម</h2>
                 <div class="style-line bg-primary m-auto mb-3 "></div>
+
+
                 <div id="carouselExampleAutoplaying" class="carousel slide  px-1" data-bs-ride="carousel">
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row bg-light rounded-2 m-5">
@@ -208,16 +272,18 @@
                                     <div
                                         class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                         <div>
-                                            <div><i
-                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            <div>
+                                                <i
+                                                    class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i>
+                                                <span class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                            </div>
                                         </div>
                                         <div class="service-rating text-warning">★★★★★ <span
                                                 class="text-black">4.9</span></div>
                                     </div>
                                     <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
                                         data-aos="fade-right">មើលបន្ថែម <span><i
-                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                                class="ri-arrow-right-line"></i></span></a>
                                 </div>
                             </div>
 
@@ -229,9 +295,11 @@
                                         <img src="../asstes/img/service-img/service-img/home_repair.jpg"
                                             class="d-block w-100 rounded-2" alt="...">
                                     </div>
+
                                 </div>
                                 <div class="col-12 col-xl-6 pe-5">
                                     <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
+
 
                                     <div class="d-flex justify-content-between text-primary">
                                         <h3 class="text-primary fw-bold">ជួសជុលផ្ទះ</h3>
@@ -242,21 +310,26 @@
                                         ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
                                         បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
                                         ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+
+
                                     <div
                                         class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                         <div>
-                                            <div><i
-                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            <div>
+                                                <i
+                                                    class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i>
+                                                <span class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                            </div>
                                         </div>
                                         <div class="service-rating text-warning">★★★★★ <span
                                                 class="text-black">4.9</span></div>
                                     </div>
                                     <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
                                         data-aos="fade-right">មើលបន្ថែម <span><i
-                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                                class="ri-arrow-right-line"></i></span></a>
                                 </div>
                             </div>
+
                         </div>
                         <div class="carousel-item">
                             <div class="row bg-light rounded-2 m-5">
@@ -284,16 +357,18 @@
                                     <div
                                         class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                         <div>
-                                            <div><i
-                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            <div>
+                                                <i
+                                                    class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                            </div>
                                         </div>
                                         <div class="service-rating text-warning">★★★★★ <span
                                                 class="text-black">4.9</span></div>
                                     </div>
                                     <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
                                         data-aos="fade-right">មើលបន្ថែម <span><i
-                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                                class="ri-arrow-right-line"></i></span></a>
                                 </div>
                             </div>
 
@@ -305,6 +380,7 @@
                                         <img src="../asstes/img/service-img/service-img/car_repair_on_road.jpg"
                                             class="d-block w-100 rounded-2" alt="...">
                                     </div>
+
                                 </div>
                                 <div class="col-12 col-xl-6 pe-5">
                                     <p class="pt-3">សេវាកម្មដល់កន្លែង</p>
@@ -318,39 +394,45 @@
                                         ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
                                         បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
                                         ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+
+
                                     <div
                                         class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                         <div>
-                                            <div><i
-                                                    class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                            <div>
+                                                <i
+                                                    class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                    class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                            </div>
                                         </div>
                                         <div class="service-rating text-warning">★★★★★ <span
                                                 class="text-black">4.9</span></div>
                                     </div>
                                     <a type="button" href="#service-area" class="btn btn-outline-primary mt-4"
                                         data-aos="fade-right">មើលបន្ថែម <span><i
-                                                class="fa-solid fa-arrow-right"></i></span></a>
+                                                class="ri-arrow-right-line"></i></span></a>
                                 </div>
                             </div>
+
                         </div>
+
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="prev">
-                        <i class="fs-1 text-black fa-regular fa-circle-chevron-left"></i>
+                        <i class="fs-1 text-black ri-arrow-left-s-line"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="next">
-                        <i class="fs-1 text-black fa-regular fa-circle-chevron-right"></i>
+                        <i class="fs-1 text-black ri-arrow-right-s-line"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
-
             </div>
         </section>
+
+
         <section class="service-area py-5 bg-light">
             <div class="container" id="service-area">
                 <h2 class="text-center fw-bold pb-3">សេវាកម្មជួសជុល</h2>
@@ -391,7 +473,7 @@
                                     <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
                                         data-bs-target="#service-detail">
                                         <div class="card-img p-1">
-                                            <img src="../asstes/img/service-img/service-img/prepare_water_system.jpg"
+                                            <img src="../../asstes/img/service-img/service-img/prepare_water_system.jpg"
                                                 class="img-fluid rounded-2" alt="">
                                         </div>
                                         <div class="card-body pt-3 pb-3 px-3">
@@ -418,7 +500,7 @@
                                                 class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                                 <div>
                                                     <div><i
-                                                            class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                             class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
                                                     </div>
                                                 </div>
@@ -434,7 +516,7 @@
                                 </div>
                             </div>
                             <!------------------------------ modal service details  ---------------------->
-                            <div class="modal modal-service fade" data-bs-backdrop="static" id="service-detail"
+                            <div class="modal modal-service fade" id="service-detail"
                                 tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
                                     <div class="modal-content">
@@ -479,14 +561,13 @@
 
                                                         <div class="phone-number  align-content-center">
                                                             <button type="button" class="btn btn-transparent border-0 text-success fw-bold
-                                                                data-bs-toggle=" tooltip data-bs-placement="top"
+                                                                data-bs-toggle="  data-bs-placement="top"
                                                                 data-bs-title="Tooltip on top">
                                                                 <span><i class="fw-bold fa-light fa-phone pe-1 "></i>
                                                                     09876543</span>
                                                             </button>
                                                         </div>
-                                                        <div class="py-2 link-underline-primary"><span><i
-                                                                    class="text-primary fa-regular fa-map-location-dot"></i></span><a
+                                                        <div class="py-2 link-underline-primary"><span><i class="ri-user-location-line"></i></span><a
                                                                 href="#" class="link-offset-3"> ស្ទឹងមានជ័យ​ ភ្នំពេញ</a>
                                                         </div>
                                                     </div>
@@ -496,7 +577,7 @@
                                                             class="text-decoration-none d-block">
                                                             <div>
                                                                 <div><i
-                                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​
                                                                         ពន្លឺ</span></div>
                                                             </div>
@@ -513,8 +594,8 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
                                                 data-bs-dismiss="modal">បិទ</button>
-                                            <button type="button" class="btn btn-primary"
-                                                data-bs-dismiss="modal">យល់ព្រម</button>
+                                            <a type="button" href="select_service.html" class="btn btn-primary"
+                                                >ជួលជុលអីឡូវនេះ!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -522,98 +603,101 @@
 
                             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                                 <div class="card card-height">
-                                    <div class="card-img p-1">
-                                        <img src="../asstes/img/service-img/service-img/paint_house.jpg"
-                                            class="img-fluid rounded-2" alt="">
-                                    </div>
-                                    <div class="card-body pt-3 pb-3 px-3">
-                                        <div class="d-flex justify-content-between text-primary">
-                                            <h4 class="">លាបពណ៍ផ្ទះ</h4>
-                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$90-250
-                                            </p>
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../asstes/img/service-img/service-img/paint_house.jpg"
+                                                class="img-fluid rounded-2" alt="">
                                         </div>
-                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
-                                            ដើម្បីអោយផ្ទះលោកអ្នកកាន់តែស្រស់ស្អាតកត្តាពណ៍ផ្ទះក៏ជាចំណុចសំខាន់ផងដែរ</p>
-                                        <div
-                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
-                                            <div>
-                                                <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">លាបពណ៍ផ្ទះ</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $90-250
+                                                </p>
                                             </div>
-                                            <div class="service-rating text-warning">★★★★★ <span
-                                                    class="text-black">4.9</span></div>
-
-
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ដើម្បីអោយផ្ទះលោកអ្នកកាន់តែស្រស់ស្អាតកត្តាពណ៍ផ្ទះក៏ជាចំណុចសំខាន់ផងដែរ</p>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★★ <span
+                                                        class="text-black">4.9</span></div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
 
                             <!-- vehicle repair tap  -->
                             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                                 <div class="card card-height">
-                                    <div class="card-img p-1">
-                                        <img src="../asstes/img/service-img/service-img/car_repair_on_road.jpg"
-                                            class="img-fluid rounded-2" alt="">
-                                    </div>
-                                    <div class="card-body pt-3 pb-3 px-3">
-                                        <div class="d-flex justify-content-between text-primary">
-                                            <h4 class="">ជួសជុលរថយន្តធន់ធ្ងន់</h4>
-                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-550
-                                            </p>
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../asstes/img/service-img/service-img/car_repair_on_road.jpg"
+                                                class="img-fluid rounded-2" alt="">
                                         </div>
-                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
-                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
-                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
-                                        <div
-                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
-                                            <div>
-                                                <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">ជួសជុលរថយន្តធន់ធ្ងន់</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $50-550
+                                                </p>
                                             </div>
-                                            <div class="service-rating text-warning">★★★★★ <span
-                                                    class="text-black">4.9</span></div>
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★★ <span
+                                                        class="text-black">4.9</span></div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                                 <div class="card card-height">
-                                    <div class="card-img p-1">
-                                        <img src="../asstes/img/service-img/service-img/car_repair_on_road_1.jpg"
-                                            class="img-fluid rounded-2" alt="">
-                                    </div>
-                                    <div class="card-body pt-3 pb-3 px-3">
-                                        <div class="d-flex justify-content-between text-primary">
-                                            <h4 class="">ជួសជុលរថយន្តធន់តូច</h4>
-                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$150-350
-                                            </p>
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../asstes/img/service-img/service-img/car_repair_on_road_1.jpg"
+                                                class="img-fluid rounded-2" alt="">
                                         </div>
-                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
-                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
-                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
-                                        <div
-                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
-                                            <div>
-                                                <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">ជួសជុលរថយន្តធន់តូច</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $150-350
+                                                </p>
                                             </div>
-                                            <div class="service-rating text-warning">★★★★ <span
-                                                    class="text-black">4.3</span></div>
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span>
+                                                    </div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★ <span
+                                                        class="text-black">4.3</span></div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
 
@@ -621,66 +705,68 @@
 
                             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                                 <div class="card card-height">
-                                    <div class="card-img p-1">
-                                        <img src="../asstes/img/service-img/service-img/washing_machine.jpg"
-                                            class="img-fluid rounded-2" alt="">
-                                    </div>
-                                    <div class="card-body pt-3 pb-3 px-3">
-                                        <div class="d-flex justify-content-between text-primary">
-                                            <h4 class="">ជួសជុលម៉ាសុីនបោកខោអាវ</h4>
-                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-100
-                                            </p>
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../asstes/img/service-img/service-img/washing_machine.jpg"
+                                                class="img-fluid rounded-2" alt="">
                                         </div>
-                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
-                                            ពិបាករកជាងជំនាញក្នុងការជួសជុលម៉ាសុីនបោកខោអាវ
-                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
-                                        <div
-                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
-                                            <div>
-                                                <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">ជួសជុលម៉ាសុីនបោកខោអាវ</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $50-100
+                                                </p>
                                             </div>
-                                            <div class="service-rating text-warning">★★★★ <span
-                                                    class="text-black">4.3</span></div>
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ពិបាករកជាងជំនាញក្នុងការជួសជុលម៉ាសុីនបោកខោអាវ
+                                                បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span>
+                                                    </div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★ <span
+                                                        class="text-black">4.3</span></div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in-up">
                                 <div class="card card-height">
-                                    <div class="card-img p-1">
-                                        <img src="../asstes/img/service-img/service-img/bicycle-repair.png"
-                                            class="img-fluid rounded-2" alt="">
-                                    </div>
-                                    <div class="card-body pt-3 pb-3 px-3">
-                                        <div class="d-flex justify-content-between text-primary">
-                                            <h4 class="">ជួសជុលកង់អគ្គិសនី</h4>
-                                            <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">$50-190
-                                            </p>
+                                    <button type="button" class="btn btn-transparent p-0" data-bs-toggle="modal"
+                                        data-bs-target="#service-detail">
+                                        <div class="card-img p-1">
+                                            <img src="../asstes/img/service-img/service-img/bicycle-repair.png"
+                                                class="img-fluid rounded-2" alt="">
                                         </div>
-                                        <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
-                                            ពិបាករកជាងជួសជុលកង់អគ្គិសនី
-                                            បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
-                                        <div
-                                            class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
-                                            <div>
-                                                <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
-                                                        class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
+                                        <div class="card-body pt-3 pb-3 px-3">
+                                            <div class="d-flex justify-content-between text-primary">
+                                                <h4 class="">ជួសជុលកង់អគ្គិសនី</h4>
+                                                <p class="fw-bold bg-secondary-subtle px-2 rounded-4 text-success">
+                                                    $50-190
+                                                </p>
                                             </div>
-                                            <div class="service-rating text-warning">★★★★★ <span
-                                                    class="text-black">4.9</span></div>
-
-
+                                            <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
+                                                ពិបាករកជាងជួសជុលកង់អគ្គិសនី
+                                                បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ</p>
+                                            <div
+                                                class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
+                                                <div>
+                                                    <div><i
+                                                            class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
+                                                            class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span>
+                                                    </div>
+                                                </div>
+                                                <div class="service-rating text-warning">★★★★★ <span
+                                                        class="text-black">4.9</span></div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <span></span>
-                                        </div>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
 
@@ -705,22 +791,17 @@
 
                                         <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-2 ">
                                             ប្រព័ន្ធទឹកពិតជាសំខាន់ណាស់សម្រាប់គេហដ្ឋានរបស់លោកអ្នក។​​
-                                            វាអាចបណ្ដាលអោយមានបញ្ហាផ្សេងៗ</p>
-
+                                            វាអាចបណ្ដាលអោយមានបញ្ហាផ្សេងៗ
+                                        </p>
                                         <div
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -745,16 +826,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -780,16 +856,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ មន្នី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.5</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -815,16 +886,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -849,16 +915,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពៅ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -884,16 +945,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ មន្នី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.5</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -924,16 +980,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -959,16 +1010,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.3</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -994,16 +1040,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1028,16 +1069,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1063,16 +1099,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.3</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1098,16 +1129,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-
-
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1138,14 +1164,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1169,14 +1192,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.3</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1200,14 +1220,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1231,14 +1248,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1262,14 +1276,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រ៉ា</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★ <span
                                                     class="text-black">4.3</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1293,14 +1304,11 @@
                                             class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center mt-1">
                                             <div>
                                                 <div><i
-                                                        class="p-2 bg-secondary-subtle rounded-circle fs-5 fa-duotone fa-thin fa-user-hair"></i><span
+                                                        class="ri-user-3-fill p-2 bg-secondary-subtle rounded-circle fs-5"></i><span
                                                         class=" fs-5 px-2 text-primary fw-bold">ជាង​ រស្មី</span></div>
                                             </div>
                                             <div class="service-rating text-warning">★★★★★ <span
                                                     class="text-black">4.9</span></div>
-                                        </div>
-                                        <div>
-                                            <span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -1343,12 +1351,13 @@
                             <h3 class="text-white">សេវាកម្ម</h3>
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
-                                <li><a href="#" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
-                                <li><a href="#" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
-                                <li><a href="#" class="text-decoration-none">រថយន្ត</a></li>
-                                <li><a href="#" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a></li>
-                                <li><a href="#" class="text-decoration-none">សំណង់</a></li>
-                                <li><a href="#" class="text-decoration-none">ទូទៅ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
+                                </li>
+                                <li><a href="service.html" class="text-decoration-none">សំណង់</a></li>
+                                <li><a href="service.html" class="text-decoration-none">ទូទៅ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1358,22 +1367,50 @@
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
                                 <li><a href="#" class="text-decoration-none">អំពីយើង</a></li>
-                                <li><a href="#" class="text-decoration-none">ក្រុមការងារ</a></li>
-                                <li><a href="#" class="text-decoration-none">ការងារ</a></li>
-                                <li><a href="#" class="text-decoration-none">ព័ត៍មាន</a></li>
-                                <li><a href="#" class="text-decoration-none">គោលការណ៍ភាពឯកជន</a></li>
+                                <li><a href="history_bolt.html" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="help.html" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <div>
+                        <div class="contact">
                             <h3 class="text-white">ទំនាក់ទំនង</h3>
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
-                                <li><a href="#" class="text-decoration-none">ជំនួយ</a></li>
-                                <li><a href="#" class="text-decoration-none">ទំនាក់ទំនង</a></li>
-                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
-                                <li><a href="#" class="text-decoration-none">កន្លែងរបស់យើង</a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-25">
+                                                <i class="ri-map-pin-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អាស័យដ្ធាន</h6>
+                                                <p class="m-0">ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-phone-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">ទំនាក់ទំនង</h6>
+                                                <p class="m-0">+1(234),567,890</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-earth-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អុីម៉ែល</h6>
+                                                <p class="m-0">FixFinder@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
                             </ul>
                         </div>
                     </div>
