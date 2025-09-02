@@ -1479,9 +1479,9 @@ html {
 
 /* ---------------------------- service page ----------------------------- */
 /*============================ navbar active on header  =======================*/
-.header-area .navbar-bottom .nav-item .nav-link.active {
+header .navbar-bottom .nav-item .nav-link.active {
    border-bottom: 4px solid white;
-   padding-block: 6px;
+   padding-bottom: 4px;
    
 }
 /* ======================== service banner =============================== */
@@ -1522,9 +1522,11 @@ html {
 
 }
 /*================================ service detail  ========================*/
-.service-area .nav-pills .nav-item .nav-linkgit {
+.service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
-
+  background-color: transparent;
+  color:var(--primary);
+ 
 }
 
 .service-area .tab-content .card .card-img {
@@ -1562,6 +1564,30 @@ html {
 
 
 }
+/*======================= popular service on service page  ==================*/
+.service-popular .carousel .carousel-control-prev{
+  left: -70px;
+}
+.service-popular .carousel .carousel-control-next{
+  right: -80px;
+}
+/*=============================== about us page  =============================*/
+
+.about-us-banner .banner-img img{
+  width: 100%;
+ 
+  
+}
+.our-mission .carousel .controll-carousel{
+  display: none;
+  transition: 0.3s;
+}
+.our-mission .carousel:hover .controll-carousel{
+  display: block;
+}
+.about-us-banner .short-quote{
+    line-height: 42px;
+}
 
 /*====================== auto typing ========================== */
 .typeJsWrapper {
@@ -1578,10 +1604,10 @@ html {
 }
 
 .service-area .nav-pills .nav-item .nav-link.active {
-  background-color: transparent;
-  border-bottom: 2px solid var(--primary);
-  border-radius: 0;
-  color: var(--primary);
+   border-bottom: 2px solid var(--primary);
+
+
+
 }
 
 .service-area .card {
