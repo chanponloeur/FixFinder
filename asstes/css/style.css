@@ -1536,6 +1536,28 @@ header .nav-item .nav-link.active {
 
 
 }
+/*======================= service popular responsive on service page  ================*/
+@media (max-width: 500px) {
+  .service-popular .carousel-item .title{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    align-content: center;
+    
+  }
+  .service-popular .carousel-item .title h3{
+    margin-bottom: 16px;
+  }
+   .service-popular .carousel-item .title p{
+    margin-block: 4px;
+   text-align: center;
+  
+  }
+  .service-popular .carousel-item .short-des{
+    display: none;
+  }
+  
+}
 
 /*================================ service detail  ========================*/
 .service-area .nav-pills .nav-item .nav-link {
