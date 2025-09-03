@@ -1578,48 +1578,86 @@ header .nav-item .nav-link.active {
 
 
 }
+
 /*=============================== about us page  =============================*/
 
-.about-us-banner .banner-img img{
+.about-us-banner .banner-img img {
   width: 100%;
- 
-  
+
+
 }
-.our-mission .carousel .controll-carousel{
+
+.our-mission .carousel .controll-carousel {
   display: none;
   transition: 0.3s;
 }
-.our-mission .carousel:hover .controll-carousel{
+
+.our-mission .carousel:hover .controll-carousel {
   display: block;
 }
-.about-us-banner .short-quote{
-    line-height: 42px;
+
+.about-us-banner .short-quote {
+  line-height: 42px;
 }
+
 header .navbar-bottom .nav-item .nav-link.active {
-   border-bottom: 4px solid white;
-
-   
+  border-bottom: 4px solid white;
 
 }
-.our-team .member .card{
+
+.our-team .member .card {
   overflow: hidden;
+  border: none !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.our-team .member .card .contact-member{
-  height: 100px;
+
+.our-team .member .card .card-img img {
+  object-fit: contain;
+  height: 350px;
+
+}
+
+.our-team .member .card .contact-member {
   position: absolute;
   align-content: center;
   background-color: var(--primary);
-  /* display: none; */
-  bottom:-100px;
-   transition: 0.3s;
-   z-index: 0;
-  
+  bottom: -100px;
+  transition: 0.3s;
+  z-index: 0;
+
 }
-.our-team .member .card:hover .contact-member{
+
+.our-team .member .card .contact-member i {
+  color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.our-team .member .card .contact-member i:hover {
+  transform: scale(1.2);
+}
+
+.our-team .member .card:hover .contact-member {
   display: block;
   transform: translateY(-75px);
-  bottom:0;
- 
+  bottom: 0;
+
+}
+
+.our-team .thank-area .sponser-logo .logo{
+  width: 1px;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.thank-area .sponser-logo .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 /*====================== auto typing ========================== */
@@ -1667,6 +1705,7 @@ header .navbar-bottom .nav-item .nav-link.active {
 .service-area .modal-service .modal-body .card .card-img:hover img {
   transform: scale(1);
 }
+
 /* 
 .service-area .modal-service .modal-body .card .note {
 } */
