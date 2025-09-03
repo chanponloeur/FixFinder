@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crextio - Register</title>
+    <title>Register</title>
     <link rel="icon" href="../asstes/img/Landing-page/title-icon.png">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -23,97 +23,101 @@
     <main>
         <section class="login d-flex align-items-center justify-content-center">
             <div class="container">
-                <div class="row card-container">
-
-                    <!-- Form Side -->
-                    <div class="col-12 form-side">
-                        <div>
-                            <div class=" logo-form text-center my-3">
-                                <img src="../asstes/img/image.login.register/logo-2 (1).png" alt="Logo"
-                                    class="img-fluid">
+                <div class="login-content p-3 p-lg-0">
+                    <div class="row card-container align-items-center">
+                        <!-- Form Side -->
+                        <div class="col-12 col-lg-6 form-side">
+                            <div class="form-content" data-aos="fade-right" data-aos-duration="1000">
+                                <div>
+                                    <div class=" logo-form text-center my-3">
+                                        <img src="../asstes/img/image.login.register/logo-2 (1).png" alt="Logo"
+                                            class="img-fluid">
+                                    </div>
+                                    <h3 class="fw-bold mb-2">បង្កើតគណនីថ្មី</h3>
+                                    <p class="text-muted mb-2">សូមបំពេញព័ត៌មានរបស់អ្នក ដើម្បីចុះឈ្មោះ។</p>
+                                </div>
+                                <form class="needs-validation" action="home.html" method="get" novalidate>
+                                    <!-- First & Last Name -->
+                                    <div class="row">
+                                        <!-- First Name -->
+                                        <div class="col-md-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="firstName"
+                                                    placeholder="First Name" required>
+                                                <label for="firstName">នាមខ្លួន</label>
+                                                <div class="invalid-feedback">សូមបញ្ចូលនាមខ្លួន!</div>
+                                            </div>
+                                        </div>
+                                        <!-- Last Name -->
+                                        <div class="col-md-6 mb-2">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="lastName"
+                                                    placeholder="Last Name" required>
+                                                <label for="lastName">នាមត្រកូល</label>
+                                                <div class="invalid-feedback">សូមបញ្ចូលនាមត្រកូល!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="form-floating mb-2">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="name@example.com" required>
+                                        <label for="email">អ៊ីមែល</label>
+                                        <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ!</div>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="form-floating mb-2">
+                                        <input type="password" class="form-control" id="password" placeholder="Password"
+                                            required>
+                                        <label for="password">ពាក្យសម្ងាត់</label>
+                                        <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់!</div>
+                                    </div>
+                                    <!-- Confirm Password -->
+                                    <div class="form-floating mb-2">
+                                        <input type="password" class="form-control" id="confirmPassword"
+                                            placeholder="Confirm Password" required>
+                                        <label for="confirmPassword">បញ្ជាក់ពាក្យសម្ងាត់</label>
+                                        <div class="invalid-feedback">សូមបញ្ជាក់ពាក្យសម្ងាត់របស់អ្នក!</div>
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn submit-btn w-100 py-2">ចុះឈ្មោះ</button>
+                                    <!-- Social Buttons -->
+                                    <div class="d-flex gap-2 mt-2">
+                                        <a href="https://appleid.apple.com/auth/authorize"
+                                            class="btn btn-dark w-50 social-btn">
+                                            <i class="fab fa-apple me-2 text-white"></i> Apple
+                                        </a>
+                                        <a href="https://accounts.google.com/o/oauth2/v2/auth"
+                                            class="btn btn-danger w-50 social-btn">
+                                            <i class="fab fa-google me-2 text-white"></i> Google
+                                        </a>
+                                    </div>
+                                    <!-- Back to Login -->
+                                    <div class="mt-4 text-center">
+                                        <span class="small text-muted">មានគណនីរួចហើយ? </span>
+                                        <a href="login.html" class="back-link">ចូលគណនី</a>
+                                    </div>
+                                </form>
                             </div>
-
-                            <h3 class="fw-bold mb-2">បង្កើតគណនីថ្មី</h3>
-                            <p class="text-muted mb-2">សូមបំពេញព័ត៌មានរបស់អ្នក ដើម្បីចុះឈ្មោះ។</p>
                         </div>
-
-                        <form class="needs-validation" action="home.html" method="get" novalidate>
-                            <!-- First & Last Name -->
-                            <div class="row">
-                                <!-- First Name -->
-                                <div class="col-md-6 mb-2">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="firstName" placeholder="First Name"
-                                            required>
-                                        <label for="firstName">នាមខ្លួន</label>
-                                        <div class="invalid-feedback">សូមបញ្ចូលនាមខ្លួន!</div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Last Name -->
-                                <div class="col-md-6 mb-2">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name"
-                                            required>
-                                        <label for="lastName">នាមត្រកូល</label>
-                                        <div class="invalid-feedback">សូមបញ្ចូលនាមត្រកូល!</div>
-                                    </div>
-                                </div>
+                        <!-- Image Side -->
+                        <div class="col-12 col-lg-6 d-none d-lg-block">
+                            <div class="img " data-aos="fade-left" data-aos-duration="1000">
+                                <img class="img-fluid" src="../asstes/img/image.login.register/register-right.png"
+                                    alt="">
                             </div>
-
-                            <!-- Email -->
-                            <div class="form-floating mb-2">
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com"
-                                    required>
-                                <label for="email">អ៊ីមែល</label>
-                                <div class="invalid-feedback">សូមបញ្ចូលអ៊ីមែលត្រឹមត្រូវ!</div>
-                            </div>
-
-                            <!-- Password -->
-                            <div class="form-floating mb-2">
-                                <input type="password" class="form-control" id="password" placeholder="Password"
-                                    required>
-                                <label for="password">ពាក្យសម្ងាត់</label>
-                                <div class="invalid-feedback">សូមបញ្ចូលពាក្យសម្ងាត់!</div>
-                            </div>
-
-                            <!-- Confirm Password -->
-                            <div class="form-floating mb-2">
-                                <input type="password" class="form-control" id="confirmPassword"
-                                    placeholder="Confirm Password" required>
-                                <label for="confirmPassword">បញ្ជាក់ពាក្យសម្ងាត់</label>
-                                <div class="invalid-feedback">សូមបញ្ជាក់ពាក្យសម្ងាត់របស់អ្នក!</div>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button type="submit" class="btn submit-btn w-100 py-2">ចុះឈ្មោះ</button>
-
-                            <!-- Social Buttons -->
-                            <div class="d-flex gap-2 mt-2">
-                                <a href="https://appleid.apple.com/auth/authorize" class="btn btn-dark w-50 social-btn">
-                                    <i class="fab fa-apple me-2 text-white"></i> Apple
-                                </a>
-                                <a href="https://accounts.google.com/o/oauth2/v2/auth"
-                                    class="btn btn-danger w-50 social-btn">
-                                    <i class="fab fa-google me-2 text-white"></i> Google
-                                </a>
-                            </div>
-
-                            <!-- Back to Login -->
-                            <div class="mt-4 text-center">
-                                <span class="small text-muted">មានគណនីរួចហើយ? </span>
-                                <a href="login.html" class="back-link">ចូលគណនី</a>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Bootstrap Validation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         (() => {
             'use strict';
