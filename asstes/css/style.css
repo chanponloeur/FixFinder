@@ -1601,6 +1601,26 @@ header .navbar-bottom .nav-item .nav-link.active {
    
 
 }
+.our-team .member .card{
+  overflow: hidden;
+}
+.our-team .member .card .contact-member{
+  height: 100px;
+  position: absolute;
+  align-content: center;
+  background-color: var(--primary);
+  /* display: none; */
+  bottom:-100px;
+   transition: 0.3s;
+   z-index: 0;
+  
+}
+.our-team .member .card:hover .contact-member{
+  display: block;
+  transform: translateY(-75px);
+  bottom:0;
+ 
+}
 
 /*====================== auto typing ========================== */
 .typeJsWrapper {
