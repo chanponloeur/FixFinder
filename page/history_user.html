@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../asstes/css/bootstrap.css">
     <link rel="stylesheet" href="../asstes/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -17,15 +19,10 @@
     <main>
         <!-- Header -->
         <header class="user-profile-top py-4">
-            <!-- Back Icon -->
-            <div class="mb-3 m-lg-4">
-                <a href="home.html" class="back-link text-decoration-none">
-                    <i class="fas fa-arrow-left me-2"></i>Home
-                </a>
-            </div>
             <div class="container rounded">
+
                 <div class="row">
-                    <div class="col-12 col-xl-2">
+                    <div class="col-12 col-xl-2" data-aos="fade-right" data-aos-duration="1000">
                         <div class="profile-img py-4 ps-4">
                             <img src="../asstes/img/user-profile-img/GettyImages-1341554760.jpg" alt="user-profile"
                                 class="img-fluid rounded-circle">
@@ -33,14 +30,20 @@
                     </div>
                     <div class="col-12 col-xl-10">
                         <div class="profile-info p-4">
-                            <div>
-                                <div class="d-flex pb-2">
+                            <div data-aos="fade-right" data-aos-duration="1000">
+                                <div class="d-flex pb-2" >
                                     <h2 class="pe-4 ">សុខ​ ដារ៉ា</h2>
                                     <div class="ms-auto">
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                             data-bs-target="#edit-profile"><span><i
                                                     class="fa-solid fa-pen-to-square"></i></span>
-                                            កែប្រែព័ត៍មាន</button>
+                                            កែប្រែព័ត៍មាន
+                                        </button>
+                                        <div class="my-3 d-flex justify-content-between">
+
+                                            <a type="button" href="home.html" class="btn btn-outline-primary">ចាកចេញ
+                                                <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="address d-flex">
@@ -66,7 +69,7 @@
                                     <div class="modal-content bg-light">
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-3 text-primary ms-auto" id="exampleModalLabel">
-                                                <span><i class="fa-regular fa-user-pen"></i></span> កែប្រែព័ត៍មាន
+                                                <span><i class="fa-solid fa-pen-to-square"></i></span> កែប្រែព័ត៍មាន
                                             </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
@@ -84,8 +87,7 @@
                                                             alt="user-profile" class="img-fluid rounded-circle ">
                                                         <div class="btn-edit-profile position-absolute">
                                                             <button type="button"
-                                                                class="btn bg-primary-subtle text-dark px-2 rounded-circle"><span><i
-                                                                        class="fa-solid fa-pen"></i></span></button>
+                                                                class="btn bg-primary-subtle text-dark px-2 rounded-circle"><span></span></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -93,7 +95,7 @@
                                             <div class="edit-username bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
                                                 <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-regular fa-pencil"></i></span> ប្ដូរឈ្មោះ</h4>
+                                                                        class="fa-solid fa-pen"></i></span> ប្ដូរឈ្មោះ</h4>
                                                 <div class="form-floating mb-3">
                                                     <input type="email" class="form-control" id="floatingInput"
                                                         value="សុខ" placeholder="name@example.com">
@@ -138,8 +140,7 @@
                                             </div>
                                             <div class="edit-email bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-left">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-light fa-envelope"></i></span> ប្ដូរអុីម៉ែល
+                                                <h4 class="pb-4 text-primary"><span><i class="fa-solid fa-envelope"></i></span> ប្ដូរអុីម៉ែល
                                                 </h4>
                                                 <div class="form-floating mb-3">
                                                     <input type="text" class="form-control" id="floatingInput"
@@ -150,8 +151,7 @@
                                             </div>
                                             <div class="edit-password bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-regular fa-location-dot"></i></span>
+                                                <h4 class="pb-4 text-primary"><span><i class="fa-solid fa-location-dot"></i></span>
                                                     ប្ដូរទីតាំង
                                                 </h4>
                                                 <div class="form-floating mb-3">
@@ -178,63 +178,62 @@
             </div>
         </header>
         <div class=" main-content bg-light py-4  ">
-            <!-- Navigation Pills -->
-            <section>
-                <div class="row mb-4 ">
+            <div class="main-content bg-light py-4">
+
+                <!-- Navigation Pills -->
+                <div class="row mb-4">
                     <div class="col-12">
-                        <ul class="nav Navigation-pills justify-content-center ">
-                            <li class="nav-item ">
+                        <ul class="nav Navigation-pills justify-content-center" data-aos="fade-down"
+                            data-aos-duration="1000">
+                            <li class="nav-item">
                                 <a class="nav-link active" href="#dashboard">
                                     <i class="fas fa-tachometer-alt me-2"></i>ផ្ទាំងបញ្ជា
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#history">
+                                <a class="nav-link" href="#history">
                                     <i class="fas fa-history me-2"></i>ប្រវត្តិ
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#locations">
+                                <a class="nav-link" href="#locations">
                                     <i class="fas fa-map-marker-alt me-2"></i>ទីតាំង
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#setting">
+                                <a class="nav-link" href="#setting">
                                     <i class="fas fa-cog me-2"></i>ការកំណត់
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-            </section>
 
-            <!-- Dashboard Stats -->
-            <section>
+                <!-- Dashboard Stats -->
                 <div class="Dashboard" id="dashboard-section">
                     <div class="row mb-4 container-fluid">
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="1000">
                             <div class="stats-card p-4 text-center">
                                 <i class="fas fa-clipboard-list fa-2x text-primary mb-2"></i>
                                 <h4 class="mb-0">៣</h4>
                                 <small class="text-muted">សរុប</small>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3" data-aos="fade-left" data-aos-duration="1000">
                             <div class="stats-card p-4 text-center">
                                 <i class="fas fa-car fa-2x text-success mb-2"></i>
                                 <h4 class="mb-0">៣</h4>
                                 <small class="text-muted">រថយន្តបានថែទាំ</small>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                             <div class="stats-card p-4 text-center">
                                 <i class="fas fa-dollar-sign fa-2x text-warning mb-2"></i>
                                 <h4 class="mb-0">$៦០៣.១១</h4>
                                 <small class="text-muted">ចំណាយសរុប</small>
                             </div>
                         </div>
-                        <div class="col-md-3 mb-3">
+                        <div class="col-md-3 mb-3" data-aos="fade-right" data-aos-duration="1000">
                             <div class="stats-card p-4 text-center">
                                 <i class="fas fa-map-marker-alt fa-2x text-info mb-2"></i>
                                 <h4 class="mb-0">៣</h4>
@@ -243,14 +242,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- History Section -->
-            <section>
+                <!-- History Section -->
                 <div class="History-Section" id="history-section">
                     <div class="row mb-4">
                         <div class="col-12">
-                            <div class="glass-card p-4 container-fluid">
+                            <div class="glass-card p-4 container-fluid" data-aos="fade-up" data-aos-duration="1000">
                                 <h3 class="text-primary mb-4"><i class="fas fa-history me-2"></i>ប្រវត្តិរបស់អ្នក</h3>
 
                                 <!-- Filter Options -->
@@ -262,12 +259,10 @@
                                                 <input type="date" id="startDate" class="form-control"
                                                     value="2025-01-01">
                                             </div>
-
                                             <div class="col-md-4">
                                                 <label for="endDate" class="form-label">ដល់កាលបរិច្ចេទ:</label>
                                                 <input type="date" id="endDate" class="form-control" value="2025-08-31">
                                             </div>
-
                                             <div class="col-md-4">
                                                 <label for="carType" class="form-label">ប្រភេទរថយន្ត:</label>
                                                 <select id="carType" class="form-select">
@@ -294,22 +289,20 @@
                                     <div class="col-md-6 mb-3">
                                         <div class="stats-card p-4">
                                             <h5 class="text-success"><i
-                                                    class="fas fa-tools me-2"></i>សេវាកម្មនាពេលខាងមុខ
-                                            </h5>
+                                                    class="fas fa-tools me-2"></i>សេវាកម្មនាពេលខាងមុខ</h5>
                                             <p class="mb-2">• Toyota Camry: ប្តូរប្រេងម៉ាស៊ីនក្នុង ២០០០ ម៉ាយ</p>
                                             <p class="mb-2">• Honda Civic: ពិនិត្យ brake pads</p>
                                             <p class="mb-0">• Ford F-150: ប្តូរ transmission fluid</p>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Locations Section -->
-            <section>
+                <!-- Locations Section -->
                 <div class="Locations Section" id="locations-section">
                     <div class="row mb-4">
                         <div class="col-12">
@@ -319,7 +312,8 @@
 
                                 <!-- Location Cards -->
                                 <div class="row">
-                                    <div class="col-md-4 mb-4">
+                                    <!-- Location 1 -->
+                                    <div class="col-md-4 mb-4" >
                                         <div class="card location-card h-100">
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary">
@@ -347,7 +341,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- Location 2 -->
                                     <div class="col-md-4 mb-4">
                                         <div class="card location-card h-100">
                                             <div class="card-body">
@@ -376,8 +370,8 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-4 mb-4">
+                                    <!-- Location 3 -->
+                                    <div class="col-md-4 mb-4" >
                                         <div class="card location-card h-100">
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary">
@@ -420,103 +414,107 @@
                                                     width="100%" height="450" style="border:0;" allowfullscreen=""
                                                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
-
-
                                         </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Section -->
+                <div id="settings-section" class="content-section">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="glass-card p-4 container-fluid">
+                                <div
+                                    class="notification-setting border-primary border-4 border-bottom bg-white p-3 mx-3 mb-4 rounded-4">
+                                    <h4 class="py-2"><span><i class="fa-solid fa-bell"></i></span> ការជូនដំណឹង</h4>
+                                    <div
+                                        class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                        <div>
+                                            <span class="lh-base fs-5">ជូនដំណឺងតាមអុីម៉ែល​ (Email)</span><br>
+                                            <span
+                                                class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈអុីម៉ែល(email)</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input fs-4" type="checkbox" role="switch"
+                                                id="switchCheckChecked" checked>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                        <div>
+                                            <span class="lh-base fs-5">ជូនដំណឺងតាមតេលេក្រាម​ (Telegram)</span><br>
+                                            <span
+                                                class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈតេលេក្រាម(telegram)</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input fs-4" type="checkbox" role="switch"
+                                                id="switchCheckChecked">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                        <div>
+                                            <span class="lh-base fs-5">ជូនដំណឺងតាមប្រអប់សារ​ (SMS)</span><br>
+                                            <span
+                                                class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈលេខទូរស័ព្ទ(message)</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input fs-4" type="checkbox" role="switch"
+                                                id="switchCheckChecked" checked>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="security-setting border-primary border-4 border-bottom bg-white p-3 mx-3 rounded-4">
+                                    <h4 class="py-2"><span><i class="fa-regular fa-shield-check"></i></span>
+                                        ចំណូលចិត្ត​​ &
+                                        សុវត្ថិភាព</h4>
+                                    <div
+                                        class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                        <div>
+                                            <span class="lh-base fs-5">ភាសា</span><br>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <div class="dropdown">
+                                                <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    ភាសាខ្មែរ
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                                    <li><a class="dropdown-item" href="#">Vietname </a></li>
+                                                    <li><a class="dropdown-item" href="#">Japanes </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                        <div>
+                                            <span class="lh-base fs-5">រក្សាទុកពាក្យសម្ងាត់</span><br>
+                                            <span
+                                                class="text-secondary">ចូលប្រើដោយមិនចាំបាច់ប្រើពាក្យសម្ងាត់នៅពេលក្រោយ</span>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input fs-4" type="checkbox" role="switch"
+                                                id="switchCheckChecked">
+                                        </div>
+                                    </div>
+                                    <div class="my-3 d-flex justify-content-between">
+                                        <a type="button" href="../index.html" class="btn btn-outline-primary">ចាកចេញ
+                                            <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Settings Section -->
-            <section id="settings-section" class="content-section ">
-                <div class="row mb-4">
-                    <div class="col-12 ">
-                        <div class="glass-card p-4 container-fluid">
-                            <div
-                                class="notification-setting  border-primary border-4 border-bottom bg-white p-3 mx-3 mb-4 rounded-4 ">
-                                <h4 class="py-2"><span><i class="fa-solid fa-bell"></i></span> ការជូនដំណឹង</h4>
-                                <div class="ps-4 d-flex justify-content-between  rounded p-2 mb-3 align-items-center">
-                                    <div>
-                                        <span class="lh-base fs-5">ជូនដំណឺងតាមអុីម៉ែល​ (Email)</span><br>
-                                        <span class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈអុីម៉ែល(email)</span>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input fs-4" type="checkbox" role="switch"
-                                            id="switchCheckChecked" checked>
-                                    </div>
-                                </div>
-                                <div class="ps-4 d-flex justify-content-between  rounded p-2 mb-3 align-items-center">
-                                    <div>
-                                        <span class="lh-base fs-5">ជូនដំណឺងតាមតេលេក្រាម​ (Telegram)</span><br>
-                                        <span
-                                            class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈតេលេក្រាម(telegram)</span>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input fs-4" type="checkbox" role="switch"
-                                            id="switchCheckChecked">
-                                    </div>
-                                </div>
-                                <div class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
-                                    <div>
-                                        <span class="lh-base fs-5">ជូនដំណឺងតាមប្រអប់សារ​ (SMS)</span><br>
-                                        <span
-                                            class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈលេខទូរស័ព្ទ(message)</span>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input fs-4" type="checkbox" role="switch"
-                                            id="switchCheckChecked" checked>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="security-setting  border-primary border-4 border-bottom bg-white p-3 mx-3 rounded-4"
-                                data-aos="fade-left">
-                                <h4 class="py-2"><span><i class="fa-regular fa-shield-check"></i></span> ចំណូលចិត្ត​​ &
-                                    សុវត្ថិភាព
-                                </h4>
-                                <div class="ps-4 d-flex justify-content-between  rounded p-2 mb-3 align-items-center">
-                                    <div>
-                                        <span class="lh-base fs-5">ភាសា</span><br>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <div class="dropdown">
-                                            <button class="btn btn-outline-primary dropdown-toggle" type="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                ភាសាខ្មែរ
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">English</a></li>
-                                                <li><a class="dropdown-item" href="#">Vietname </a></li>
-                                                <li><a class="dropdown-item" href="#">Japanes </a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
-                                    <div>
-                                        <span class="lh-base fs-5">រក្សាទុកពាក្យសម្ងាត់</span><br>
-                                        <span
-                                            class="text-secondary">ចូលប្រើដោយមិនចាំបាច់ប្រើពាក្យសម្ងាត់នៅពេលក្រោយ</span>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input fs-4" type="checkbox" role="switch"
-                                            id="switchCheckChecked">
-                                    </div>
-                                </div>
-                                <div class="my-3 d-flex justify-content-between">
+            </div>
 
-                                    <a type="button" href="../index.html" class="btn btn-outline-primary">ចាកចេញ
-                                        <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- Recent Sessions -->
             <section>
@@ -526,7 +524,7 @@
                             <h3 class="mb-4 text-primary"><i class="fas fa-clock me-2"></i>ថ្មីៗ</h3>
 
                             <!-- Session 1: Toyota Camry -->
-                            <div class="card history-card mb-4">
+                            <div class="card history-card mb-4" >
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -810,6 +808,11 @@
     </main>
 
     <script src="../asstes/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         // Navigation functionality
@@ -818,6 +821,24 @@
             const dashboardSection = document.getElementById('dashboard-section');
             const historySection = document.getElementById('history-section');
             const locationsSection = document.getElementById('locations-section');
+            const settingsSection = document.getElementById('settings-section');
+
+            // Function to hide main content sections (not settings)
+            function hideMainSections() {
+                if (dashboardSection) dashboardSection.style.display = 'none';
+                if (historySection) historySection.style.display = 'none';
+                if (locationsSection) locationsSection.style.display = 'none';
+            }
+
+            // Function to hide settings section
+            function hideSettingsSection() {
+                if (settingsSection) settingsSection.style.display = 'none';
+            }
+
+            // Show dashboard by default and hide settings
+            hideMainSections();
+            hideSettingsSection();
+            if (dashboardSection) dashboardSection.style.display = 'block';
 
             navLinks.forEach(link => {
                 link.addEventListener('click', function (e) {
@@ -829,16 +850,36 @@
                     // Add active class to clicked link
                     this.classList.add('active');
 
-                    // Hide all sections
-                    if (dashboardSection) dashboardSection.style.display = 'none';
-                    if (historySection) historySection.style.display = 'none';
-                    if (locationsSection) locationsSection.style.display = 'none';
-
-                    // Show selected section
+                    // Get target section
                     const target = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(target + '-section');
-                    if (targetSection) {
-                        targetSection.style.display = 'block';
+
+                    if (target === 'setting') {
+                        // For settings tab: hide main sections, show settings
+                        hideMainSections();
+                        if (settingsSection) settingsSection.style.display = 'block';
+                    } else {
+                        // For other tabs: hide settings, show selected main section
+                        hideSettingsSection();
+                        hideMainSections();
+
+                        let targetSection;
+                        switch (target) {
+                            case 'dashboard':
+                                targetSection = dashboardSection;
+                                break;
+                            case 'history':
+                                targetSection = historySection;
+                                break;
+                            case 'locations':
+                                targetSection = locationsSection;
+                                break;
+                            default:
+                                targetSection = dashboardSection;
+                        }
+
+                        if (targetSection) {
+                            targetSection.style.display = 'block';
+                        }
                     }
                 });
             });
