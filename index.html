@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="asstes/css/style.css">
 </head>
 
-<body>
+<body id="body">
 
     <header>
         <!-- navbar-top -->
@@ -973,10 +973,23 @@
             <p class="bg-black text-white m-0 py-2 fs-6 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
         </div>
     </footer>
+    <a href="#body" class="arrow-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        const arrowUp = document.querySelector('.arrow-up');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                arrowUp.classList.add('show');
+            } else {
+                arrowUp.classList.remove('show');
+            }
+        });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
