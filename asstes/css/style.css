@@ -288,7 +288,7 @@ html {
 
 .herobanner .banner-title {
   position: absolute;
-  top: 140px;
+  top: 120px;
 }
 
 .herobanner .form-control {
@@ -301,10 +301,37 @@ html {
     height: 60vh;
   }
 }
+@media (min-width: 992px) {
+  .herobanner {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .herobanner {
+    height: 100vh;
+  }
+
+  .herobanner .banner-title {
+    position: absolute;
+    top: 90px;
+  }
+}
 
 @media (max-width: 600px) {
   .herobanner {
     height: 100vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .herobanner {
+    height: 100vh;
+  }
+
+  .herobanner .banner-title {
+    position: absolute;
+    top: 200px;
   }
 }
 
