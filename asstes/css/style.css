@@ -1550,8 +1550,17 @@ header .nav-item .nav-link.active {
 
 
 }
+.service-area .card .short-des p{
+  width: 100%;
+  /* height: 70px; */
+  background-color: red;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
 /*======================= service popular responsive on service page  ================*/
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .service-popular .carousel-item .title{
     display: flex;
     flex-direction: column;
@@ -1572,6 +1581,7 @@ header .nav-item .nav-link.active {
   }
   
 }
+
 
 /*================================ service detail page ========================*/
 .service-detail-area{
