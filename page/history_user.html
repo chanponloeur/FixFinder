@@ -31,7 +31,7 @@
                     <div class="col-12 col-xl-10">
                         <div class="profile-info p-4">
                             <div data-aos="fade-right" data-aos-duration="1000">
-                                <div class="d-flex pb-2" >
+                                <div class="d-flex pb-2">
                                     <h2 class="pe-4 ">សុខ​ ដារ៉ា</h2>
                                     <div class="ms-auto">
                                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -41,7 +41,7 @@
                                         </button>
                                         <div class="my-3 d-flex justify-content-between">
 
-                                            <a type="button" href="home.html" class="btn btn-outline-primary">ចាកចេញ
+                                            <a type="button" href="home.html" class="btn btn-outline-primary">ត្រឡប់
                                                 <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                             <div class="edit-username bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
                                                 <h4 class="pb-4 text-primary"><span><i
-                                                                        class="fa-solid fa-pen"></i></span> ប្ដូរឈ្មោះ</h4>
+                                                            class="fa-solid fa-pen"></i></span> ប្ដូរឈ្មោះ</h4>
                                                 <div class="form-floating mb-3">
                                                     <input type="email" class="form-control" id="floatingInput"
                                                         value="សុខ" placeholder="name@example.com">
@@ -140,7 +140,8 @@
                                             </div>
                                             <div class="edit-email bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-left">
-                                                <h4 class="pb-4 text-primary"><span><i class="fa-solid fa-envelope"></i></span> ប្ដូរអុីម៉ែល
+                                                <h4 class="pb-4 text-primary"><span><i
+                                                            class="fa-solid fa-envelope"></i></span> ប្ដូរអុីម៉ែល
                                                 </h4>
                                                 <div class="form-floating mb-3">
                                                     <input type="text" class="form-control" id="floatingInput"
@@ -151,7 +152,8 @@
                                             </div>
                                             <div class="edit-password bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
-                                                <h4 class="pb-4 text-primary"><span><i class="fa-solid fa-location-dot"></i></span>
+                                                <h4 class="pb-4 text-primary"><span><i
+                                                            class="fa-solid fa-location-dot"></i></span>
                                                     ប្ដូរទីតាំង
                                                 </h4>
                                                 <div class="form-floating mb-3">
@@ -313,7 +315,7 @@
                                 <!-- Location Cards -->
                                 <div class="row">
                                     <!-- Location 1 -->
-                                    <div class="col-md-4 mb-4" >
+                                    <div class="col-md-4 mb-4">
                                         <div class="card location-card h-100">
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary">
@@ -371,7 +373,7 @@
                                         </div>
                                     </div>
                                     <!-- Location 3 -->
-                                    <div class="col-md-4 mb-4" >
+                                    <div class="col-md-4 mb-4">
                                         <div class="card location-card h-100">
                                             <div class="card-body">
                                                 <h5 class="card-title text-primary">
@@ -468,7 +470,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="security-setting border-primary border-4 border-bottom bg-white p-3 mx-3 rounded-4">
+                                <div
+                                    class="security-setting border-primary border-4 border-bottom bg-white p-3 mx-3 rounded-4">
                                     <h4 class="py-2"><span><i class="fa-regular fa-shield-check"></i></span>
                                         ចំណូលចិត្ត​​ &
                                         សុវត្ថិភាព</h4>
@@ -503,10 +506,43 @@
                                                 id="switchCheckChecked">
                                         </div>
                                     </div>
+                                    <!-- Button trigger modal -->
                                     <div class="my-3 d-flex justify-content-between">
-                                        <a type="button" href="../index.html" class="btn btn-outline-primary">ចាកចេញ
-                                            <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
+                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                            data-bs-target="#logoutModal">
+                                            ចាកចេញ <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                                        </button>
                                     </div>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="logoutModal" tabindex="-1"
+                                        aria-labelledby="logoutModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <!-- Header -->
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="logoutModalLabel">បញ្ជាក់ចាកចេញ</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <!-- Body -->
+                                                <div class="modal-body">
+                                                    តើអ្នកពិតជាចង់ចាកចេញពីប្រព័ន្ធមែនទេ?
+                                                </div>
+
+                                                <!-- Footer -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">បោះបង់</button>
+                                                    <a href="../index.html" class="btn btn-danger">ចាកចេញ</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -524,7 +560,7 @@
                             <h3 class="mb-4 text-primary"><i class="fas fa-clock me-2"></i>ថ្មីៗ</h3>
 
                             <!-- Session 1: Toyota Camry -->
-                            <div class="card history-card mb-4" >
+                            <div class="card history-card mb-4">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-12">
