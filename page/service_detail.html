@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
     <link rel="icon" href="../asstes/img/Landing-page/title-icon.png">
+    <title>Service Detail</title>
     <link rel="stylesheet" href="../asstes/css/bootstrap.css">
-    <link rel="stylesheet" href="../asstes/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!-- remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="../asstes/css/style.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                 </div>
                 <div>
                     <form class="d-flex search-form d-none d-lg-block" role="search">
-                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែងរកសេវាកម្ម"
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
                             aria-label="Search" />
                         <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
                                 class="ri-search-line"></i></button>
@@ -59,7 +59,7 @@
                         aria-controls="panelsStayOpen-collapseOne"></i>
                     <div class="dropdown">
                         <a href="notification.html" class="nav-link position-relative">
-                            <i class="fa-regular fa-bell fs-4 me-3"></i>
+                            <i class="ri-notification-2-line fs-4 me-3"></i>
                             <span
                                 class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
                                 3+
@@ -110,6 +110,7 @@
                             <div class="profile-image-container me-3">
                                 <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image"
                                     alt="">
+
                             </div>
                             <span
                                 class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -120,6 +121,7 @@
                             <li><a class="dropdown-item " href="history_user.html"><i class="ri-user-3-line"></i>
                                     គណនី</a></li>
                             <li><a class="dropdown-item" href="../index.html"><i class="ri-arrow-right-line"></i>
+
                                     ចាកចេញ</a></li>
 
                         </ul>
@@ -149,7 +151,7 @@
         <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
                 <li class="nav-item ">
-                    <a class="nav-link active " aria-current="page" href="home.html"><i class="ri-home-gear-line"></i>
+                    <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
                         ទំព័រដើម</a>
                 </li>
                 <li class="nav-item ">
@@ -181,7 +183,7 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                             <li class="nav-item ">
-                                <a class="nav-link  hvr-underline-from-center" aria-current="page" href="home.html"><i
+                                <a class="nav-link hvr-underline-from-center" aria-current="page" href="home.html"><i
                                         class="ri-home-gear-line"></i>
                                     ទំព័រដើម</a>
                             </li>
@@ -190,8 +192,7 @@
                                         class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" href="service.html"><i
-                                        class="ri-tools-fill"></i>
+                                <a class="nav-link active" href="service.html"><i class="ri-tools-fill"></i>
                                     សេវាកម្ម</a>
                             </li>
                             <li class="nav-item">
@@ -204,7 +205,8 @@
                                     ជំនួយ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about_us.html"><i class="ri-team-line"></i>
+                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i
+                                        class="ri-team-line"></i>
                                     អំពីពួកយើង</a>
                             </li>
                             <li class="nav-item">
@@ -219,228 +221,232 @@
         </nav>
     </header>
     <main>
-        <section class="about-us-banner bg-light py-5">
+        <section class="service-detail-area py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-xl-6">
-                        <div class="title pt-5">
-                            <h2>អំពី <span class="fw-bold text-primary">Fix Finder</span></h2>
-                            <div class="style-line bg-primary mx-5 mb-3 "></div>
-                        </div>
-                        <div class="short-quote fs-4 ps-4">
-
-                            <i class="fa-solid fa-quote-left"></i>
-                            <span>ក្រុមហ៊ុន <span class="text-primary fw-bold">Fix Finder</span>
-                                គឺបង្កើតឡើងដើម្បីជួយសម្រួលដល់ប្រជាពលរដ្ឋដែលពិបាករកកន្លែងជួសជុសនិងកង្វះពេលវេលាក្នុងស្វែងរកជាង
-                                និងមិនមានទំនុកចិត្តលើជាងក្នុងការជួសជុល។ បច្ចុប្បន្ននេះពួកយើងបានបង្កើតគេហទំព័រ <span
-                                    class="text-primary fw-bold">Fix Finder </span>ដើម្បីជួយសម្រួលបញ្ហារបស់ពុកម៉ែបងប្អូន
-                            </span>
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="banner-img p-5">
-                            <img src="../asstes/img/Landing-page/herobanner.jpg" alt="" class="rounded">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="our-mission py-5">
-            <div class="container">
-                <h2 class="text-center pb-2 text-primary fw-bold">បេសកកម្មពួកយើង</h2>
-                <div class="style-line bg-primary m-auto mb-0 "></div>
-                <div id="carouselExampleAutoplaying" class="carousel slide  px-1" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row bg-light rounded-2 m-5 align-items-center">
-                                <div class="col-12 col-xl-6">
-                                    <div class="img">
-                                        <img src="../asstes/img/about_us/security.jpg" class="d-block w-100 rounded-2"
-                                            alt="...">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 pe-5">
-                                    <p class="pt-3">បេសកកម្មពួកយើង</p>
-                                    <div class="d-flex justify-content-between text-primary">
-                                        <h3 class="text-primary fw-bold">ផ្ដល់ទំនុកចិត្តដល់អតិថិជន</h3>
-                                    </div>
-                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 fs-5">
-                                        អនុញ្ញាតអោយអតិថិជនអស់កង្វល់រឿងជាងលួចដោះដូរគ្រឿងនិងយកតម្លៃលើសលប់។​
-                                        ធានាសងប្រាក់់ជូនវិញករណីរកឃើញការជួសជុលដោយមិនយកចិត្តទុកដាក់របស់ជាងក្រុមយើង</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row bg-light rounded-2 m-5 align-items-center">
-                                <div class="col-12 col-xl-6">
-                                    <div class="img">
-                                        <img src="../asstes/img/about_us/save_time.jpg" class="d-block w-100 rounded-2"
-                                            alt="...">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 pe-5">
-                                    <p class="pt-3">បេសកកម្មពួកយើង</p>
-                                    <div class="d-flex justify-content-between text-primary">
-                                        <h3 class="text-primary fw-bold">ចំណេញពេលវេលា</h3>
-                                    </div>
-                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 fs-5">
-                                        អនុញ្ញាតអោយអតិថិជនអស់កង្វល់រឿងជាងលួចដោះដូរគ្រឿងនិងយកតម្លៃលើសលប់។​
-                                        ធានាសងប្រាក់់ជូនវិញករណីរកឃើញការជួសជុលដោយមិនយកចិត្តទុកដាក់របស់ជាងក្រុមយើង</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row bg-light rounded-2 m-5 align-items-center">
-                                <div class="col-12 col-xl-6">
-                                    <div class="img">
-                                        <img src="../asstes/img/about_us/Confidence.jpg" class="d-block w-100 rounded-2"
-                                            alt="...">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 pe-5">
-                                    <p class="pt-3">បេសកកម្មពួកយើង</p>
-                                    <div class="d-flex justify-content-between text-primary">
-                                        <h3 class="text-primary fw-bold">ផ្ដល់ភាពងាយស្រួលដល់អតិថិជន</h3>
-                                    </div>
-                                    <p class="border-3 border-start bg-light border-primary p-3 ms-2 my-4 fs-5">
-                                        អនុញ្ញាតអោយអតិថិជនអស់កង្វល់រឿងជាងលួចដោះដូរគ្រឿងនិងយកតម្លៃលើសលប់។​
-                                        ធានាសងប្រាក់់ជូនវិញករណីរកឃើញការជួសជុលដោយមិនយកចិត្តទុកដាក់របស់ជាងក្រុមយើង</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="controll-carousel">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <i class="fs-1 text-black ri-arrow-left-s-line"></i>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <i class="fs-1 text-black ri-arrow-right-s-line"></i>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="our-team py-5">
-            <div class="container">
-                <h2 class="text-center text-primary fw-bold pb-2">ស្ថានិកគេហទំព័រ</h2>
-                <div class="style-line bg-primary m-auto mb-5"></div>
-                <div class="member">
-                    <div class="row g-5">
-                        <div class="col-12 col-xl-3 col-md-6">
-                            <div class="card card-height" data-aos="zoom-in-left">
-                                <div class="card-img ">
-                                    <img src="../asstes/img/about_us/ponler.jpg" class="img-fluid w-100 rounded-2"
-                                        alt="">
-                                </div>
-                                <div class="card-body pt-3 px-3">
-                                    <h4 class="text-center text-primary fw-bold">ចាន់ ពន្លឺ​</h4>
-                                </div>
-                                <div class="contact-member fs-1 text-center  w-100">
-                                    <span><a href="https://www.facebook.com/" class="text-white"><i
-                                                class="fa-brands fa-facebook"></i></a></span>
-                                    <span><a href="https://t.me/ponloeur" class="text-white"><i
-                                                class="fa-brands fa-telegram"></i></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-md-6">
-                            <div class="card card-height" data-aos="zoom-in-left">
-                                <div class="card-img ">
-                                    <img src="../asstes/img/about_us/m-hai.jpg" class="img-fluid w-100 rounded-2"
-                                        alt="">
-                                </div>
-                                <div class="card-body pt-3 px-3">
-                                    <h4 class="text-center text-primary fw-bold"> ឯម សុខហៃ</h4>
-                                </div>
-                                <div class="contact-member fs-1 text-center  w-100">
-                                    <span><a href="https://www.facebook.com/" class="text-white"><i
-                                                class="fa-brands fa-facebook"></i></a></span>
-                                    <span><a href="https://t.me/Sokhai_09" class="text-white"><i
-                                                class="fa-brands fa-telegram"></i></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-md-6">
-                            <div class="card card-height" data-aos="zoom-in-right">
-                                <div class="card-img ">
-                                    <img src="../asstes/img/about_us/m-damrey.JPG" class="img-fluid w-100 rounded-2"
-                                        alt="">
-                                </div>
-                                <div class="card-body pt-3 px-3">
-                                    <h4 class="text-center text-primary fw-bold"> ជិន ដំរី</h4>
-                                </div>
-                                <div class="contact-member fs-1 text-center  w-100">
-                                    <span><a href="https://www.facebook.com/" class="text-white"><i
-                                                class="fa-brands fa-facebook"></i></a></span>
-                                    <span><a href="https://t.me/Damrey_chin" class="text-white"><i
-                                                class="fa-brands fa-telegram"></i></a></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-md-6">
-                            <div class="card card-height" data-aos="zoom-in-right">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-8 col-xl-8">
+                        <div class="w-100 rounded-3" data-aos="fade-left">
+                            <div class="card card-height border-0 p-2">
                                 <div class="card-img">
-                                    <img src="../asstes/img/about_us/m-vin.jpg" class="img-fluid w-100 rounded-2"
-                                        alt="">
+                                    <img src="../asstes/img/service-img/service-img/car_repair_on_road.png"
+                                        class="img-fluid rounded-2" alt="">
                                 </div>
                                 <div class="card-body pt-3 px-3">
-                                    <h4 class="text-center text-primary fw-bold"> សុីម វីន</h4>
-                                </div>
-                                <div class="contact-member fs-1 text-center  w-100">
-                                    <span><a href="https://www.facebook.com/" class="text-white"><i
-                                                class="fa-brands fa-facebook"></i></a></span>
-                                    <span><a href="https://t.me/sim_vin168" class="text-white"><i
-                                                class="fa-brands fa-telegram"></i></a></span>
+                                    <div class="title d-flex justify-content-between align-items-center text-primary">
+                                        <span class="fs-3 fw-bold" data-aos="fade-right">ជួសជុលរថយន្តធន់ធ្ងន់</span>
+                                        <span class="fw-bold bg-secondary-subtle rounded-4 text-success px-2">
+                                            $50-150
+                                        </span>
+
+                                    </div>
+
+                                    <p class="text-start fs-5 fw-bold bg-light border-primary ms-2 my-2 mt-2 p-3"
+                                        data-aos="fade-left">
+                                        ពិបាករកជាងជំនាញក្នុងការជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                        បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ។ ចំណាយតិច
+                                        ចំណេញពេលវេលារបស់លោកអ្នក​ តោះនៅចាំអីទៀត!
+                                        ស្វែងរកជាងតាមចំណូលចិត្ត</p>
+                                    <p class="text-danger text-start fs-5 mb-0 fw-bold" data-aos="fade-right">ចំណាំ *
+                                    </p>
+                                    <div class="note text-danger p-4 rounded-2" data-aos="fade-right">
+                                        <p>ថ្លៃសេវាកម្មដល់កន្លែង (១គីឡូដី ៤០០រៀល)</p>
+                                        <p>ដំណើរការ 24ម៉ោងក្នុងមួយសប្ដាហ៍</p>
+                                        <p>មិនមានការបង់ប្រាក់មុននោះទេ ជួសជុលរួចទើបបង់ប្រាក់</p>
+                                        <p>ជាងដែលមាននៅទីនេះទទួលបានការចុះឈ្មោះជាមួយក្រុមហ៊ុនត្រឹមត្រូវ
+                                        </p>
+
+                                    </div>
+                                    <div class="d-flex justify-content-between py-3">
+
+                                        <div class="phone-number  align-content-center">
+                                            <a type="button" href="tel:+1234567890"
+                                                class="btn btn-transparent border-0 text-success fw-bold">
+                                                <span data-aos="fade-right"><i class="fa-solid fa-phone"></i>
+                                                    09876543
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <div class="py-2 fw-bold link-underline-primary" data-aos="fade-right">
+                                            <a href="https://maps.app.goo.gl/wbCgLLDDnA9BhfPG7" class="link-offset-3">
+                                                <i class="ri-user-location-line"></i>
+                                                ស្ទឹងមានជ័យ​ ភ្នំពេញ
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between border-bottom py-3 border-3 align-items-center">
+                                        <a href="profile_professional.html" class="text-decoration-none d-block">
+                                            <div>
+                                                <div class="repairman-profile"><img
+                                                        src="../asstes/img/professional_list/pro-1.688Z.png" alt=""
+                                                        class="img-fluid">
+                                                    <span class=" fs-5 px-2 text-primary fw-bold">ជាង​ ពន្លឺ
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="service-rating text-warning">★★★★★ <span
+                                                class="text-black">4.9</span></div>
+                                    </div>
+                                    <div class="py-3 text-end" data-aos="fade-right">
+                                        <a type="button" href="select_service.html"
+                                            class="btn btn-primary">ជួលជុលអីឡូវនេះ!
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-            </div>
-        </section>
-        <section class="thank-area py-5">
-            <div class="container">
-                <h2 class="text-center text-primary fw-bold pb-2" data-aos="zoom-in">សូមថ្លែងអំណរគុណដល់</h2>
-
-                <div class="style-line bg-primary m-auto mb-3 "></div>
-                <p class="px-5 fs-5 text-center lh-lg" data-aos="zoom-in">
-                    យើងខ្ញុំទាំងអស់គ្នាសូមអនុញ្ញាតធ្វើសេចក្ដីថ្លែងអំណរ​អរគុណនិងដឹងគុណយ៉ាងជ្រាលជ្រៅទៅដល់
-                    <span class="text-primary fw-bold">ក្រសួងប្រៃសណីយ៌ និង ទូរគមនាគមន៍មូលនិធិ ស.អ</span>
-                    ដែលបានផ្ដល់អាហារូបករណ៌ជំនាញ Web Developmentដល់ពួកយើងទាំងអស់បានសិក្សារៀនសូត្រលើសពីនេះ
-                    ពួកយើងទាំងអស់គ្នាក៏សូមថ្លែងសេចក្ដីអំណរ​ អរគុណនិងដឹងគុណយ៉ាងជ្រាវជ្រៅដល់ថ្នាក់ដឹកនាំសាលា​
-                    <span class="text-primary fw-bold"> ថ្នាក់បណ្ដុះបណ្ដាលបច្ចេកវិទ្យាអាន-ANT</span>
-                    ព្រមទាំងលោកគ្រូ អ្នកគ្រូជាពិសេសលោកគ្រូ
-                    <span class="text-primary fw-bold">ចែ ​សុផល</span>
-                    ដែលបានព្យាយាម​ខិតខំ​នាំមកនូវឱកាសអាហារូបករណ៌ដល់ល្អអោយពួកយើងទាំងអស់គ្នាបានសិក្សា
-                    ព្រមទាំងបានបង្ហាត់បង្រៀនណែនាំយើងយ៉ាងយកចិត្តទុកដាក់លើដំណើរការសិក្សាកន្លងមក។
-                </p>
-                <div class="sponser-logo pb-5">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-12 col-md-4">
-                            <div class="logo p-0">
-                                <img src="../asstes/img/about_us/MPTC.png" alt="" data-aos="fade-right"
-                                    class="img-fluid ">
+                    <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="relate-block w-100  bg-white rounded-3 py-4">
+                            <h4 class="pb-3 fw-bold text-primary text-center">ជួសជុលដែលពាក់ព័ន្ធ</h4>
+                            <div class="relate-repair m-3" data-aos="fade-left">
+                                <a href="service_detail.html" class="text-decoration-none text-black">
+                                    <div class="row g-0 px-1">
+                                        <div class="col-8">
+                                            <div class="w-100 p-2">
+                                                <h5 class="text-primary fw-bold">ជួលជុលរថយន្តតូច</h5>
+                                                <p class="ps-2">ពិបាករកជាងជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                    បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 py-4 pe-2">
+                                            <div class="relate-img w-100 bg-info">
+                                                <img src="../asstes/img/service-img/service-img/car_repair_on_road_1.png"
+                                                    alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="relate-repair m-3" data-aos="fade-right">
+                                <a href="service_detail.html" class="text-decoration-none text-black">
+                                    <div class="row g-0 px-1">
+                                        <div class="col-8">
+                                            <div class="w-100 p-2">
+                                                <h5 class="text-primary fw-bold">ជួសជុលម៉ាសុីនច្រូត</h5>
+                                                <p class="ps-2">ពិបាករកជាងជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                    បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 py-4 pe-2">
+                                            <div class="relate-img w-100">
+                                                <img src="../asstes/img/service-img/service-img/machine_cut_rice.png"
+                                                    alt="" class="img-fluid rounded-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="relate-repair m-3" data-aos="fade-left">
+                                <a href="service_detail.html" class="text-decoration-none text-black">
+                                    <div class="row g-0 px-1">
+                                        <div class="col-8">
+                                            <div class="w-100 p-2">
+                                                <h5 class="text-primary fw-bold">ជួសជុលកង់អគ្គិសនី</h5>
+                                                <p class="ps-2">ពិបាករកជាងជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                    បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 py-4 pe-2">
+                                            <div class="relate-img w-100">
+                                                <img src="../asstes/img/service-img/service-img/bicycle-repair.png"
+                                                    alt="" class="img-fluid rounded-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="relate-repair m-3" data-aos="fade-right">
+                                <a href="service_detail.html" class="text-decoration-none text-black">
+                                    <div class="row g-0 px-1">
+                                        <div class="col-8">
+                                            <div class="w-100 p-2">
+                                                <h5 class="text-primary fw-bold">ជួសជុលត្រាក់ទ័រ</h5>
+                                                <p class="ps-2">ពិបាករកជាងជួសជុលរថយន្តនៅតាមទីជនបទ​
+                                                    បច្ចុប្បន្ននេះលែងជាបញ្ហាទៀតហើយ
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 py-4 pe-2">
+                                            <div class="relate-img w-100">
+                                                <img src="../asstes/img/service-img/service-img/tractor_repair.png"
+                                                    alt="" class="img-fluid rounded-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pt-2 px-3 text-end">
+                                <a href="service.html"
+                                    class="see-more px-3 py-2 bg-primary text-white text-decoration-none rounded">មើលបន្ថែម
+                                    <span><i class="next fs-sm fa-solid fa-arrow-right"></i></span></a>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
-                            <div class="logo">
-                                <img src="../asstes/img/about_us/CBRD Fund.png" alt="" data-aos="fade-left"
-                                    class="img-fluid">
+                        <div class="relate-repair-man w-100 bg-white mt-4 rounded p-4">
+                            <h4 class="pb-3 fw-bold text-primary text-center">ជាងពាក់ព័ន្ធ</h4>
+                            <div class="repairman p-2 rounded " data-aos="fade-left">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="repiarman-img w-100">
+                                            <img src="../asstes/img/professional_list/pro-3.688Z.png" alt=""
+                                                class="img-fluid rounded-2">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="w-100 ps-3 pt-1 pe-1">
+                                            <h5 class="text-primary fw-bold">លោក​ ប៉េង សីហា</h5>
+                                            <span class="fw-bold">ជំនាញ</span>
+                                            <div class="d-flex pt-2">
+                                                <span
+                                                    class="bg-secondary-subtle text-center p-2 me-1 rounded-4 fw-bold">មេកានិចរថយន្ត</span>
+                                                <span
+                                                    class="bg-secondary-subtle text-center p-2 rounded-4 fw-bold">ចង្កូតរថយន្ត</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="pt-2">
+                                        <a href="professional_list.html"
+                                            class="btn btn-outline-primary w-100 text-decoration-none rounded">មើលបន្ថែម
+                                            
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <div class="logo">
-                                <img src="../asstes/img/about_us/ANT.png" alt="" data-aos="fade-right"
-                                    class="img-fluid">
+                            <div class="repairman p-2 rounded mt-4" data-aos="fade-left">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="repiarman-img w-100">
+                                            <img src="../asstes/img/professional_list/pro-2.688Z.png" alt=""
+                                                class="img-fluid rounded-2">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="w-100 ps-3 pt-1 pe-1">
+                                            <h5 class="text-primary fw-bold">លោក សុខា​ វិចិត្រ</h5>
+                                            <span class="fw-bold">ជំនាញ</span>
+                                            <div class="d-flex pt-2">
+                                                <span
+                                                    class="bg-secondary-subtle text-center p-2 me-1 rounded-4 fw-bold">ជួសជុលរថយន្ត</span>
+                                                <span
+                                                    class="bg-secondary-subtle text-center p-2 rounded-4 fw-bold">តភ្លើងរថយន្ត</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="pt-2">
+                                        <a href="professional_list.html"
+                                            class="btn btn-outline-primary w-100 text-decoration-none rounded">មើលបន្ថែម
+                                            
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -477,7 +483,9 @@
                                 <li><a href="service.html" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
                                 <li><a href="service.html" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
                                 <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
-                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a></li>
+                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -486,9 +494,10 @@
                             <h3 class="text-white">ក្រុមហ៊ុន</h3>
                             <div class="style-line bg-primary my-2"></div>
                             <ul class="footer-service p-0">
-                                <li><a href="about_us.html" class="text-decoration-none">អំពីយើង</a></li>
+                                <li><a href="#" class="text-decoration-none">អំពីយើង</a></li>
                                 <li><a href="history_bolt.html" class="text-decoration-none">ការងារ</a></li>
                                 <li><a href="help.html" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
                             </ul>
                         </div>
                     </div>
@@ -504,7 +513,7 @@
                                             </div>
                                             <div class="w-75">
                                                 <h6 class="fw-bold text-primary mb-0">អាស័យដ្ធាន</h6>
-                                                <p class="m-0">Lorem ipsum dolor sit amet,</p>
+                                                <p class="m-0">ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
                                             </div>
                                         </div>
                                     </a></li>
@@ -537,16 +546,16 @@
             </div>
         </div>
         <div class="col-12 border-top">
-            <p class="bg-black text-white m-0 py-2 fs-6 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+            <p class="bg-black text-white m-0 py-2 fs-5 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
         </div>
     </footer>
-
     <script src="../asstes/js/bootstrap.bundle.min.js"></script>
     <script src="../asstes/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-</body>
+
+    <body>
 
 </html>
