@@ -1552,7 +1552,6 @@ header .nav-item .nav-link.active {
 }
 .service-area .card .short-des p{
   width: 100%;
-  /* height: 70px; */
   background-color: red;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1562,31 +1561,36 @@ header .nav-item .nav-link.active {
 /*======================= service popular responsive on service page  ================*/
 @media (max-width: 576px) {
   .service-popular .carousel-item .title{
+
     display: flex;
     flex-direction: column;
     font-size: 15px;
     align-content: center;
-    
+
   }
-  .service-popular .carousel-item .title h3{
+
+  .service-popular .carousel-item .title h3 {
     margin-bottom: 16px;
   }
-   .service-popular .carousel-item .title p{
+
+  .service-popular .carousel-item .title p {
     margin-block: 4px;
-   text-align: center;
-  
+    text-align: center;
+
   }
-  .service-popular .carousel-item .short-des{
+
+  .service-popular .carousel-item .short-des {
     display: none;
   }
-  
+
 }
 
 
 /*================================ service detail page ========================*/
-.service-detail-area{
-  background-color:#eff6ff;
+.service-detail-area {
+  background-color: #eff6ff;
 }
+
 .service-area .nav-pills .nav-item .nav-link {
   font-weight: bold;
 
@@ -1622,22 +1626,28 @@ header .nav-item .nav-link.active {
   color: #ff6467;
   font-size: 14px;
 }
-.service-detail-area .card .card-body .repairman-profile img{
+
+.service-detail-area .card .card-body .repairman-profile img {
   width: 60px;
-  border-radius: 100%;;
+  border-radius: 100%;
+  ;
 }
-.service-detail-area .relate-repair{
+
+.service-detail-area .relate-repair {
   background-color: #f5f5f4a8;
   border-radius: 5px;
 }
-.service-detail-area .relate-block .see-more .next{
+
+.service-detail-area .relate-block .see-more .next {
   transition: 0.2s;
 }
-.service-detail-area .relate-block .see-more:hover .next{
+
+.service-detail-area .relate-block .see-more:hover .next {
   transform: translateX(8px);
 }
-.service-detail-area .relate-repair-man .repairman{
-  background-color:  #f5f5f4b9;
+
+.service-detail-area .relate-repair-man .repairman {
+  background-color: #f5f5f4b9;
 }
 
 /*=============================== about us page  =============================*/
@@ -1693,10 +1703,12 @@ header .nav-item .nav-link.active {
     top: 100%;
   }
 
+  .service-popular .carousel .carousel-control-prev,
   .our-mission .carousel .controll-carousel .carousel-control-prev {
     left: 35%;
   }
 
+  .service-popular .carousel .carousel-control-next,
   .our-mission .carousel .controll-carousel .carousel-control-next {
     left: 50%;
   }
@@ -1727,7 +1739,7 @@ header .navbar-bottom .nav-item .nav-link.active {
 
 .our-team .member .card .card-body {
   text-align: center;
-  
+
 }
 
 .our-team .member .card .contact-member {
@@ -2540,4 +2552,29 @@ header .navbar-bottom .nav-item .nav-link.active {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   padding: 20px;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #252223;
+  color: #fff;
+  width: 43px;
+  height: 43px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  transform: translateY(10px);
+}
+
+.arrow-up.show {
+  opacity: 1;
+  pointer-events: auto;
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../asstes/css/style.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <!-- navbar-top -->
         <nav class="navbar-top py-2">
@@ -412,7 +412,7 @@
                                     <div class="pt-2">
                                         <a href="professional_list.html"
                                             class="btn btn-outline-primary w-100 text-decoration-none rounded">មើលបន្ថែម
-                                            
+
                                         </a>
                                     </div>
                                 </div>
@@ -441,7 +441,7 @@
                                     <div class="pt-2">
                                         <a href="professional_list.html"
                                             class="btn btn-outline-primary w-100 text-decoration-none rounded">មើលបន្ថែម
-                                            
+
                                         </a>
                                     </div>
                                 </div>
@@ -549,11 +549,24 @@
             <p class="bg-black text-white m-0 py-2 fs-5 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
         </div>
     </footer>
+    <a href="#body" class="arrow-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
     <script src="../asstes/js/bootstrap.bundle.min.js"></script>
     <script src="../asstes/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        const arrowUp = document.querySelector('.arrow-up');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                arrowUp.classList.add('show');
+            } else {
+                arrowUp.classList.remove('show');
+            }
+        });
     </script>
 
     <body>
