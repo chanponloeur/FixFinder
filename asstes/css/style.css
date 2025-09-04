@@ -1440,49 +1440,6 @@ html {
   border-radius: 10px;
 }
 
-/* ========================= user profile ================================ */
-@media (min-width:768px) {
-  .user-profile-top .profile-img img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-}
-
-
-.btn-tap .nav .nav-link.active {
-
-  border-radius: 0;
-  border-bottom: 2px solid var(--primary);
-  background-color: transparent;
-  color: var(--primary);
-}
-
-@media (max-width:767px) {
-  .user-profile-top .profile-img img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-  }
-
-  .user-profile-top .profile-img {
-    display: flex;
-    justify-content: center;
-    line-height: 30px;
-  }
-
-  .user-profile-top .profile-info {
-
-    display: flex;
-    justify-content: center;
-  }
-
-
-  .user-profile-top .profile-info .address {
-    flex-direction: column;
-  }
-}
-
 /* ====================== service history ============= */
 .user-profile-body .service-detail,
 .user-profile-body .user-setting .notification-setting,
@@ -2243,7 +2200,60 @@ header .navbar-bottom .nav-item .nav-link.active {
 
 /*========================history user===================*/
 
+/* Desktop (>=768px) */
+@media (min-width:768px) {
+  .user-profile-top .profile-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
 
+  .user-profile-top h2 {
+    text-align: left;
+  }
+}
+
+/* Mobile (<768px) */
+@media (max-width:767px) {
+  .user-profile-top .profile-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .user-profile-top .profile-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .user-profile-top .profile-info {
+    text-align: center;
+  }
+
+  .user-profile-top h2 {
+    width: 100%;
+    text-align: center; /* ឈ្មោះចំកណ្តាល */
+    font-size: 1.8rem;  /* ធ្វើឲ្យមើលច្បាស់លើទូរស័ព្ទ */
+  }
+
+  .user-profile-top .profile-info .address {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user-profile-top .profile-info p {
+    text-align: center;
+  }
+
+  .user-profile-top .d-flex.gap-2 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*history*/
 .main-content .Dashboard .stats-card {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
