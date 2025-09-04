@@ -20,49 +20,61 @@
         <!-- Header -->
         <header class="user-profile-top py-4">
             <div class="container rounded">
-
                 <div class="row">
+                    <!-- Profile Image -->
                     <div class="col-12 col-xl-2" data-aos="fade-right" data-aos-duration="1000">
                         <div class="profile-img py-4 ps-4">
                             <img src="../asstes/img/user-profile-img/GettyImages-1341554760.jpg" alt="user-profile"
                                 class="img-fluid rounded-circle">
                         </div>
                     </div>
+
+                    <!-- Profile Info -->
                     <div class="col-12 col-xl-10">
                         <div class="profile-info p-4">
                             <div data-aos="fade-right" data-aos-duration="1000">
                                 <div class="d-flex pb-2">
-                                    <h2 class="pe-4 ">សុខ​ ដារ៉ា</h2>
-                                    <div class="ms-auto">
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#edit-profile"><span><i
-                                                    class="fa-solid fa-pen-to-square"></i></span>
-                                            កែប្រែព័ត៍មាន
-                                        </button>
-                                        <div class="my-3 d-flex justify-content-between">
-
-                                            <a type="button" href="home.html" class="btn btn-outline-primary">ត្រឡប់
-                                                <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
-                                        </div>
-                                    </div>
+                                    <h2 class="pe-4">សុខ​ ដារ៉ា</h2>
                                 </div>
+
+                                <!-- Address and Date -->
                                 <div class="address d-flex">
                                     <div class="pe-4 text-secondary">
-                                        <p><span><i class="fa-solid fa-location-dot"></i></span> ស្ទឹងមានជ័យ,ភ្នំពេញ
+                                        <p><span><i class="fa-solid fa-location-dot"></i></span> ស្ទឹងមានជ័យ, ភ្នំពេញ
                                         </p>
                                     </div>
-                                    <div class="">
-                                        <p class="text-secondary"><span><i class="fa-solid fa-calendar-days"></i></span>
-                                            បានចូលរួម​ ២៣​ ​មេសា ២០២៤​
+                                    <div>
+                                        <p class="text-secondary">
+                                            <span><i class="fa-solid fa-calendar-days"></i></span> បានចូលរួម​ ២៣ មេសា
+                                            ២០២៤
                                         </p>
                                     </div>
                                 </div>
-                                <p class="text-secondary"><span><i class="fa-solid fa-envelope"></i></span>
-                                    sokdara168@gmail.com</p>
-                                <p class="text-secondary"><span><i class="fa-solid fa-phone"></i></span> 0987654345
+
+                                <!-- Email & Phone -->
+                                <p class="text-secondary">
+                                    <span><i class="fa-solid fa-envelope"></i></span> sokdara168@gmail.com
+                                </p>
+                                <p class="text-secondary">
+                                    <span><i class="fa-solid fa-phone"></i></span> 0987654345
                                 </p>
                             </div>
-                            <!------------------------------ modal edit profile user ---------------------------->
+
+                            <!-- Buttons (Edit + Back) -->
+                            <div class="d-flex gap-2 my-3">
+                                <!-- Edit Profile Button -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#edit-profile">
+                                    <span><i class="fa-solid fa-pen-to-square"></i></span> កែប្រែព័ត៍មាន
+                                </button>
+
+                                <!-- Back Button -->
+                                <a type="button" href="home.html" class="btn btn-outline-primary">
+                                    ត្រឡប់ <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                                </a>
+                            </div>
+
+                            <!-- Modal edit-profile -->
                             <div class="modal fade" id="edit-profile" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
@@ -75,16 +87,16 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="edit-profile-user bg-white p-4 rounded  border-primary border-3 border-bottom"
+                                            <!-- Change Image -->
+                                            <div class="edit-profile-user bg-white p-4 rounded border-primary border-3 border-bottom"
                                                 data-aos="fade-left">
-                                                <h4 class="text-primary"><span><i
-                                                            class="fa-light fa-image-landscape"></i></span>
-                                                    ប្ដូររូបភាព
+                                                <h4 class="text-primary">
+                                                    <span><i class="fa-light fa-image-landscape"></i></span> ប្ដូររូបភាព
                                                 </h4>
                                                 <div class="position-relative d-flex justify-content-center">
                                                     <div class="profile-img">
                                                         <img src="../asstes/img/user-profile-img/GettyImages-1341554760.jpg"
-                                                            alt="user-profile" class="img-fluid rounded-circle ">
+                                                            alt="user-profile" class="img-fluid rounded-circle">
                                                         <div class="btn-edit-profile position-absolute">
                                                             <button type="button"
                                                                 class="btn bg-primary-subtle text-dark px-2 rounded-circle"><span></span></button>
@@ -92,77 +104,83 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="edit-username bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
+
+                                            <!-- Change Name -->
+                                            <div class="edit-username bg-white p-4 my-4 rounded border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-solid fa-pen"></i></span> ប្ដូរឈ្មោះ</h4>
+                                                <h4 class="pb-4 text-primary">
+                                                    <span><i class="fa-solid fa-pen"></i></span> ប្ដូរឈ្មោះ
+                                                </h4>
                                                 <div class="form-floating mb-3">
-                                                    <input type="email" class="form-control" id="floatingInput"
-                                                        value="សុខ" placeholder="name@example.com">
-                                                    <label for="floatingInput">នាមត្រកូល</label>
+                                                    <input type="text" class="form-control" id="lastname" value="សុខ"
+                                                        placeholder="នាមត្រកូល">
+                                                    <label for="lastname">នាមត្រកូល</label>
                                                 </div>
                                                 <div class="form-floating">
-                                                    <input type="text" class="form-control" id="floatingPassword"
-                                                        value="ដារ៉ា" placeholder="Password">
-                                                    <label for="floatingPassword">នាមបុគ្គល</label>
+                                                    <input type="text" class="form-control" id="firstname" value="ដារ៉ា"
+                                                        placeholder="នាមបុគ្គល">
+                                                    <label for="firstname">នាមបុគ្គល</label>
                                                 </div>
                                             </div>
-                                            <div class="edit-password bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
+
+                                            <!-- Change Password -->
+                                            <div class="edit-password bg-white p-4 my-4 rounded border-primary border-3 border-bottom"
                                                 data-aos="fade-left">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-sharp-duotone fa-solid fa-unlock"></i></span>
-                                                    ប្ដូរពាក្យសម្ងាត់</h4>
+                                                <h4 class="pb-4 text-primary">
+                                                    <span><i class="fa-solid fa-unlock"></i></span> ប្ដូរពាក្យសម្ងាត់
+                                                </h4>
                                                 <div class="form-floating mb-3">
-                                                    <input type="password" class="form-control" id="floatingInput"
-                                                        placeholder="name@example.com">
-                                                    <label for="floatingInput">ពាក្យសម្ងាត់ចាស់</label>
+                                                    <input type="password" class="form-control" id="oldPassword"
+                                                        placeholder="ពាក្យសម្ងាត់ចាស់">
+                                                    <label for="oldPassword">ពាក្យសម្ងាត់ចាស់</label>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input type="password" class="form-control" id="floatingPassword"
-                                                        placeholder="Password">
-                                                    <label for="floatingPassword">ពាក្យសម្ងាត់ថ្មី</label>
+                                                    <input type="password" class="form-control" id="newPassword"
+                                                        placeholder="ពាក្យសម្ងាត់ថ្មី">
+                                                    <label for="newPassword">ពាក្យសម្ងាត់ថ្មី</label>
                                                 </div>
                                                 <div class="form-floating">
-                                                    <input type="password" class="form-control" id="floatingPassword"
-                                                        placeholder="Password">
-                                                    <label for="floatingPassword">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                                                    <input type="password" class="form-control" id="confirmPassword"
+                                                        placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់">
+                                                    <label for="confirmPassword">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
                                                 </div>
                                             </div>
+
+                                            <!-- Change Phone -->
                                             <div class="edit-phone-number bg-white p-4 my-4 rounded"
                                                 data-aos="fade-right">
                                                 <h4 class="pb-4">ប្ដូរលេខទូរស័ព្ទ</h4>
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        value="098765421" placeholder="">
-                                                    <label for="floatingInput">លេខទូរស័ព្ទ</label>
+                                                    <input type="text" class="form-control" id="phone" value="098765421"
+                                                        placeholder="លេខទូរស័ព្ទ">
+                                                    <label for="phone">លេខទូរស័ព្ទ</label>
                                                 </div>
-
                                             </div>
-                                            <div class="edit-email bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
+
+                                            <!-- Change Email -->
+                                            <div class="edit-email bg-white p-4 my-4 rounded border-primary border-3 border-bottom"
                                                 data-aos="fade-left">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-solid fa-envelope"></i></span> ប្ដូរអុីម៉ែល
+                                                <h4 class="pb-4 text-primary">
+                                                    <span><i class="fa-solid fa-envelope"></i></span> ប្ដូរអុីម៉ែល
                                                 </h4>
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        value="sokdara168@gmail" placeholder="sokdara@example.com">
-                                                    <label for="floatingInput">អុីម៉ែល</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        value="sokdara168@gmail.com" placeholder="sokdara@example.com">
+                                                    <label for="email">អុីម៉ែល</label>
                                                 </div>
-
                                             </div>
-                                            <div class="edit-password bg-white p-4 my-4 rounded  border-primary border-3 border-bottom"
+
+                                            <!-- Change Location -->
+                                            <div class="edit-location bg-white p-4 my-4 rounded border-primary border-3 border-bottom"
                                                 data-aos="fade-right">
-                                                <h4 class="pb-4 text-primary"><span><i
-                                                            class="fa-solid fa-location-dot"></i></span>
-                                                    ប្ដូរទីតាំង
+                                                <h4 class="pb-4 text-primary">
+                                                    <span><i class="fa-solid fa-location-dot"></i></span> ប្ដូរទីតាំង
                                                 </h4>
                                                 <div class="form-floating mb-3">
-                                                    <input type="text" class="form-control" id="floatingInput"
-                                                        value="ក្រាំងធ្នង់​​ , ភ្នំពេញ"
-                                                        placeholder="ក្រាំងធ្នង់​​ , ភ្នំពេញ">
-                                                    <label for="floatingInput">ទីតាំង</label>
+                                                    <input type="text" class="form-control" id="location"
+                                                        value="ក្រាំងធ្នង់​​ , ភ្នំពេញ" placeholder="ទីតាំង">
+                                                    <label for="location">ទីតាំង</label>
                                                 </div>
-
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -174,11 +192,13 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- End Modal -->
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
         <div class=" main-content bg-light py-4  ">
             <div class="main-content bg-light py-4">
 
@@ -506,43 +526,10 @@
                                                 id="switchCheckChecked">
                                         </div>
                                     </div>
-                                    <!-- Button trigger modal -->
                                     <div class="my-3 d-flex justify-content-between">
-                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                                            data-bs-target="#logoutModal">
-                                            ចាកចេញ <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
-                                        </button>
+                                        <a type="button" href="../index.html" class="btn btn-outline-primary">ចាកចេញ
+                                            <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span></a>
                                     </div>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="logoutModal" tabindex="-1"
-                                        aria-labelledby="logoutModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-
-                                                <!-- Header -->
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="logoutModalLabel">បញ្ជាក់ចាកចេញ</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-
-                                                <!-- Body -->
-                                                <div class="modal-body">
-                                                    តើអ្នកពិតជាចង់ចាកចេញពីប្រព័ន្ធមែនទេ?
-                                                </div>
-
-                                                <!-- Footer -->
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">បោះបង់</button>
-                                                    <a href="../index.html" class="btn btn-danger">ចាកចេញ</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
