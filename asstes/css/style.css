@@ -1672,7 +1672,36 @@ header .nav-item .nav-link.active {
 .service-detail-area .relate-repair-man .repairman {
   background-color: #f5f5f4b9;
 }
+@media (max-width:1400px) {
+  .service-detail-area .relate-repair-man .repairman .skill{
+    
+    font-size: 14px;
 
+  }
+  .service-detail-area .relate-repair-man .repairman .skill span{
+    padding-inline:3px ;
+    padding-block: 4px;
+  }
+}
+@media (max-width:1200px) {
+
+   .service-detail-area .relate-repair-man h5{
+    font-size: 18px; 
+    margin-bottom: 0;
+   }
+   
+  .service-detail-area .relate-repair-man .repairman .skill{
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 12px;
+   
+
+  }
+  .service-detail-area .relate-repair-man .repairman .skill span{
+    padding-inline:3px ;
+    padding-block: 4px;
+  }
+}
 /*=============================== about us page  =============================*/
 
 .about-us-banner .banner-img img {
