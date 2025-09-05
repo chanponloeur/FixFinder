@@ -1248,11 +1248,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/rUTCIfJtjow?si=m3sfEVd6qOWiPXRd"
-                                    title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
+                                <video id="player" src="../asstes/media/video.mp4" controls muted loop>
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -1268,11 +1265,8 @@
                         </div>
                         <div class="modal-body">
                             <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/rUTCIfJtjow?si=m3sfEVd6qOWiPXRd"
-                                    title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen>
-                                </iframe>
+                                <video id="player" src="../asstes/media/video.mp4" controls muted loop>
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -1391,7 +1385,7 @@
                 arrowUp.classList.remove('show');
             }
         });
-        
+
         document.addEventListener('DOMContentLoaded', () => {
             const sidebar = document.getElementById("sidebar");
             const main = document.getElementById("mainContent");

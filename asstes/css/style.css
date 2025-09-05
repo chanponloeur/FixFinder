@@ -301,6 +301,7 @@ html {
     height: 60vh;
   }
 }
+
 @media (min-width: 992px) {
   .herobanner {
     height: 100vh;
@@ -403,6 +404,7 @@ html {
   padding: 5px 10px;
   border-radius: 10px;
   display: inline-block;
+  margin-bottom: 10px;
   font-size: 12px;
   background-color: #f5f5f5;
 
@@ -415,27 +417,41 @@ html {
 
 .professional-list .bg-tag,
 .popular-fixer .bg-tag {
+  width: fit-content;
+  /* margin-bottom: 10px; */
   background-color: #EFF6FF;
+  display: inline-block;
 }
 
 @media (min-width: 1025px) {
   .professional-list .card {
-    height: 620px;
+    height: 660px;
   }
 
   .popular-fixer .card {
-    height: 620px;
+    height: 660px;
   }
 }
 
 @media (max-width: 1025px) {
   .professional-list .card {
-    height: 680px;
+    height: 700px;
   }
 
   .popular-fixer .card {
-    height: 680px;
+    height: 700px;
   }
+}
+
+@media (max-width: 768px) {
+  .professional-list .card {
+    height: auto;
+  }
+
+  .popular-fixer .card {
+    height: auto;
+  }
+
 }
 
 /* ===== Q&A-Customer ===== */
@@ -1534,7 +1550,8 @@ header .nav-item .nav-link.active {
 
 
 }
-.service-area .card .short-des p{
+
+.service-area .card .short-des p {
   width: 100%;
   background-color: red;
   display: -webkit-box;
@@ -1542,9 +1559,31 @@ header .nav-item .nav-link.active {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
+
+.service-area .tab-pane .card {
+  border: none;
+  height: 550px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+  .service-area .tab-pane .card {
+    height: 560px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .service-area .tab-pane .card {
+    height: auto;
+  }
+
+}
+
 /*======================= service popular responsive on service page  ================*/
 @media (max-width: 576px) {
-  .service-popular .carousel-item .title{
+  .service-popular .carousel-item .title {
 
     display: flex;
     flex-direction: column;
@@ -2055,6 +2094,29 @@ header .navbar-bottom .nav-item .nav-link.active {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 
+.modal .modal-body .ratio.ratio-16x9 .card {
+  width: 100%;
+  height: 500px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  border: none ;
+}
+
+.modal .modal-body .ratio.ratio-16x9 .card video {
+  height: 100%;
+  border-radius: 10px;
+  border: none ;
+}
+
+.modal .modal-body .ratio.ratio-16x9 .plyr__poster {
+  background-size: cover !important;
+}
+
+.modal .modal-body .ratio.ratio-16x9 .plyr__control--overlaid {
+  background-color: #0056b3 !important;
+} */
+
 .navbar .container-fluid .toggle-btn {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -2260,8 +2322,10 @@ header .navbar-bottom .nav-item .nav-link.active {
 
   .user-profile-top h2 {
     width: 100%;
-    text-align: center; /* ឈ្មោះចំកណ្តាល */
-    font-size: 1.8rem;  /* ធ្វើឲ្យមើលច្បាស់លើទូរស័ព្ទ */
+    text-align: center;
+    /* ឈ្មោះចំកណ្តាល */
+    font-size: 1.8rem;
+    /* ធ្វើឲ្យមើលច្បាស់លើទូរស័ព្ទ */
   }
 
   .user-profile-top .profile-info .address {
@@ -2413,6 +2477,17 @@ header .navbar-bottom .nav-item .nav-link.active {
   }
 }
 
+.search-service .tom-select {
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.search-service .tom-select option {
+  border-radius: 10px;
+  font-size: 24px !important;
+}
+
 .question .icon {
   font-size: 24px;
   width: 70px;
@@ -2456,54 +2531,6 @@ header .navbar-bottom .nav-item .nav-link.active {
   font-size: 16px;
   color: #6c757d;
 
-}
-
-.slider-container {
-  position: relative;
-  width: 300px;
-}
-
-.slider {
-  position: relative;
-  height: 5px;
-  background: #ddd;
-  border-radius: 5px;
-}
-
-.progress-range {
-  position: static;
-  height: 5px;
-  background: blue;
-  border-radius: 5px;
-}
-
-.range-input {
-  position: absolute;
-  top: -6px;
-  width: 100%;
-  -webkit-appearance: none;
-  background: none;
-  pointer-events: none;
-}
-
-.range-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 18px;
-  width: 18px;
-  border-radius: 50%;
-  background: #007bff;
-  border: 2px solid #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-  pointer-events: auto;
-  cursor: pointer;
-}
-
-.values {
-  display: flex;
-  align-items: center;
-  gap: 240px;
-  margin-top: 20px;
-  font-weight: bold;
 }
 
 .testimonial.bg-gray {
@@ -2593,9 +2620,9 @@ header .navbar-bottom .nav-item .nav-link.active {
 
 .arrow-up {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #252223;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0056b3;
   color: #fff;
   width: 43px;
   height: 43px;
