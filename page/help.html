@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../asstes/css/style.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <!-- navbar-top -->
         <nav class="navbar-top py-2">
@@ -108,7 +108,8 @@
                         <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <div class="profile-image-container me-3">
-                                <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image" alt="">
+                                <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image"
+                                    alt="">
                             </div>
                             <span
                                 class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
@@ -180,8 +181,8 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                             <li class="nav-item ">
-                                <a class="nav-link hvr-underline-from-center" aria-current="page"
-                                    href="home.html"><i class="ri-home-gear-line"></i>
+                                <a class="nav-link hvr-underline-from-center" aria-current="page" href="home.html"><i
+                                        class="ri-home-gear-line"></i>
                                     ទំព័រដើម</a>
                             </li>
                             <li class="nav-item ">
@@ -198,12 +199,12 @@
                                         class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="help.html"><i
-                                        class="ri-question-line"></i>
+                                <a class="nav-link active" href="help.html"><i class="ri-question-line"></i>
                                     ជំនួយ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i class="ri-team-line"></i>
+                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i
+                                        class="ri-team-line"></i>
                                     អំពីពួកយើង</a>
                             </li>
                             <li class="nav-item">
@@ -244,18 +245,18 @@
 
         <section class="help-content py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-8">
+                <div class="row gy-3">
+                    <div class="col-12 col-lg-8">
                         <div class="help-question">
-                            <div class="mb-4 ps-3"  data-aos="fade-up" data-aos-duration="1000">
+                            <div class="mb-4 ps-3" data-aos="fade-up" data-aos-duration="1000">
                                 <h3>
                                     <i class="ri-question-answer-line text-primary"></i>
                                     សំណួរដែលសួរញឹកញាប់
                                 </h3>
                                 <p class="text-black-50">ចម្លើយសម្រាប់សំណួរទូទៅអំពីFixFinder</p>
                             </div>
-                            <div  data-aos="fade-up" data-aos-duration="1000">
-                                <div class="col-12" >
+                            <div data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-12">
                                     <div class="px-3">
                                         <div class="accordion" id="accordionFlushExample">
                                             <div class="accordion-item mb-3">
@@ -477,7 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-lg-4">
                         <div class="help-contact" data-aos="fade-left" data-aos-duration="1000">
                             <div class="mb-4 ps-3">
                                 <h3>
@@ -553,7 +554,7 @@
                                 <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
                                 <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -613,14 +614,27 @@
             </div>
         </div>
         <div class="col-12 border-top">
-            <p class="bg-black text-white m-0 py-2 fs-5 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+            <p class="bg-black text-white m-0 py-2 fs-6 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
         </div>
     </footer>
+    <a href="#body" class="arrow-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 </body>
 <script src="../asstes/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    const arrowUp = document.querySelector('.arrow-up');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+            arrowUp.classList.add('show');
+        } else {
+            arrowUp.classList.remove('show');
+        }
+    });
 </script>
 
 </html>
