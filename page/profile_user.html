@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile_user</title>
+    <link rel="stylesheet" href="../asstes/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="../asstes/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar-top -->
+        <nav class="navbar-top py-2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <div class="d-flex align-items-center ps-4">
+                            <div class="me-3">
+                                <i class="ri-phone-line fs-5 "></i>
+                                <span class=" fs-6">ទំនាក់ទំនង:</span>
+                                <a href="#" class="text-decoration-none">+1 (234) 567 890</a>
+                            </div>
+                            <div>
+                                <i class="ri-mail-line fs-5 "></i>
+                                <span class=" fs-6">FixFinder@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar-center -->
+        <nav class="navbar navbar-center navbar-expand-lg">
+            <div class="container-lg justify-content-between align-items-center ">
+                <div>
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="../asstes/img/Landing-page/logo-2.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <form class="d-flex search-form d-none d-lg-block" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"></i>
+                    <div class="dropdown">
+                        <a href="notification.html" class="nav-link position-relative">
+                            <i class="ri-notification-2-line fs-4 me-3"></i>
+                            <span
+                                class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
+                                3+
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-notification ">
+                            <div class="d-flex px-4 pt-2 align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="ri-notification-2-line fs-5 me-3"></i>
+                                    <h5 class="fs-5 m-0 ">ការជូនដំណឹង</h5>
+                                </div>
+                            </div>
+                            <hr class="mb-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6 pb-3">ថ្មីៗនេះ</span>
+                                    <div>
+                                        <span class="fw-bold">ការកក់បានទទួល:</span>
+                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួល...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ថ្ងៃនេះ</span>
+                                    <div>
+                                        <span class="fw-bold ">ការជួសជុលបានបញ្ចប់</span>
+                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ម្សិលមិញ</span>
+                                    <div>
+                                        <span class="fw-bold">ការផ្តល់ជូនពិសេស:</span>
+                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួស...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <div class="w-100 d-flex justify-content-center py-2">
+                                <div> <a href="notification.html"
+                                        class="btn btn-outline-primary rounded-pill hvr-shutter-in-horizontal overflow-hidden">​​មើលទាំងអស់</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="profile-image-container me-3">
+                                <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image"
+                                    alt="">
+
+                            </div>
+                            <span
+                                class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a class="dropdown-item " href="history_user.html"><i class="ri-user-3-line"></i>
+                                    គណនី</a></li>
+                            <li><a class="dropdown-item" href="../index.html"><i class="ri-arrow-right-line"></i>
+
+                                    ចាកចេញ</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-body-tertiary m-auto">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="py-3 d-flex justify-content-center d-lg-none d-block">
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
+                <li class="nav-item ">
+                    <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
+                        ទំព័រដើម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="professional_list.html"><i class="ri-file-list-3-line"></i>
+                        បញ្ជីអ្នកជំនាញ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="history_bolt.html"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html"><i class="ri-question-line"></i> ជំនួយ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="about_us.html"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact_us.html"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navbar-bottom -->
+        <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block" data-bs-theme="dark">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item ">
+                                <a class="nav-link active" aria-current="page" href="home.html"><i
+                                        class="ri-home-gear-line"></i>
+                                    ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" href="professional_list.html"><i
+                                        class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" href="service.html"><i
+                                        class="ri-tools-fill"></i>
+                                    សេវាកម្ម</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="history_bolt.html"><i
+                                        class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="help.html"><i
+                                        class="ri-question-line"></i>
+                                    ជំនួយ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i
+                                        class="ri-team-line"></i>
+                                    អំពីពួកយើង</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="contact_us.html"><i
+                                        class="ri-phone-line"></i>
+                                    ទំនាក់ទំនង</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="user-pf py-5">
+            <div class="container">
+                <div class="row gx-3">
+                    <div class="col-lg-4">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="card">
+                                    <img src="../asstes/img/Landing-page/user-profile.png"
+                                        class="img-fluid w-25 mx-auto mt-4" alt="">
+                                    <div class="card-body text-center">
+                                        <h3>សុខ​ ដារ៉ា</h3>
+                                        <p><span class="fw-bold">អាយុ : </span>32 ឆ្នាំ</p>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="modal"
+                                                data-bs-target="#edit-profile">
+                                                <i class="ri-edit-line"></i> កែប្រែព័ត៍មាន
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#setting">
+                                                <i class="ri-settings-3-line"></i> ការកំណត់
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- modal Edit Profile -->
+                                    <div class="modal fade" id="edit-profile" tabindex="-1"
+                                        aria-labelledby="editProfileLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+                                            <div class="modal-content bg-light">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-3 text-primary ms-auto"
+                                                        id="editProfileLabel">
+                                                        <i class="fa-solid fa-pen-to-square me-1"></i> កែប្រែព័ត៍មាន
+                                                    </h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Change Image -->
+                                                    <div class="edit-profile-user bg-white p-4 rounded border-primary border-3 border-bottom mb-4"
+                                                        data-aos="fade-left">
+                                                        <h4 class="text-primary mb-3"><i
+                                                                class="fa-light fa-image-landscape me-1"></i>
+                                                            ប្ដូររូបភាព</h4>
+                                                        <div class=" d-flex justify-content-center">
+                                                            <div class="profile-img position-relative align-content-center">
+                                                                <img src="../asstes/img/Landing-page/user-profile.png"
+                                                                    alt="user-profile"
+                                                                    class="img-fluid w-25 mx-auto rounded-circle position-relative">
+                                                                <div class="btn-edit-profile position-absolute d-none d-md-block">
+                                                                    <button type="button"
+                                                                        class="btn bg-primary text-dark px-2 rounded-circle">
+                                                                        <i class="ri-camera-line"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <button type="button"
+                                                                    class="btn bg-primary text-dark px-2 rounded-circle d-block d-md-none ms-auto">
+                                                                    <i class="ri-camera-line"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Change Name -->
+                                                    <div class="edit-username bg-white p-4 rounded border-primary border-3 border-bottom mb-4"
+                                                        data-aos="fade-right">
+                                                        <h4 class="text-primary mb-3">
+                                                            <i class="ri-pencil-line"></i>
+                                                            ប្ដូរព័ត៍មាន
+                                                        </h4>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="lastname"
+                                                                value="សុខ" placeholder="នាមត្រកូល">
+                                                            <label for="lastname">នាមត្រកូល</label>
+                                                        </div>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="firstname"
+                                                                value="ដារ៉ា" placeholder="នាមបុគ្គល">
+                                                            <label for="firstname">នាមបុគ្គល</label>
+                                                        </div>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="gender"
+                                                                value="ប្រុស" placeholder="ភេទ">
+                                                            <label for="firstname">ភេទ</label>
+                                                        </div>
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="Age" value="32"
+                                                                placeholder="អាយុ">
+                                                            <label for="firstname">អាយុ</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Change Password -->
+                                                    <div class="edit-password bg-white p-4 rounded border-primary border-3 border-bottom mb-4"
+                                                        data-aos="fade-left">
+                                                        <h4 class="text-primary mb-3">
+                                                            <i class="ri-lock-2-line"></i>
+                                                            ប្ដូរពាក្យសម្ងាត់
+                                                        </h4>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="password" class="form-control" id="oldPassword"
+                                                                placeholder="ពាក្យសម្ងាត់ចាស់">
+                                                            <label for="oldPassword">ពាក្យសម្ងាត់ចាស់</label>
+                                                        </div>
+                                                        <div class="form-floating mb-3">
+                                                            <input type="password" class="form-control" id="newPassword"
+                                                                placeholder="ពាក្យសម្ងាត់ថ្មី">
+                                                            <label for="newPassword">ពាក្យសម្ងាត់ថ្មី</label>
+                                                        </div>
+                                                        <div class="form-floating">
+                                                            <input type="password" class="form-control"
+                                                                id="confirmPassword"
+                                                                placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់">
+                                                            <label for="confirmPassword">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Change Phone -->
+                                                    <div class="edit-phone-number bg-white p-4 rounded mb-4"
+                                                        data-aos="fade-right">
+                                                        <h4 class="mb-3 text-primary">
+                                                            <i class="ri-phone-line"></i>ប្ដូរលេខទូរស័ព្ទ
+                                                        </h4>
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="phone"
+                                                                value="098765421" placeholder="លេខទូរស័ព្ទ">
+                                                            <label for="phone">លេខទូរស័ព្ទ</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Change Email -->
+                                                    <div class="edit-email bg-white p-4 rounded border-primary border-3 border-bottom mb-4"
+                                                        data-aos="fade-left">
+                                                        <h4 class="text-primary mb-3">
+                                                            <i class="ri-mail-line"></i>
+                                                            ប្ដូរអុីម៉ែល
+                                                        </h4>
+                                                        <div class="form-floating">
+                                                            <input type="email" class="form-control" id="email"
+                                                                value="sokdara168@gmail.com"
+                                                                placeholder="sokdara@example.com">
+                                                            <label for="email">អុីម៉ែល</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Change Location -->
+                                                    <div class="edit-location bg-white p-4 rounded border-primary border-3 border-bottom mb-4"
+                                                        data-aos="fade-right">
+                                                        <h4 class="text-primary mb-3">
+                                                            <i class="ri-map-pin-line"></i>ប្ដូរទីតាំង
+                                                        </h4>
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="location"
+                                                                value="ក្រាំងធ្នង់​​ , ភ្នំពេញ" placeholder="ទីតាំង">
+                                                            <label for="location">ទីតាំង</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">បោះបង់</button>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-bs-dismiss="modal">រក្សាទុក</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- modal Setting -->
+                                    <div class="modal" id="setting" tabindex="-1" aria-labelledby="editProfileLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-lg modal-fullscreen-md-down">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="mb-0 text-primary"> <i class="ri-settings-3-line"></i>
+                                                        ការកំណត់</h3>
+                                                    <button type="button" class="btn-close"
+                                                        data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div id="settings-section" class="content-section">
+                                                        <div class="row mb-4">
+                                                            <div class="col-12">
+                                                                <div class="glass-card p-4 container-fluid">
+                                                                    <div
+                                                                        class="notification-setting border-primary border-4 border-bottom bg-white p-3 mx-3 mb-4 rounded-4">
+                                                                        <h4 class="py-2"><span><i
+                                                                                    class="fa-solid fa-bell"></i></span>
+                                                                            ការជូនដំណឹង</h4>
+                                                                        <div
+                                                                            class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                                                            <div>
+                                                                                <span
+                                                                                    class="lh-base fs-5">ជូនដំណឺងតាមអុីម៉ែល​
+                                                                                    (Email)</span><br>
+                                                                                <span
+                                                                                    class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈអុីម៉ែល(email)</span>
+                                                                            </div>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input fs-4"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="switchCheckChecked" checked>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                                                            <div>
+                                                                                <span
+                                                                                    class="lh-base fs-5">ជូនដំណឺងតាមតេលេក្រាម​
+                                                                                    (Telegram)</span><br>
+                                                                                <span
+                                                                                    class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈតេលេក្រាម(telegram)</span>
+                                                                            </div>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input fs-4"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="switchCheckChecked">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                                                            <div>
+                                                                                <span
+                                                                                    class="lh-base fs-5">ជូនដំណឺងតាមប្រអប់សារ​
+                                                                                    (SMS)</span><br>
+                                                                                <span
+                                                                                    class="text-secondary">ទទួលការជូនដំណឹងផ្សេងៗតាមរយៈលេខទូរស័ព្ទ(message)</span>
+                                                                            </div>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input fs-4"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="switchCheckChecked" checked>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="security-setting border-primary border-4 border-bottom bg-white p-3 mx-3 rounded-4">
+                                                                        <h4 class="py-2"><span><i
+                                                                                    class="fa-regular fa-shield-check"></i></span>
+                                                                            ចំណូលចិត្ត​​ &
+                                                                            សុវត្ថិភាព</h4>
+                                                                        <div
+                                                                            class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                                                            <div>
+                                                                                <span
+                                                                                    class="lh-base fs-5">ភាសា</span><br>
+                                                                            </div>
+                                                                            <div class="form-check form-switch">
+                                                                                <div class="dropdown">
+                                                                                    <button
+                                                                                        class="btn btn-outline-primary dropdown-toggle"
+                                                                                        type="button"
+                                                                                        data-bs-toggle="dropdown"
+                                                                                        aria-expanded="false">
+                                                                                        ភាសាខ្មែរ
+                                                                                    </button>
+                                                                                    <ul class="dropdown-menu">
+                                                                                        <li><a class="dropdown-item"
+                                                                                                href="#">English</a>
+                                                                                        </li>
+                                                                                        <li><a class="dropdown-item"
+                                                                                                href="#">Vietname </a>
+                                                                                        </li>
+                                                                                        <li><a class="dropdown-item"
+                                                                                                href="#">Japanes </a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="ps-4 d-flex justify-content-between rounded p-2 mb-3 align-items-center">
+                                                                            <div>
+                                                                                <span
+                                                                                    class="lh-base fs-5">រក្សាទុកពាក្យសម្ងាត់</span><br>
+                                                                                <span
+                                                                                    class="text-secondary">ចូលប្រើដោយមិនចាំបាច់ប្រើពាក្យសម្ងាត់នៅពេលក្រោយ</span>
+                                                                            </div>
+                                                                            <div class="form-check form-switch">
+                                                                                <input class="form-check-input fs-4"
+                                                                                    type="checkbox" role="switch"
+                                                                                    id="switchCheckChecked">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary">រក្សាទុក</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body p-4">
+                                        <h3>ព័ត៍មានរបស់អ្នក</h3>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">ឈ្មោះ : </span></div>
+                                            <div class="w-75">
+                                                <p>សុខ​ ដារ៉ា</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">ភេទ : </span></div>
+                                            <div class="w-75">
+                                                <p>ប្រុស</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">អាយុ : </span></div>
+                                            <div class="w-75">
+                                                <p>32 ឆ្នាំ</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">លេខទូរស័ព្ទ : </span></div>
+                                            <div class="w-75">
+                                                <p>0987654321</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">អ៊ីម៉ែល : </span></div>
+                                            <div class="w-75">
+                                                <p>sokdara168@gmail.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="w-25"><span class="fw-bold">ទីតាំង : </span></div>
+                                            <div class="w-75">
+                                                <p>ស្ទឹងមានជ័យ, ភ្នំពេញ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="mt">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="fw-bold m-0">សរុប</h5>
+                                                <i class="ri-tools-fill text-primary fs-3"></i>
+                                            </div>
+                                            <p class="fs-1 fw-bold text-primary m-0">4</p>
+                                            <p class="m-0">សេវាកម្មសរុបដែលធ្លាប់ប្រើប្រាស់</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="fw-bold m-0">ជោគជ័យ</h5>
+                                                <i class="ri-checkbox-circle-line text-primary fs-3"></i>
+                                            </div>
+                                            <p class="fs-1 fw-bold text-primary m-0">3</p>
+                                            <p class="m-0">សេវាកម្មសរុបដែលជួសជុលរួច</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h5 class="fw-bold m-0">កំពុងដំំណើរការ</h5>
+                                                <i class="ri-time-line text-primary fs-3"></i>
+                                            </div>
+                                            <p class="fs-1 fw-bold text-primary m-0">1</p>
+                                            <p class="m-0">សេវាកម្មសរុបកំពុងដំណើរការ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h3>ប្រវត្តិ</h3>
+                                            <hr>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ល.រ</th>
+                                                        <th scope="col">ឈ្មោះសេវាកម្ម</th>
+                                                        <th scope="col">ថ្ងៃខែជួសជុល</th>
+                                                        <th scope="col">តម្លៃ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td><a href="#"
+                                                                class="text-decoration-none text-black">ជួសជុលប្រព័ន្ធទឹក</a>
+                                                        </td>
+                                                        <td>20/02/2025</td>
+                                                        <td>60 $</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td><a href="#"
+                                                                class="text-decoration-none text-black">ជួសជុលម៉ាសុីនបោកខោអាវ</a>
+                                                        </td>
+                                                        <td>25/03/2025</td>
+                                                        <td>20 $</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td><a href="#"
+                                                                class="text-decoration-none text-black">រថយន្តធន់តូច</a>
+                                                        </td>
+                                                        <td>30/05/2025</td>
+                                                        <td>100 $</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer py-5 bg-black">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <img src="../asstes/img/Landing-page/logo-2.png" class="img-fluid w-50 mb-2" alt="">
+                            <div class="style-line bg-primary my-2"></div>
+                            <p class="text-white">វេទិកាដែលភ្ជាប់អ្នកប្រើប្រាស់ជាមួយអ្នកជំនាញដោះស្រាយបញ្ហាដោយងាយស្រួល
+                                និងរហ័ស។</p>
+                            <div class="social-links d-flex ">
+                                <a href="https://www.facebook.com/" class="text-decoration-none"><i
+                                        class="ri-facebook-fill"></i></a>
+                                <a href="https://www.tiktok.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-tiktok-line"></i></a>
+                                <a href="https://web.telegram.org/" class="text-decoration-none mx-2"><i
+                                        class="ri-telegram-2-fill"></i></a>
+                                <a href="https://www.google.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-google-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">សេវាកម្ម</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="service.html" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ក្រុមហ៊ុន</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="about_us.html" class="text-decoration-none">អំពីយើង</a></li>
+                                <li><a href="history_bolt.html" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="help.html" class="text-decoration-none">ជំនួយ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="contact">
+                            <h3 class="text-white">ទំនាក់ទំនង</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-25">
+                                                <i class="ri-map-pin-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អាស័យដ្ធាន</h6>
+                                                <p class="m-0">ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-phone-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">ទំនាក់ទំនង</h6>
+                                                <p class="m-0">+1(234),567,890</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-earth-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អុីម៉ែល</h6>
+                                                <p class="m-0">FixFinder@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 border-top">
+            <p class="bg-black text-white m-0 py-2 fs-6 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+
+    <script src="../asstes/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -2649,6 +2649,33 @@ header .navbar-bottom .nav-item .nav-link.active {
   pointer-events: auto;
 }
 
+/* ===================  User-Profile =================== */
+
+.user-pf {
+  background-color: #f8fafc;
+}
+
+.user-pf .card {
+  border: none;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.user-pf .profile-img .position-absolute {
+  top: 140px;
+  left: 120px;
+}
+
+@media (max-width: 768px) {
+  .user-pf .mt {
+    padding-top: 24px;
+  }
+
+  .user-pf .profile-img .position-absolute {
+    top: 65px;
+    left: 65px;
+  }
+}
+
 /*=========================urgent_service===========================*/
 .service-search .search-container {
   background: white;
