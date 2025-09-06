@@ -223,7 +223,7 @@
         <div class="next-step py-5">
             <div class="container">
                 <div class="d-flex w-100 justify-content-start align-items-center gap-3 mb-5">
-                    <a href="profile_professional.html" class="btn-next-step btn btn-primary">ត្រឡប់ក្រោយ</a>
+                    <a href="#" onclick="goBack()" class="btn-next-step btn btn-primary">ត្រឡប់ក្រោយ</a>
                 </div>
             </div>
         </div>
@@ -510,6 +510,10 @@
 <script src="../asstes/js/main.js"></script>
 <script>
     AOS.init();
+
+    function goBack() {
+        window.history.back();
+    }
 </script>
 
 </html>
