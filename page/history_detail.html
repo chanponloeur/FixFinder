@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history detail</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../asstes/img/Landing-page/title-icon.png">
+    <link rel="stylesheet" href="../asstes/css/bootstrap.css">
+    <link rel="stylesheet" href="../asstes/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+</head>
+
+<body id="body">
+
+    <header>
+        <!-- navbar-top -->
+        <nav class="navbar-top py-2">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-8 d-none d-lg-block">
+                        <div class="d-flex align-items-center ps-4">
+                            <div class="me-3">
+                                <i class="ri-phone-line fs-5 "></i>
+                                <span class=" fs-6">ទំនាក់ទំនង:</span>
+                                <a href="#" class="text-decoration-none">+1 (234) 567 890</a>
+                            </div>
+                            <div>
+                                <i class="ri-mail-line fs-5 "></i>
+                                <span class=" fs-6">FixFinder@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar-center -->
+        <nav class="navbar navbar-center navbar-expand-lg">
+            <div class="container-lg justify-content-between align-items-center ">
+                <div>
+                    <a class="navbar-brand fw-bold" href="home.html">
+                        <img src="../asstes/img/Landing-page/logo-2.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <form class="d-flex search-form d-none d-lg-block" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="ri-search-line me-3 d-lg-none d-block fs-3" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"></i>
+                    <div class="dropdown">
+                        <a href="notification.html" class="nav-link position-relative">
+                            <i class="ri-notification-2-line fs-4 me-3"></i>
+                            <span
+                                class="position-absolute top-0 start-50 translate-middle badge rounded-circle p-1 bg-danger">
+                                3+
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-notification ">
+                            <div class="d-flex px-4 pt-2 align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <i class="ri-notification-2-line fs-5 me-3"></i>
+                                    <h5 class="fs-5 m-0 ">ការជូនដំណឹង</h5>
+                                </div>
+                            </div>
+                            <hr class="mb-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6 pb-3">ថ្មីៗនេះ</span>
+                                    <div>
+                                        <span class="fw-bold">ការកក់បានទទួល:</span>
+                                        <p class="fs-6 m-0">ការកក់សេវារបស់អ្នកត្រូវបានទទួល...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ថ្ងៃនេះ</span>
+                                    <div>
+                                        <span class="fw-bold ">ការជួសជុលបានបញ្ចប់</span>
+                                        <p class="fs-6 m-0">សេវាការជួសជុលរបស់អ្នកត្រូវបានបញ្ចប់...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <li><a class="dropdown-item px-4 py-2" href="#">
+                                    <span class="fw-bold text-primary fs-6">ម្សិលមិញ</span>
+                                    <div>
+                                        <span class="fw-bold">ការផ្តល់ជូនពិសេស:</span>
+                                        <p class="fs-6 m-0">ការបញ្ចុះតម្លៃ 20% សម្រាប់សេវាការជួស...</p>
+                                    </div>
+                                </a></li>
+                            <hr class="m-0">
+                            <div class="w-100 d-flex justify-content-center py-2">
+                                <div> <a href="notification.html"
+                                        class="btn btn-outline-primary rounded-pill hvr-shutter-in-horizontal overflow-hidden">​​មើលទាំងអស់</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="profile-image-container me-3">
+                                <img src="../asstes/img/Landing-page/user-profile.png" class="img-fluid profile-image"
+                                    alt="">
+
+                            </div>
+                            <span
+                                class="position-absolute top-0 start-75 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-profile">
+                            <li><a class="dropdown-item " href="history_user.html"><i class="ri-user-3-line"></i>
+                                    គណនី</a></li>
+                            <li><a class="dropdown-item" href="../asstes/../asstes/index.html"><i
+                                        class="ri-arrow-right-line"></i>
+
+                                    ចាកចេញ</a></li>
+
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-body-tertiary m-auto">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="py-3 d-flex justify-content-center d-lg-none d-block">
+                    <form class="d-flex search-form" role="search">
+                        <input class="form-control me-2 p-2" type="search" placeholder="ស្វែករកសេវាកម្ម"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success bg-primary text-white" type="submit"><i
+                                class="ri-search-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse px-3" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  flex-column">
+                <li class="nav-item ">
+                    <a class="nav-link active " aria-current="page" href="#"><i class="ri-home-gear-line"></i>
+                        ទំព័រដើម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="professional_list.html"><i class="ri-file-list-3-line"></i>
+                        បញ្ជីអ្នកជំនាញ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="service.html"><i class="ri-tools-fill"></i> សេវាកម្ម</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="history_bolt.html"><i class="ri-chat-history-line"></i> ប្រវត្តិការងារ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="help.html"><i class="ri-question-line"></i> ជំនួយ</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"><i class="ri-team-line"></i> អំពីពួកយើង</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="contact_us.html"><i class="ri-phone-line"></i> ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- navbar-bottom -->
+        <nav class="navbar navbar-bottom navbar-expand-lg bg-primary d-none d-lg-block" data-bs-theme="dark">
+            <div class="container">
+                <div class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" aria-current="page" href="home.html"><i
+                                        class="ri-home-gear-line"></i>
+                                    ទំព័រដើម</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" href="professional_list.html"><i
+                                        class="ri-file-list-3-line"></i> បញ្ជីអ្នកជំនាញ </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link hvr-underline-from-center" href="service.html"><i
+                                        class="ri-tools-fill"></i>
+                                    សេវាកម្ម</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="history_bolt.html"><i class="ri-chat-history-line"></i>
+                                    ប្រវត្តិការងារ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="help.html"><i
+                                        class="ri-question-line"></i>
+                                    ជំនួយ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="about_us.html"><i
+                                        class="ri-team-line"></i>
+                                    អំពីពួកយើង</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="contact_us.html"><i
+                                        class="ri-phone-line"></i>
+                                    ទំនាក់ទំនង</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="history-detail py-5">
+            <div class="container container-md">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="detail-card">
+                            <div class="detail-header" data-aos="fade-up" data-aos-duration="1000">
+                                <h3 class="mb-0">បន្ថែម RAM ទូរស័ព្ទ</h3>
+                            </div>
+                            <div class="detail-body" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="mb-4">
+                                    <p class="fs-4  ">
+                                        ធ្វើឱ្យ RAM កាន់តែលឿនពី 16GB ទៅ 32GBដើម្បីកែលម្អប្រសិទ្ធភាព
+                                    </p>
+                                </div>
+
+                                <div class="row mb-4">
+                                    <div class="col-md-6">
+                                        <div class="info-label">អ្នកទទួលខុសត្រូវ</div>
+                                        <div class="info-value">
+                                            <i class="bi bi-person"></i> វណ្ណ សុភា
+                                        </div>
+
+                                        <div class="info-label">ប្រភេទ</div>
+                                        <div class="info-value">
+                                            <span class="badge bg-primary">software</span>
+                                        </div>
+
+                                        <div class="info-label">អាទិភាព</div>
+                                        <div class="info-value">
+                                            <span class="badge bg-primary">ថ្មីៗនេះ</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="info-label">កាលបរិច្ឆេទធ្វើ</div>
+                                        <div class="info-value">
+                                            <i class="bi bi-calendar-plus"></i> 10/01/2024
+                                        </div>
+
+                                        <div class="info-label">កាលបរិច្ឆេទត្រូវបញ្ចប់</div>
+                                        <div class="info-value">
+                                            <i class="bi bi-calendar-check"></i> 15/01/2024
+                                        </div>
+
+                                        <div class="info-label">ស្ថានភាព</div>
+                                        <div class="info-value">
+                                            <span class="badge bg-success">បានបញ្ចប់</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4">
+                                    <div class="info-label">ការពិពណ៌នា</div>
+                                    <div class="info-value">
+                                        <p>ធ្វើឱ្យម៉ាស៊ីនមេ RAM កាន់តែលឿនដើម្បីកែលម្អប្រសិទ្ធភាពប្រព័ន្ធទាំងមូល
+                                            និងដោះស្រាយការងារកាន់តែច្រើន។ RAM 16GB
+                                            បច្ចុប្បន្នធ្វើឱ្យមានឧបសគ្គក្នុងការដំណើរការក្នុងអំឡុងពេលខ្ពស់។
+                                            ការធ្វើឱ្យកាន់តែលឿនទៅ 32GB នឹងធានាបាននូវប្រតិបត្តិការរលូន
+                                            និងសមត្ថភាពធ្វើការពហុៗកាន់តែប្រសើរ។</p>
+                                        <p>កិច្ចការនេះរួមបញ្ចូលទាំងការដំឡើងម៉ូឌុល RAM ថ្មីដោយរូបវន្ត
+                                            កំណត់រចនាសម្ព័ន្ធ BIOS
+                                            និងការធ្វើតេស្តស្ថេរភាពប្រព័ន្ធក្រោយពីការធ្វើឱ្យកាន់តែលឿន។</p>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="mb-4">
+                                    <div class="info-label">ស្លាក</div>
+                                    <div class="info-value">
+                                        <span class="tag">ម៉ាស៊ីនមេ</span>
+                                        <span class="tag">អង្គចងចាំ</span>
+                                        <span class="tag">ប្រសិទ្ធភាព</span>
+                                        <span class="tag">ធ្វើឱ្យកាន់តែលឿន</span>
+                                        <span class="tag">ផ្នែករឹង</span>
+                                    </div>
+                                </div> -->
+
+                                <div class="mb-4">
+                                    <div class="info-label">ដំណើរការ</div>
+                                    <div class="info-value">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <small class="text-muted">បានបញ្ចប់</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="detail-body">
+                                <h5 class="mb-4">តម្លៃ និងការបំណាច់ចំណាយ</h5>
+
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="cost-breakdown">
+                                            <div class="d-flex justify-content-between">
+                                                <span>RAM (2x8GB)</span>
+                                                <span>$24.00</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>តម្លៃការងារ</span>
+                                                <span>$3.00</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>ការធ្វើរោគវិនិច្ឆ័យ</span>
+                                                <span>$1.00</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>ពន្ធ</span>
+                                                <span>$1.00</span>
+                                            </div>
+                                            <hr>
+                                            <div class="d-flex justify-content-between fw-bold">
+                                                <span>សរុប</span>
+                                                <span>$29.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="price-card">
+                                            <h5>តម្លៃសរុប</h5>
+                                            <div class="price-amount">$29</div>
+                                            <!-- <p>រួមទាំងគ្រឿងបន្លាស់ ការងារ និងពន្ធ</p> -->
+                                            <div class="d-grid gap-2">
+                                                <a href="../asstes/img/history_detail/វិក័យបត្រ - FixFinder.pdf"
+                                                    download class="btn btn-primary">
+                                                    ទាញយកវិក័យប័ត្រ
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="detail-body">
+                                <h5 class="mb-4">មតិ</h5>
+
+                                <div class="comment-section">
+                                    <div class="comment">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <strong>ស៊ុន ស៊ីណា</strong>
+                                            <small class="text-muted">12/01/2024 11:55 AM</small>
+                                        </div>
+                                        <p> RAM ថ្មីបានមកដល់។
+                                            កំណត់ពេលវេលាសម្រាប់ធ្វើឱ្យកាន់តែលឿននៅថ្ងៃស្អែកក្នុងអំឡុងពេលថែទាំ។</p>
+                                    </div>
+
+                                    <div class="comment">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <strong>វណ្ណ សុភា</strong>
+                                            <small class="text-muted">13/01/2024 1:55 PM</small>
+                                        </div>
+                                        <p>RAM ត្រូវបានដំឡើងដោយជោគជ័យ។
+                                            កំពុងដំណើរការរោគវិនិច្ឆ័យដើម្បីធានាថាអ្វីៗទាំងអស់ដំណើរការបានត្រឹមត្រូវ។
+                                        </p>
+                                    </div>
+
+                                    <div class="comment">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <strong>ហួត ម៉េងហ៊ុយ</strong>
+                                            <small class="text-muted">14/01/2024 6:00 PM</small>
+                                        </div>
+                                        <p>ការធ្វើរោគវិនិច្ឆ័យបានបញ្ចប់។ តេស្តទាំងអស់ឆ្លងកាត់។
+                                            ប្រសិទ្ធភាពប្រព័ន្ធបានកែលម្អយ៉ាងខ្លាំង។</p>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3"
+                                                placeholder="បន្ថែមមតិ..."></textarea>
+                                        </div>
+                                        <button class="btn btn-primary mt-2">បញ្ចូនមតិ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="detail-card profile-card" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="../asstes/img/popular-fixer/Fixer-1.png" class="profile-img" alt="វណ្ណ សុភា">
+                            <h4>វណ្ណ សុភា</h4>
+                            <p class="text-muted">ជាងជួសជុលកំព្យូទ័រ</p>
+
+                            <div class="rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-line"></i>
+                                <span class="text-dark">4.5</span>
+                            </div>
+
+                            <div class="d-flex justify-content-center mb-3">
+                                <div class="mx-3 text-center">
+                                    <div class="fw-bold">167</div>
+                                    <div class="small">គម្រោង</div>
+                                </div>
+                                <div class="mx-3 text-center">
+                                    <div class="fw-bold">5</div>
+                                    <div class="small">ឆ្នាំ</div>
+                                </div>
+                                <div class="mx-3 text-center">
+                                    <div class="fw-bold">93%</div>
+                                    <div class="small">ការពេញចិត្ត</div>
+                                </div>
+                            </div>
+
+                            <h6>ជំនាញ និងឯកទេស</h6>
+                            <div class="mb-3">
+                                <span class="skill-badge">Server Hardware</span>
+                                <span class="skill-badge">Memory Upgrades</span>
+                                <span class="skill-badge">Data Recovery</span>
+                                <span class="skill-badge">Hardware Diagnostics</span>
+                                <span class="skill-badge">BIOS Configuration</span>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="select_service.html" class="btn btn-primary">
+                                    <i class="bi bi-chat-dots"></i> ទទួលជួសជុល
+                                </a>
+                                <a href="profile_professional.html" class="btn btn-outline-primary">
+                                    <i class="bi bi-eye"></i> មើលប្រវត្តិ
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="detail-card" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="detail-body">
+                                <h5 class="mb-4">ស្ថិតិជាងជួសជុល</h5>
+
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="stats-tab" data-bs-toggle="tab"
+                                            data-bs-target="#stats" type="button" role="tab">ប្រសិទ្ធភាព</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="history-tab" data-bs-toggle="tab"
+                                            data-bs-target="#history" type="button" role="tab">ប្រវត្តិ</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="stats" role="tabpanel">
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>ការបញ្ចប់ទាន់ពេល</span>
+                                                <span class="fw-bold">៩៥%</span>
+                                            </div>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 95%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>ការពេញចិត្តអតិថិជន</span>
+                                                <span class="fw-bold">៩៧%</span>
+                                            </div>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 97%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between">
+                                                <span>ការអនុវត្តតាមថវិកា</span>
+                                                <span class="fw-bold">៩២%</span>
+                                            </div>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 92%;"></div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>អតិថិជនដែលត្រលប់មកវិញ</span>
+                                                <span class="fw-bold">៤៥%</span>
+                                            </div>
+                                            <div class="progress" style="height: 8px;">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 45%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade d-flex justify-content-center" id="history"
+                                        role="tabpanel">
+                                        <div class="timeline-with-icons">
+                                            <div class="timeline-item mb-3">
+                                                <div class="timeline-icon">
+                                                    <i class="bi bi-briefcase"></i>
+                                                </div>
+                                                <h6 class="fw-bold">TechSolutions ខ្មែរ</h6>
+                                                <p class="small text-muted">ជាងជួសជុលផ្នែករឹងជាន់ខ្ពស់ |
+                                                    ២០២០-បច្ចុប្បន្ន</p>
+                                            </div>
+
+                                            <div class="timeline-item mb-3">
+                                                <div class="timeline-icon">
+                                                    <i class="bi bi-building"></i>
+                                                </div>
+                                                <h6 class="fw-bold">DataCare ប្រព័ន្ធ</h6>
+                                                <p class="small text-muted">ជាងបច្ចេកទេស IT | ២០១៨-២០២០</p>
+                                            </div>
+
+                                            <div class="timeline-item mb-3">
+                                                <div class="timeline-icon">
+                                                    <i class="bi bi-award"></i>
+                                                </div>
+                                                <h6 class="fw-bold">វិញ្ញាបនបត្រ CompTIA Server+</h6>
+                                                <p class="small text-muted">២០១៩</p>
+                                            </div>
+
+                                            <div class="timeline-item">
+                                                <div class="timeline-icon">
+                                                    <i class="bi bi-mortarboard"></i>
+                                                </div>
+                                                <h6 class="fw-bold">បរិញ្ញាបត្រវិស្វកម្មកុំព្យូទ័រ</h6>
+                                                <p class="small text-muted">សាកលវិទ្យាល័យបច្ចេកទេស | ២០១៤-២០១៨</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer py-5 bg-black">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <img src="../asstes/img/Landing-page/logo-2.png" class="img-fluid w-50 mb-2" alt="">
+                            <div class="style-line bg-primary my-2"></div>
+                            <p class="text-white">វេទិកាដែលភ្ជាប់អ្នកប្រើប្រាស់ជាមួយអ្នកជំនាញដោះស្រាយបញ្ហាដោយងាយស្រួល
+                                និងរហ័ស។</p>
+                            <div class="social-links d-flex ">
+                                <a href="https://www.facebook.com/" class="text-decoration-none"><i
+                                        class="ri-facebook-fill"></i></a>
+                                <a href="https://www.tiktok.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-tiktok-line"></i></a>
+                                <a href="https://web.telegram.org/" class="text-decoration-none mx-2"><i
+                                        class="ri-telegram-2-fill"></i></a>
+                                <a href="https://www.google.com/" class="text-decoration-none mx-2"><i
+                                        class="ri-google-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">សេវាកម្ម</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="service.html" class="text-decoration-none">ជួសជុលផ្ទះ</a></li>
+                                <li><a href="service.html" class="text-decoration-none">អេឡិចត្រូនិច</a></li>
+                                <li><a href="service.html" class="text-decoration-none">រថយន្ត</a></li>
+                                <li><a href="service.html" class="text-decoration-none">សម្ភារះប្រើប្រាស់</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="text-white">ក្រុមហ៊ុន</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="about_us.html" class="text-decoration-none">អំពីយើង</a></li>
+                                <li><a href="history_bolt.html" class="text-decoration-none">ការងារ</a></li>
+                                <li><a href="help.html" class="text-decoration-none">ជំនួយ</a></li>
+                                <li><a href="#" class="text-decoration-none">សំណួរដែលសួរញឹកញាប់</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="contact">
+                            <h3 class="text-white">ទំនាក់ទំនង</h3>
+                            <div class="style-line bg-primary my-2"></div>
+                            <ul class="footer-service p-0">
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex align-items-center">
+                                            <div class="w-25">
+                                                <i class="ri-map-pin-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អាស័យដ្ធាន</h6>
+                                                <p class="m-0">ខណ្ឌទួលគោក រាជធានីភ្នំពេញ</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-phone-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">ទំនាក់ទំនង</h6>
+                                                <p class="m-0">+1(234),567,890</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="contact_us.html" class="text-decoration-none">
+                                        <div class="d-flex">
+                                            <div class="w-25">
+                                                <i class="ri-earth-line fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="w-75">
+                                                <h6 class="fw-bold text-primary mb-0">អុីម៉ែល</h6>
+                                                <p class="m-0">FixFinder@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 border-top">
+            <p class="bg-black text-white m-0 py-2 fs-6 text-center">© 2025 FixFinder. រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+        </div>
+    </footer>
+    <a href="#body" class="arrow-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="../asstes/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>

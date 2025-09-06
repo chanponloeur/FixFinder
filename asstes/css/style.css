@@ -684,7 +684,7 @@ html {
 
 .contact-banner {
   height: 600px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/Landing-page/contact-us.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Landing-page/contact-us.jpg) no-repeat center center;
   background-size: cover;
   align-content: center;
 }
@@ -2037,6 +2037,327 @@ header .navbar-bottom .nav-item .nav-link.active {
 /*======================================== History ===============================*/
 /*========================================= sidebar======================*/
 
+
+.history .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.history .card-title {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.history .badge {
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.history .search-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
+}
+
+.history .stats-box {
+  background: #fff;
+  color: #0056b3;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history .btn-view {
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.history .btn-view:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.history .filter-btn {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.history .filter-btn.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.history .filter-btn.active:hover {
+  background-color: #0b5ed7;
+}
+
+.history .filter-btn:hover {
+  background-color: #dee2e6;
+}
+
+.history .assignee {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.history .date {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.history .tags {
+  background-color: #e9f7fe;
+  color: #3b5998;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* ================= history details ================= */
+
+.history-detail .detail-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
+}
+
+.history-detail .detail-header {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+.history-detail .detail-body {
+  padding: 25px;
+}
+
+.history-detail .info-label {
+  font-weight: 700;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.history-detail .info-value {
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.history-detail .progress-bar {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.history-detail .comment-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.history-detail .comment {
+  border-left: 3px solid #3b5998;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.history-detail .back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.history-detail .back-button:hover {
+  background-color: #5a6268;
+  color: white;
+}
+
+.history-detail .tag {
+  background-color: #e9f7fe;
+  color: #3b5998;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.history-detail .action-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.history-detail .price-card {
+  color: #212529;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.history-detail .price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.history-detail .profile-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.history-detail .profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b5998;
+  margin-bottom: 15px;
+}
+
+.history-detail .rating {
+  color: #FFD700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.history-detail .skill-badge {
+  background-color: #e9f7fe;
+  color: #3b5998;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: 3px;
+}
+
+.history-detail .tab-content {
+  padding: 20px;
+  height: auto  ;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px ;
+}
+
+.history-detail .nav-tabs .nav-link.active {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+}
+
+.history-detail .nav-tabs .nav-link {
+  color: #495057;
+  padding: 10px 20px;
+}
+
+.history-detail .cost-breakdown {
+  border-left: 3px solid #007bff;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.history-detail .timeline-with-icons {
+  border-left: 4px solid #3b5998;
+  position: relative;
+}
+
+.history-detail .timeline-item {
+  position: relative;
+  margin-left: 40px;
+}
+
+.history-detail .timeline-icon {
+  position: absolute;
+  left: -24.5%;
+  background-color: #3b5998;
+  color: white;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .history-detail .timeline-icon {
+    display: none;
+  }
+
+  .history-detail .timeline-item {
+    margin-left: 0;
+  }
+
+  .history-detail .timeline-with-icons {
+    border-left: none;
+
+  }
+}
+
+
+.history-detail .khmer-title {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.history-detail .stats-box {
+  background: linear-gradient(135deg, #3b5998, #2c3e50);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.history-detail .search-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 20px;
+}
+
+.history-detail .filter-btn {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+
+
 /* Sidebar */
 .header-sidebar .sidebar {
   width: 260px;
@@ -2432,7 +2753,7 @@ header .navbar-bottom .nav-item .nav-link.active {
 
 /* ===================  professional-list ================ */
 .banner-professional-list {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/professional_list/banner.172Z.png) no-repeat bottom center;
   background-size: cover;
 }
@@ -2575,7 +2896,7 @@ header .navbar-bottom .nav-item .nav-link.active {
 
 .banner-help {
   height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/help/banner.png) no-repeat bottom center;
   background-size: cover;
 }
