@@ -1672,36 +1672,41 @@ header .nav-item .nav-link.active {
 .service-detail-area .relate-repair-man .repairman {
   background-color: #f5f5f4b9;
 }
+
 @media (max-width:1400px) {
-  .service-detail-area .relate-repair-man .repairman .skill{
-    
+  .service-detail-area .relate-repair-man .repairman .skill {
+
     font-size: 14px;
 
   }
-  .service-detail-area .relate-repair-man .repairman .skill span{
-    padding-inline:3px ;
+
+  .service-detail-area .relate-repair-man .repairman .skill span {
+    padding-inline: 3px;
     padding-block: 4px;
   }
 }
+
 @media (max-width:1200px) {
 
-   .service-detail-area .relate-repair-man h5{
-    font-size: 18px; 
+  .service-detail-area .relate-repair-man h5 {
+    font-size: 18px;
     margin-bottom: 0;
-   }
-   
-  .service-detail-area .relate-repair-man .repairman .skill{
+  }
+
+  .service-detail-area .relate-repair-man .repairman .skill {
     flex-direction: column;
     row-gap: 5px;
     font-size: 12px;
-   
+
 
   }
-  .service-detail-area .relate-repair-man .repairman .skill span{
-    padding-inline:3px ;
+
+  .service-detail-area .relate-repair-man .repairman .skill span {
+    padding-inline: 3px;
     padding-block: 4px;
   }
 }
+
 /*=============================== about us page  =============================*/
 
 .about-us-banner .banner-img img {
@@ -2670,4 +2675,345 @@ header .navbar-bottom .nav-item .nav-link.active {
 .arrow-up.show {
   opacity: 1;
   pointer-events: auto;
+}
+
+/*=========================urgent_service===========================*/
+.service-search .search-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-search {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-search:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
+  color: white;
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.location-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 15px;
+  padding: 15px 25px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.location-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.service-category {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.service-category:hover,
+.service-category.active {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border-color: #007bff;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 15px;
+  color: white;
+}
+
+.icon-electric {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-plumbing {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-mechanic {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-construction {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-cleaning {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-beauty {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-repair {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.icon-gardening {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.professional-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.professional-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.professional-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+.distance-badge {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.price-badge {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.btn-contact {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  color: white;
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.loading-spinner {
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+
+.filter-section {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.map-container {
+  background: white;
+  border-radius: 15px;
+  height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+    linear-gradient(-45deg, #f0f0f0 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
+    linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.status-indicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-online {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-busy {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-offline {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.quick-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.quick-filter-btn {
+  background: #e9ecef;
+  border: none;
+  color: #495057;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.quick-filter-btn:hover,
+.quick-filter-btn.active {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+}
+
+/* Override Bootstrap button styles to ensure all buttons are blue */
+.btn-primary,
+.btn-outline-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  border-color: #007bff !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085) !important;
+  border-color: #0056b3 !important;
+  color: white !important;
+}
+
+.btn-outline-primary {
+  background: transparent !important;
+  color: #007bff !important;
+  border: 2px solid #007bff !important;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  color: white !important;
+}
+
+/* Make map button blue */
+.map-placeholder .btn {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  border: none !important;
+  color: white !important;
+}
+
+.map-placeholder .btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085) !important;
+  color: white !important;
+}
+
+/* Map control buttons */
+.btn-light {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  border-color: #007bff !important;
+  color: white !important;
+}
+
+.btn-light:hover {
+  background: linear-gradient(135deg, #0056b3, #004085) !important;
+  color: white !important;
+}
+
+/* Load more button */
+.btn-outline-primary.btn-lg {
+  background: transparent !important;
+  color: #007bff !important;
+  border: 2px solid #007bff !important;
+  padding: 12px 30px !important;
+}
+
+.btn-outline-primary.btn-lg:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    padding: 20px;
+  }
+
+  .professional-card {
+    padding: 15px;
+  }
+
+  .service-category {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
 }
